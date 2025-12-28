@@ -4,6 +4,8 @@
 
 The goal is to **empower students to build AI solutions.**
 
+**NOTE: THIS REPOSITORY IS A WORK-IN-PROGRESS.  FINAL CONTENT IS EXPECTED IN FEBRUARY 2026.**
+
 # Series Outline
 
 ## Part 1 - The Basics
