@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# This script reformats the python codebase per the formatting rules
+# defined in the 'ruff' program.
+#
+# Chris Joakim, 2025
+
+black *.py
+black src 
+black tests
