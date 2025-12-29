@@ -96,8 +96,24 @@
 
 ## In Summary, the Goal is to **"Teach you to Fish" regarding AI, with Python**
 
---img| prepared-salmon-meal.jpg
---img| fishing-pole.png
---img| woman-smiling-with-fish.jpg
---img| man-smiling-with-fish.jpg
-# =============================================================================
+### I won't give you this 
+
+<p align="center">
+   <img src="img/prepared-salmon-meal.jpg" width="60%">
+</p>
+
+### But I'll help teach you how to use this 
+
+<p align="center">
+   <img src="img/fishing-pole.png" width="60%">
+</p>
+
+### This is you in 2026
+
+<p align="center">
+   <img src="img/woman-smiling-with-fish.jpg" width="60%">
+</p>
+
+<p align="center">
+   <img src="img/man-smiling-with-fish.jpg" width="60%">
+</p>
