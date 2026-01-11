@@ -11,6 +11,8 @@ Options:
   --version     Show version.
 """
 
+# Chris Joakim, 3Cloud/Cognizant, 2026
+
 import json
 import sys
 import os

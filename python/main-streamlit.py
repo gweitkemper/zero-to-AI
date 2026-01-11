@@ -7,6 +7,8 @@ import streamlit as st
 
 from faker import Faker
 
+# Chris Joakim, 3Cloud/Cognizant, 2026
+
 # Run the app with command: streamlit run app.py
 
 # Initialize Session State in 'st.session_state'

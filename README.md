@@ -18,9 +18,9 @@ Version 2026-01-10b
 -  3  -  [A Python CLI (Command Line Interface) Program](docs/session-a-python-cli-program.md)
 -  4  -  [A Python UI app with Streamlit](docs/session-a-python-ui-app-with-streamlit.md)
 -  5  -  [Data Wrangling](docs/session-data-wrangling.md)
--  6  -  [Notebooks, Jupyter, Notebooks, Dataframes, Pandas, DuckDB](docs/session-notebooks-jupyter-notebooks-dataframes-pandas-duckdb.md)
+-  6  -  [Notebooks, Jupyter, Notebooks, Dataframes, Pandas, DuckDB](docs/session-jupyter-notebooks.md)
 -  7  -  [Unit Testing and Datatypes](docs/session-unit-testing-and-datatypes.md)
--  8  -  [IDEs and Tooling - VSC, GitHub Copilot, Cursor](docs/session-ides-and-tooling---vsc-github-copilot-cursor.md)
+-  8  -  [IDEs and Tooling - VSC, GitHub Copilot, Cursor](docs/session-ides-cursor.md)
 
 ## Part 2 - Foundational Azure Services
 

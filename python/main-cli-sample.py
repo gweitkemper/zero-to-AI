@@ -11,6 +11,8 @@ Options:
   --version     Show version
 """
 
+# Chris Joakim, 3Cloud/Cognizant, 2026
+
 # The above content is so that the docopt library can display command-line help
 # regarding how to run this program.
 

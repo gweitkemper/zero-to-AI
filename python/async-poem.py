@@ -2,6 +2,8 @@ import asyncio
 import random
 import sys
 
+# Chris Joakim, 3Cloud/Cognizant, 2026
+
 async def write_me_a_poem(subject: str) -> str:
     # TODO:format the prompt and call the LLM asynchronously
     await asyncio.sleep(0.01)  # simulate async behavior with the sleep(seconds) method 

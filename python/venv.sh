@@ -3,7 +3,7 @@
 # Recreate the python virtual environment and reinstall libs on mac/linux
 # using a "modern" python toolchain which includes uv and pyproject.toml
 # rather than pip and requirements.in.
-# Chris Joakim, 2025
+# Chris Joakim, 3Cloud/Cognizant, 2026
 
 echo "Prune/ensure directories..."
 rm -rf venv    # legacy directory 
