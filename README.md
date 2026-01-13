@@ -8,7 +8,7 @@ The goal is to **empower students to build AI solutions.**
 
 # Series Outline
 
-Version 2026-01-11b
+Version 2026-01-12b
 
 ## Part 1 - The Basics
 
@@ -39,7 +39,34 @@ Version 2026-01-11b
 -  18  -  [A Complete AI App](docs/session-a-complete-ai-app.md)
 -  19  -  [Your Turn, Create Something!](docs/session-your-turn-create-something!.md)
 
-<br><br><br><br><br><br>
+<br><br><br>
+
+## Tentative Session Schedule
+
+| Date           | Session |
+| -------------- | ------- |
+| Tue 2026-02-03 | Preparing for this Series |
+| Thu 2026-02-05 | Git and GitHub |
+| Tue 2026-02-10 | Installing Python and Tooling |
+| Thu 2026-02-12 | A Python CLI (Command Line Interface) Program |
+| Tue 2026-02-17 | A Python UI app with Streamlit |
+| Thu 2026-02-19 | Data Wrangling |
+| Tue 2026-02-24 | Notebooks, Jupyter, Dataframes, Pandas |
+| Thu 2026-02-26 | Unit Testing and Datatypes |
+| Tue 2026-03-03 | IDEs and Tooling - VSC, GitHub Copilot, Cursor |
+| Thu 2026-03-05 | Azure Storage |
+| Tue 2026-03-10 | Azure Foundry, Deploying Models/LLMs, Tokens, Throughput |
+| Thu 2026-03-12 | Azure OpenAI SDK |
+| Tue 2026-03-17 | Azure CosmosDB |
+| Thu 2026-03-19 | Azure Search |
+| Tue 2026-03-24 | PDF to Markdown with Azure Document Intelligence |
+| Thu 2026-03-26 | Knowledge Graphs |
+| Tue 2026-03-31 | MCP, the Model Context Protocol |
+| Thu 2026-04-02 | Azure Agent Framework |
+| Tue 2026-04-07 | A Complete AI App |
+| Thu 2026-04-09 | Your Turn, Create Something! |
+
+<br><br><br>
 
 ```
 Chris Joakim, 3Cloud/Cognizant, 2026
