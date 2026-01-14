@@ -45,15 +45,16 @@ jobs:
         echo "pylint_output<<EOF" >> $GITHUB_OUTPUT
         echo "$pylint_output" >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
-        # echo "line_count=$line_count" >> $GITHUB_OUTPUT
-        # echo "Pylint output line count: $line_count"
+        echo "line_count=$line_count" >> $GITHUB_OUTPUT
+        echo "Pylint output line count: $line_count"
         echo "$pylint_output"
         
     - name: Check pylint results
       working-directory: ./python
       run: |
-        if [ "${{ steps.pylint.outputs.line_count }}" -gt "0" ]; then
-          echo "Pylint found errors (output length: ${{ steps.pylint.outputs.line_count }} lines). Output:"
+        line_count="${{ steps.pylint.outputs.line_count }}"
+        if [ -z "$line_count" ] || [ "$line_count" -gt "0" ]; then
+          echo "Pylint found errors (output length: ${line_count:-unknown} lines). Output:"
           echo "${{ steps.pylint.outputs.pylint_output }}"
           exit 1
         else
