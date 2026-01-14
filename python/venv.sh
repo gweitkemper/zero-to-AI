@@ -14,21 +14,19 @@ rm -rf htmlcov
 mkdir -p out 
 mkdir -p tmp 
 
-echo "Creating a new virtual environment in .venv..."
+echo "Creating a new virtual environment in .venv ..."
 uv venv
 
-echo "Activating the virtual environment..."
+echo "Activating the virtual environment ..."
 source .venv/bin/activate
 
-echo "Installing libraries..."
+echo "Installing libraries ..."
 uv pip install --editable .
 
-# echo "Creating a requirements.txt file..."
-# uv pip compile pyproject.toml -o requirements.txt
+echo "Creating a requirements.txt file for users of pip instead of uv ..."
+uv pip compile pyproject.toml -o requirements.txt
 
 # uv tree
 
-echo "Activating the virtual environment..."
-source .venv/bin/activate
-
-echo "next: source .venv/bin/activate"
+echo "Listing the installed libraries ..."
+uv pip list

@@ -53,6 +53,15 @@
 - [Installation Instructions](https://docs.astral.sh/uv/getting-started/installation/)
   - Several options are shown there, use the one you're most comfortable with
 
+### Install the uv package manager - On Windows 11
+
+This installation approach worked successfully for our 3Cloud teammate Nazar.
+See https://docs.astral.sh/uv/getting-started/installation/#winget
+
+```
+winget install --id=astral-sh.uv  -e
+```
+
 ### ruff 
 
 - An extremely fast Python **linter and code formatter**, written in Rust
