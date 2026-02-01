@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-   <img src="docs/img/zero-to-AI-logo.png" width="70%">
+   <img src="docs/img/zero-to-AI-logo-1024.png" width="80%">
 </p>
 
 <br>
