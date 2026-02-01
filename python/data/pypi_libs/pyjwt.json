@@ -6,7 +6,6 @@
     "classifiers": [
       "Development Status :: 5 - Production/Stable",
       "Intended Audience :: Developers",
-      "License :: OSI Approved :: MIT License",
       "Natural Language :: English",
       "Programming Language :: Python",
       "Programming Language :: Python :: 3",
@@ -15,6 +14,7 @@
       "Programming Language :: Python :: 3.11",
       "Programming Language :: Python :: 3.12",
       "Programming Language :: Python :: 3.13",
+      "Programming Language :: Python :: 3.14",
       "Programming Language :: Python :: 3.9",
       "Topic :: Utilities"
     ],
@@ -27,12 +27,17 @@
       "last_month": -1,
       "last_week": -1
     },
-    "dynamic": null,
+    "dynamic": [
+      "License-File"
+    ],
     "home_page": null,
     "keywords": "json, jwt, security, signing, token, web",
-    "license": "MIT",
-    "license_expression": null,
-    "license_files": null,
+    "license": null,
+    "license_expression": "MIT",
+    "license_files": [
+      "LICENSE",
+      "AUTHORS.rst"
+    ],
     "maintainer": null,
     "maintainer_email": null,
     "name": "PyJWT",
@@ -48,29 +53,29 @@
       "docs",
       "tests"
     ],
-    "release_url": "https://pypi.org/project/PyJWT/2.10.1/",
+    "release_url": "https://pypi.org/project/PyJWT/2.11.0/",
     "requires_dist": [
       "cryptography>=3.4.0; extra == \"crypto\"",
-      "coverage[toml]==5.0.4; extra == \"dev\"",
+      "coverage[toml]==7.10.7; extra == \"dev\"",
       "cryptography>=3.4.0; extra == \"dev\"",
       "pre-commit; extra == \"dev\"",
-      "pytest<7.0.0,>=6.0.0; extra == \"dev\"",
+      "pytest<9.0.0,>=8.4.2; extra == \"dev\"",
       "sphinx; extra == \"dev\"",
       "sphinx-rtd-theme; extra == \"dev\"",
       "zope.interface; extra == \"dev\"",
       "sphinx; extra == \"docs\"",
       "sphinx-rtd-theme; extra == \"docs\"",
       "zope.interface; extra == \"docs\"",
-      "coverage[toml]==5.0.4; extra == \"tests\"",
-      "pytest<7.0.0,>=6.0.0; extra == \"tests\""
+      "coverage[toml]==7.10.7; extra == \"tests\"",
+      "pytest<9.0.0,>=8.4.2; extra == \"tests\""
     ],
     "requires_python": ">=3.9",
     "summary": "JSON Web Token implementation in Python",
-    "version": "2.10.1",
+    "version": "2.11.0",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 26208831,
+  "last_serial": 33934309,
   "releases": {
     "0.1.1": [
       {
@@ -2531,6 +2536,50 @@
         "yanked_reason": null
       }
     ],
+    "2.11.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6f01c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c",
+          "md5": "c1ffbbdb1d2dc33488b02e9ee916f59e",
+          "sha256": "94a6bde30eb5c8e04fee991062b534071fd1439ef58d2adc9ccb823e7bcd0469"
+        },
+        "downloads": -1,
+        "filename": "pyjwt-2.11.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c1ffbbdb1d2dc33488b02e9ee916f59e",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 28224,
+        "upload_time": "2026-01-30T19:59:54",
+        "upload_time_iso_8601": "2026-01-30T19:59:54.539418Z",
+        "url": "https://files.pythonhosted.org/packages/6f/01/c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c/pyjwt-2.11.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5c5ab46fa56bf322901eee5b0454a34343cdbdae202cd421775a8ee4e42fd519",
+          "md5": "00db5b7ec516b13e54e81433bb6eb58b",
+          "sha256": "35f95c1f0fbe5d5ba6e43f00271c275f7a1a4db1dab27bf708073b75318ea623"
+        },
+        "downloads": -1,
+        "filename": "pyjwt-2.11.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "00db5b7ec516b13e54e81433bb6eb58b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 98019,
+        "upload_time": "2026-01-30T19:59:55",
+        "upload_time_iso_8601": "2026-01-30T19:59:55.694646Z",
+        "url": "https://files.pythonhosted.org/packages/5c/5a/b46fa56bf322901eee5b0454a34343cdbdae202cd421775a8ee4e42fd519/pyjwt-2.11.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "2.2.0": [
       {
         "comment_text": "",
@@ -2886,44 +2935,44 @@
   },
   "urls": [
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "61ad689f02752eeec26aed679477e80e632ef1b682313be70793d798c1d5fc8f",
-        "md5": "dcd961185ca574bdf86b92026d714cb6",
-        "sha256": "dcdd193e30abefd5debf142f9adfcdd2b58004e644f25406ffaebd50bd98dacb"
+        "blake2b_256": "6f01c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c",
+        "md5": "c1ffbbdb1d2dc33488b02e9ee916f59e",
+        "sha256": "94a6bde30eb5c8e04fee991062b534071fd1439ef58d2adc9ccb823e7bcd0469"
       },
       "downloads": -1,
-      "filename": "PyJWT-2.10.1-py3-none-any.whl",
+      "filename": "pyjwt-2.11.0-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "dcd961185ca574bdf86b92026d714cb6",
+      "md5_digest": "c1ffbbdb1d2dc33488b02e9ee916f59e",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.9",
-      "size": 22997,
-      "upload_time": "2024-11-28T03:43:27",
-      "upload_time_iso_8601": "2024-11-28T03:43:27.893367Z",
-      "url": "https://files.pythonhosted.org/packages/61/ad/689f02752eeec26aed679477e80e632ef1b682313be70793d798c1d5fc8f/PyJWT-2.10.1-py3-none-any.whl",
+      "size": 28224,
+      "upload_time": "2026-01-30T19:59:54",
+      "upload_time_iso_8601": "2026-01-30T19:59:54.539418Z",
+      "url": "https://files.pythonhosted.org/packages/6f/01/c26ce75ba460d5cd503da9e13b21a33804d38c2165dec7b716d06b13010c/pyjwt-2.11.0-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "e746bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726",
-        "md5": "f3273aaf736c24795e78ac48adbab111",
-        "sha256": "3cc5772eb20009233caf06e9d8a0577824723b44e6648ee0a2aedb6cf9381953"
+        "blake2b_256": "5c5ab46fa56bf322901eee5b0454a34343cdbdae202cd421775a8ee4e42fd519",
+        "md5": "00db5b7ec516b13e54e81433bb6eb58b",
+        "sha256": "35f95c1f0fbe5d5ba6e43f00271c275f7a1a4db1dab27bf708073b75318ea623"
       },
       "downloads": -1,
-      "filename": "pyjwt-2.10.1.tar.gz",
+      "filename": "pyjwt-2.11.0.tar.gz",
       "has_sig": false,
-      "md5_digest": "f3273aaf736c24795e78ac48adbab111",
+      "md5_digest": "00db5b7ec516b13e54e81433bb6eb58b",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.9",
-      "size": 87785,
-      "upload_time": "2024-11-28T03:43:29",
-      "upload_time_iso_8601": "2024-11-28T03:43:29.933157Z",
-      "url": "https://files.pythonhosted.org/packages/e7/46/bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726/pyjwt-2.10.1.tar.gz",
+      "size": 98019,
+      "upload_time": "2026-01-30T19:59:55",
+      "upload_time_iso_8601": "2026-01-30T19:59:55.694646Z",
+      "url": "https://files.pythonhosted.org/packages/5c/5a/b46fa56bf322901eee5b0454a34343cdbdae202cd421775a8ee4e42fd519/pyjwt-2.11.0.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

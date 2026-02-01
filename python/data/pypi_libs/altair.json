@@ -103,7 +103,7 @@
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33644592,
+  "last_serial": 33803304,
   "releases": {
     "1.0.0": [
       {
@@ -2219,6 +2219,50 @@
         "upload_time": "2026-01-19T03:34:54",
         "upload_time_iso_8601": "2026-01-19T03:34:54.501066Z",
         "url": "https://files.pythonhosted.org/packages/f4/3a/4c9214f476ea72d3981cdf6e66e6966c676f2cc930f7c2f8dd97b3289b60/altair-6.1.0.dev20260119.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "6.1.0.dev20260126": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0171afa432c768bd0492e7650e4e2734073dfe5b45f16ca7a244bace0d97bb4c",
+          "md5": "85dcffaf53ac2ccf4340f1c365695e21",
+          "sha256": "4361195f736575cf19fb1458ea477a66d7513dddb241bf383b16606fa4ad516f"
+        },
+        "downloads": -1,
+        "filename": "altair-6.1.0.dev20260126-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "85dcffaf53ac2ccf4340f1c365695e21",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 795683,
+        "upload_time": "2026-01-26T03:39:04",
+        "upload_time_iso_8601": "2026-01-26T03:39:04.908429Z",
+        "url": "https://files.pythonhosted.org/packages/01/71/afa432c768bd0492e7650e4e2734073dfe5b45f16ca7a244bace0d97bb4c/altair-6.1.0.dev20260126-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ac0055594ad932d9bd5c0d59341c51657e8c39e988039f9b773727ab80a2e535",
+          "md5": "f6eee44abd3abbd8f7aa2a49e9200872",
+          "sha256": "c418897dddf4af7327486899c3914b57f4c1fcbcf970f943aeb58d7305a1c849"
+        },
+        "downloads": -1,
+        "filename": "altair-6.1.0.dev20260126.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f6eee44abd3abbd8f7aa2a49e9200872",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 764169,
+        "upload_time": "2026-01-26T03:39:06",
+        "upload_time_iso_8601": "2026-01-26T03:39:06.933576Z",
+        "url": "https://files.pythonhosted.org/packages/ac/00/55594ad932d9bd5c0d59341c51657e8c39e988039f9b773727ab80a2e535/altair-6.1.0.dev20260126.tar.gz",
         "yanked": false,
         "yanked_reason": null
       }

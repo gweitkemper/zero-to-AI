@@ -5,12 +5,10 @@ Usage:
     python main-search.py <func>
     python main-search.py check_env
     -
-    python main-search.py create_cosmos_nosql_datasource <db> <collection>
     python main-search.py create_cosmos_nosql_datasource dev libraries
     -
     python main-search.py create_cosmos_nosql_datasource dev libraries
     -
-    python main-search.py delete_datasource <name>
     python main-search.py delete_datasource cosmosdb-nosql-dev-libraries
     -
     python main-search.py list_indexes
@@ -33,11 +31,7 @@ Usage:
     python main-search.py search_index nosql-libraries m26 aisearch/libraries_searches.json
     python main-search.py search_index nosql-libraries vector_search_fastapi_vector aisearch/libraries_searches.json
     -
-    python main-search.py lookup_doc nosql-libraries eVBWc0FPdExvZzJYQXdBQUFBQUFBQT090
-    -
-    python main-search.py direct_load_index <index_name> <data_json_filename>
     python main-search.py direct_load_index zipcodes ../data/zipcodes/us_zipcodes.json --load
-    python main-search.py direct_load_index pythonlibs ../../CosmosAIGraph/data/pypi/wrangled_libs --load
 """
 
 # Chris Joakim, 3Cloud/Cognizant, 2026

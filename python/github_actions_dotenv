@@ -1,0 +1,5 @@
+# Placeholder for the '.env' file used in the GitHub Actions workflow.
+# See file .github/workflows/python_lint_and_test.yml
+# Chris Joakim, 3Cloud/Cognizant, 2026
+
+GITHUB_ACTIONS_ENV=1

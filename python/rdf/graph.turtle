@@ -1,0 +1,1200 @@
+@prefix libgraph: <http://example.org/libgraph#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/libgraph> a owl:Ontology ;
+    rdfs:label "Library Graph Ontology" ;
+    rdfs:comment "Ontology for the RDF Graph Model representing Python Libraries in this project" .
+
+libgraph:name a owl:DatatypeProperty ;
+    rdfs:label "name" ;
+    rdfs:domain libgraph:Library ;
+    rdfs:range xsd:string .
+
+libgraph:uses_lib a owl:ObjectProperty ;
+    rdfs:label "uses_lib" ;
+    rdfs:domain libgraph:Library ;
+    rdfs:range libgraph:Library .
+
+<http://example.org/libgraph/agent-framework> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/agent-framework-core> .
+
+<http://example.org/libgraph/alembic> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/mako>,
+        <http://example.org/libgraph/sqlalchemy>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/av> a libgraph:Library .
+
+<http://example.org/libgraph/azure-ai-documentintelligence> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-ai-evaluation> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/aiohttp>,
+        <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/azure-identity>,
+        <http://example.org/libgraph/azure-storage-blob>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/msrest>,
+        <http://example.org/libgraph/nltk>,
+        <http://example.org/libgraph/openai>,
+        <http://example.org/libgraph/pandas>,
+        <http://example.org/libgraph/pyjwt>,
+        <http://example.org/libgraph/ruamel-yaml> .
+
+<http://example.org/libgraph/azure-ai-projects> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-ai-agents>,
+        <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/azure-storage-blob>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-ai-textanalytics> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-common>,
+        <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-cosmos> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-keyvault-secrets> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-mgmt-applicationinsights> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-common>,
+        <http://example.org/libgraph/azure-mgmt-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-mgmt-cognitiveservices> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-mgmt-core>,
+        <http://example.org/libgraph/msrest>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-search-documents> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-common>,
+        <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/docopt> a libgraph:Library .
+
+<http://example.org/libgraph/duckdb> a libgraph:Library .
+
+<http://example.org/libgraph/faker> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/tzdata> .
+
+<http://example.org/libgraph/fastapi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/annotated-doc>,
+        <http://example.org/libgraph/email-validator>,
+        <http://example.org/libgraph/fastapi-cli>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/pydantic-extra-types>,
+        <http://example.org/libgraph/pydantic-settings>,
+        <http://example.org/libgraph/python-multipart>,
+        <http://example.org/libgraph/starlette>,
+        <http://example.org/libgraph/typing-extensions>,
+        <http://example.org/libgraph/uvicorn> .
+
+<http://example.org/libgraph/fastmcp> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/authlib>,
+        <http://example.org/libgraph/cyclopts>,
+        <http://example.org/libgraph/exceptiongroup>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/jsonschema-path>,
+        <http://example.org/libgraph/mcp>,
+        <http://example.org/libgraph/openapi-pydantic>,
+        <http://example.org/libgraph/platformdirs>,
+        <http://example.org/libgraph/py-key-value-aio>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/pydocket>,
+        <http://example.org/libgraph/pyperclip>,
+        <http://example.org/libgraph/python-dotenv>,
+        <http://example.org/libgraph/rich>,
+        <http://example.org/libgraph/uvicorn>,
+        <http://example.org/libgraph/websockets> .
+
+<http://example.org/libgraph/geopy> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/geographiclib> .
+
+<http://example.org/libgraph/jupyter> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/ipykernel>,
+        <http://example.org/libgraph/ipywidgets>,
+        <http://example.org/libgraph/jupyter-console>,
+        <http://example.org/libgraph/jupyterlab>,
+        <http://example.org/libgraph/nbconvert>,
+        <http://example.org/libgraph/notebook> .
+
+<http://example.org/libgraph/m26> a libgraph:Library .
+
+<http://example.org/libgraph/markdown> a libgraph:Library .
+
+<http://example.org/libgraph/matplotlib> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/contourpy>,
+        <http://example.org/libgraph/cycler>,
+        <http://example.org/libgraph/fonttools>,
+        <http://example.org/libgraph/kiwisolver>,
+        <http://example.org/libgraph/numpy>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/pillow>,
+        <http://example.org/libgraph/pyparsing>,
+        <http://example.org/libgraph/python-dateutil> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-httpx> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http>,
+        <http://example.org/libgraph/wrapt> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-logging> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation> .
+
+<http://example.org/libgraph/pgvector> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/numpy> .
+
+<http://example.org/libgraph/psycopg2-binary> a libgraph:Library .
+
+<http://example.org/libgraph/pylint> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/astroid>,
+        <http://example.org/libgraph/colorama>,
+        <http://example.org/libgraph/dill>,
+        <http://example.org/libgraph/isort>,
+        <http://example.org/libgraph/mccabe>,
+        <http://example.org/libgraph/platformdirs>,
+        <http://example.org/libgraph/tomlkit> .
+
+<http://example.org/libgraph/pytest-asyncio> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pytest> .
+
+<http://example.org/libgraph/pytest-cov> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/coverage>,
+        <http://example.org/libgraph/pluggy>,
+        <http://example.org/libgraph/pytest> .
+
+<http://example.org/libgraph/pytest-randomly> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pytest> .
+
+<http://example.org/libgraph/rdflib> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pyparsing> .
+
+<http://example.org/libgraph/sqlalchemy-utils> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/sqlalchemy> .
+
+<http://example.org/libgraph/streamlit> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/altair>,
+        <http://example.org/libgraph/blinker>,
+        <http://example.org/libgraph/cachetools>,
+        <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/gitpython>,
+        <http://example.org/libgraph/numpy>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/pandas>,
+        <http://example.org/libgraph/pillow>,
+        <http://example.org/libgraph/protobuf>,
+        <http://example.org/libgraph/pyarrow>,
+        <http://example.org/libgraph/pydeck>,
+        <http://example.org/libgraph/requests>,
+        <http://example.org/libgraph/tenacity>,
+        <http://example.org/libgraph/toml>,
+        <http://example.org/libgraph/tornado>,
+        <http://example.org/libgraph/typing-extensions>,
+        <http://example.org/libgraph/watchdog> .
+
+<http://example.org/libgraph/tiktoken> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/regex>,
+        <http://example.org/libgraph/requests> .
+
+<http://example.org/libgraph/agent-framework-core> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/aiofiles>,
+        <http://example.org/libgraph/azure-identity>,
+        <http://example.org/libgraph/azure-monitor-opentelemetry>,
+        <http://example.org/libgraph/azure-monitor-opentelemetry-exporter>,
+        <http://example.org/libgraph/mcp>,
+        <http://example.org/libgraph/openai>,
+        <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc>,
+        <http://example.org/libgraph/opentelemetry-sdk>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions-ai>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/pydantic-settings>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/aiofiles> a libgraph:Library .
+
+<http://example.org/libgraph/aiohappyeyeballs> a libgraph:Library .
+
+<http://example.org/libgraph/aiohttp> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/aiohappyeyeballs>,
+        <http://example.org/libgraph/aiosignal>,
+        <http://example.org/libgraph/attrs>,
+        <http://example.org/libgraph/frozenlist>,
+        <http://example.org/libgraph/multidict>,
+        <http://example.org/libgraph/propcache>,
+        <http://example.org/libgraph/yarl> .
+
+<http://example.org/libgraph/aiosignal> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/frozenlist> .
+
+<http://example.org/libgraph/altair> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/jsonschema>,
+        <http://example.org/libgraph/narwhals>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/annotated-doc> a libgraph:Library .
+
+<http://example.org/libgraph/annotated-types> a libgraph:Library .
+
+<http://example.org/libgraph/appnope> a libgraph:Library .
+
+<http://example.org/libgraph/argon2-cffi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/argon2-cffi-bindings> .
+
+<http://example.org/libgraph/argon2-cffi-bindings> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cffi> .
+
+<http://example.org/libgraph/arrow> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/python-dateutil>,
+        <http://example.org/libgraph/tzdata> .
+
+<http://example.org/libgraph/asgiref> a libgraph:Library .
+
+<http://example.org/libgraph/astroid> a libgraph:Library .
+
+<http://example.org/libgraph/asttokens> a libgraph:Library .
+
+<http://example.org/libgraph/async-lru> a libgraph:Library .
+
+<http://example.org/libgraph/authlib> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cryptography> .
+
+<http://example.org/libgraph/azure-ai-agents> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/azure-core-tracing-opentelemetry> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/opentelemetry-api> .
+
+<http://example.org/libgraph/azure-monitor-opentelemetry> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/azure-core-tracing-opentelemetry>,
+        <http://example.org/libgraph/azure-monitor-opentelemetry-exporter>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-django>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-fastapi>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-flask>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-psycopg2>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-requests>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-urllib>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-urllib3>,
+        <http://example.org/libgraph/opentelemetry-resource-detector-azure>,
+        <http://example.org/libgraph/opentelemetry-sdk> .
+
+<http://example.org/libgraph/babel> a libgraph:Library .
+
+<http://example.org/libgraph/beautifulsoup4> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/soupsieve>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/bleach> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/tinycss2>,
+        <http://example.org/libgraph/webencodings> .
+
+<http://example.org/libgraph/blinker> a libgraph:Library .
+
+<http://example.org/libgraph/charset-normalizer> a libgraph:Library .
+
+<http://example.org/libgraph/cloudpickle> a libgraph:Library .
+
+<http://example.org/libgraph/contourpy> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/numpy> .
+
+<http://example.org/libgraph/coverage> a libgraph:Library .
+
+<http://example.org/libgraph/cycler> a libgraph:Library .
+
+<http://example.org/libgraph/cyclopts> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/attrs>,
+        <http://example.org/libgraph/docstring-parser>,
+        <http://example.org/libgraph/rich>,
+        <http://example.org/libgraph/rich-rst> .
+
+<http://example.org/libgraph/debugpy> a libgraph:Library .
+
+<http://example.org/libgraph/decorator> a libgraph:Library .
+
+<http://example.org/libgraph/defusedxml> a libgraph:Library .
+
+<http://example.org/libgraph/dill> a libgraph:Library .
+
+<http://example.org/libgraph/diskcache> a libgraph:Library .
+
+<http://example.org/libgraph/distro> a libgraph:Library .
+
+<http://example.org/libgraph/dnspython> a libgraph:Library .
+
+<http://example.org/libgraph/docstring-parser> a libgraph:Library .
+
+<http://example.org/libgraph/docutils> a libgraph:Library .
+
+<http://example.org/libgraph/exceptiongroup> a libgraph:Library .
+
+<http://example.org/libgraph/executing> a libgraph:Library .
+
+<http://example.org/libgraph/fakeredis> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/lupa>,
+        <http://example.org/libgraph/redis>,
+        <http://example.org/libgraph/sortedcontainers> .
+
+<http://example.org/libgraph/fastapi-cli> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/fastapi-cloud-cli>,
+        <http://example.org/libgraph/rich-toolkit>,
+        <http://example.org/libgraph/typer>,
+        <http://example.org/libgraph/uvicorn> .
+
+<http://example.org/libgraph/fastapi-cloud-cli> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/fastar>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/rich-toolkit>,
+        <http://example.org/libgraph/rignore>,
+        <http://example.org/libgraph/sentry-sdk>,
+        <http://example.org/libgraph/typer>,
+        <http://example.org/libgraph/uvicorn> .
+
+<http://example.org/libgraph/fastar> a libgraph:Library .
+
+<http://example.org/libgraph/fastjsonschema> a libgraph:Library .
+
+<http://example.org/libgraph/fonttools> a libgraph:Library .
+
+<http://example.org/libgraph/fqdn> a libgraph:Library .
+
+<http://example.org/libgraph/geographiclib> a libgraph:Library .
+
+<http://example.org/libgraph/gitdb> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/smmap> .
+
+<http://example.org/libgraph/gitpython> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/gitdb> .
+
+<http://example.org/libgraph/googleapis-common-protos> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/protobuf> .
+
+<http://example.org/libgraph/greenlet> a libgraph:Library .
+
+<http://example.org/libgraph/grpcio> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/httpcore> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/certifi>,
+        <http://example.org/libgraph/h11> .
+
+<http://example.org/libgraph/httptools> a libgraph:Library .
+
+<http://example.org/libgraph/httpx-sse> a libgraph:Library .
+
+<http://example.org/libgraph/importlib-metadata> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/zipp> .
+
+<http://example.org/libgraph/iniconfig> a libgraph:Library .
+
+<http://example.org/libgraph/ipython-pygments-lexers> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pygments> .
+
+<http://example.org/libgraph/ipywidgets> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/comm>,
+        <http://example.org/libgraph/ipython>,
+        <http://example.org/libgraph/jupyterlab-widgets>,
+        <http://example.org/libgraph/traitlets>,
+        <http://example.org/libgraph/widgetsnbextension> .
+
+<http://example.org/libgraph/isoduration> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/arrow> .
+
+<http://example.org/libgraph/isort> a libgraph:Library .
+
+<http://example.org/libgraph/jaraco-classes> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/more-itertools> .
+
+<http://example.org/libgraph/jaraco-context> a libgraph:Library .
+
+<http://example.org/libgraph/jaraco-functools> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/more-itertools> .
+
+<http://example.org/libgraph/jedi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/parso> .
+
+<http://example.org/libgraph/jiter> a libgraph:Library .
+
+<http://example.org/libgraph/joblib> a libgraph:Library .
+
+<http://example.org/libgraph/json5> a libgraph:Library .
+
+<http://example.org/libgraph/jsonpointer> a libgraph:Library .
+
+<http://example.org/libgraph/jsonschema-path> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pathable>,
+        <http://example.org/libgraph/pyyaml>,
+        <http://example.org/libgraph/referencing>,
+        <http://example.org/libgraph/requests> .
+
+<http://example.org/libgraph/jsonschema-specifications> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/referencing> .
+
+<http://example.org/libgraph/jupyter-console> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/ipykernel>,
+        <http://example.org/libgraph/ipython>,
+        <http://example.org/libgraph/jupyter-client>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/prompt-toolkit>,
+        <http://example.org/libgraph/pygments>,
+        <http://example.org/libgraph/pyzmq>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/jupyter-events> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jsonschema>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/python-json-logger>,
+        <http://example.org/libgraph/pyyaml>,
+        <http://example.org/libgraph/referencing>,
+        <http://example.org/libgraph/rfc3339-validator>,
+        <http://example.org/libgraph/rfc3986-validator>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/jupyter-lsp> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jupyter-server> .
+
+<http://example.org/libgraph/jupyter-server-terminals> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pywinpty>,
+        <http://example.org/libgraph/terminado> .
+
+<http://example.org/libgraph/jupyterlab-pygments> a libgraph:Library .
+
+<http://example.org/libgraph/jupyterlab-widgets> a libgraph:Library .
+
+<http://example.org/libgraph/keyring> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jaraco-classes>,
+        <http://example.org/libgraph/jaraco-context>,
+        <http://example.org/libgraph/jaraco-functools>,
+        <http://example.org/libgraph/jeepney>,
+        <http://example.org/libgraph/pywin32-ctypes>,
+        <http://example.org/libgraph/secretstorage> .
+
+<http://example.org/libgraph/kiwisolver> a libgraph:Library .
+
+<http://example.org/libgraph/lark> a libgraph:Library .
+
+<http://example.org/libgraph/lupa> a libgraph:Library .
+
+<http://example.org/libgraph/mako> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/markupsafe> .
+
+<http://example.org/libgraph/markdown-it-py> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/mdurl> .
+
+<http://example.org/libgraph/mccabe> a libgraph:Library .
+
+<http://example.org/libgraph/mdurl> a libgraph:Library .
+
+<http://example.org/libgraph/mistune> a libgraph:Library .
+
+<http://example.org/libgraph/msal-extensions> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/msal> .
+
+<http://example.org/libgraph/narwhals> a libgraph:Library .
+
+<http://example.org/libgraph/nbclient> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jupyter-client>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/nbformat>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/nest-asyncio> a libgraph:Library .
+
+<http://example.org/libgraph/nltk> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/joblib>,
+        <http://example.org/libgraph/regex>,
+        <http://example.org/libgraph/tqdm> .
+
+<http://example.org/libgraph/notebook> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jupyter-server>,
+        <http://example.org/libgraph/jupyterlab>,
+        <http://example.org/libgraph/jupyterlab-server>,
+        <http://example.org/libgraph/notebook-shim>,
+        <http://example.org/libgraph/tornado> .
+
+<http://example.org/libgraph/oauthlib> a libgraph:Library .
+
+<http://example.org/libgraph/openapi-pydantic> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pydantic> .
+
+<http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-proto> .
+
+<http://example.org/libgraph/opentelemetry-exporter-otlp-proto-grpc> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/googleapis-common-protos>,
+        <http://example.org/libgraph/grpcio>,
+        <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-exporter-otlp-proto-common>,
+        <http://example.org/libgraph/opentelemetry-proto>,
+        <http://example.org/libgraph/opentelemetry-sdk>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-asgi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/asgiref>,
+        <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-dbapi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/wrapt> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-django> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-wsgi>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-fastapi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-asgi>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-flask> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-wsgi>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http>,
+        <http://example.org/libgraph/packaging> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-psycopg2> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-instrumentation-dbapi> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-requests> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-urllib> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-urllib3> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http>,
+        <http://example.org/libgraph/wrapt> .
+
+<http://example.org/libgraph/opentelemetry-resource-detector-azure> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-sdk> .
+
+<http://example.org/libgraph/opentelemetry-semantic-conventions-ai> a libgraph:Library .
+
+<http://example.org/libgraph/pandocfilters> a libgraph:Library .
+
+<http://example.org/libgraph/parso> a libgraph:Library .
+
+<http://example.org/libgraph/pathable> a libgraph:Library .
+
+<http://example.org/libgraph/pathvalidate> a libgraph:Library .
+
+<http://example.org/libgraph/pexpect> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/ptyprocess> .
+
+<http://example.org/libgraph/pure-eval> a libgraph:Library .
+
+<http://example.org/libgraph/py-key-value-shared> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/beartype>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/pyarrow> a libgraph:Library .
+
+<http://example.org/libgraph/pycparser> a libgraph:Library .
+
+<http://example.org/libgraph/pydantic-core> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/pydantic-extra-types> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/pydeck> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/numpy> .
+
+<http://example.org/libgraph/pydocket> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cloudpickle>,
+        <http://example.org/libgraph/fakeredis>,
+        <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/prometheus-client>,
+        <http://example.org/libgraph/py-key-value-aio>,
+        <http://example.org/libgraph/python-json-logger>,
+        <http://example.org/libgraph/redis>,
+        <http://example.org/libgraph/rich>,
+        <http://example.org/libgraph/typer>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/pyperclip> a libgraph:Library .
+
+<http://example.org/libgraph/pytz> a libgraph:Library .
+
+<http://example.org/libgraph/pywin32> a libgraph:Library .
+
+<http://example.org/libgraph/pywin32-ctypes> a libgraph:Library .
+
+<http://example.org/libgraph/requests-oauthlib> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/oauthlib>,
+        <http://example.org/libgraph/requests> .
+
+<http://example.org/libgraph/rfc3987-syntax> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/lark> .
+
+<http://example.org/libgraph/rich-rst> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/docutils>,
+        <http://example.org/libgraph/rich> .
+
+<http://example.org/libgraph/rignore> a libgraph:Library .
+
+<http://example.org/libgraph/ruamel-yaml> a libgraph:Library .
+
+<http://example.org/libgraph/secretstorage> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cryptography>,
+        <http://example.org/libgraph/jeepney> .
+
+<http://example.org/libgraph/send2trash> a libgraph:Library .
+
+<http://example.org/libgraph/sentry-sdk> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/certifi>,
+        <http://example.org/libgraph/urllib3> .
+
+<http://example.org/libgraph/setuptools> a libgraph:Library .
+
+<http://example.org/libgraph/shellingham> a libgraph:Library .
+
+<http://example.org/libgraph/smmap> a libgraph:Library .
+
+<http://example.org/libgraph/sniffio> a libgraph:Library .
+
+<http://example.org/libgraph/sortedcontainers> a libgraph:Library .
+
+<http://example.org/libgraph/soupsieve> a libgraph:Library .
+
+<http://example.org/libgraph/sse-starlette> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio>,
+        <http://example.org/libgraph/starlette> .
+
+<http://example.org/libgraph/stack-data> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/asttokens>,
+        <http://example.org/libgraph/executing>,
+        <http://example.org/libgraph/pure-eval> .
+
+<http://example.org/libgraph/tenacity> a libgraph:Library .
+
+<http://example.org/libgraph/tinycss2> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/webencodings> .
+
+<http://example.org/libgraph/toml> a libgraph:Library .
+
+<http://example.org/libgraph/tomlkit> a libgraph:Library .
+
+<http://example.org/libgraph/uri-template> a libgraph:Library .
+
+<http://example.org/libgraph/uvloop> a libgraph:Library .
+
+<http://example.org/libgraph/watchdog> a libgraph:Library .
+
+<http://example.org/libgraph/watchfiles> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio> .
+
+<http://example.org/libgraph/wcwidth> a libgraph:Library .
+
+<http://example.org/libgraph/webcolors> a libgraph:Library .
+
+<http://example.org/libgraph/websocket-client> a libgraph:Library .
+
+<http://example.org/libgraph/widgetsnbextension> a libgraph:Library .
+
+<http://example.org/libgraph/yarl> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/idna>,
+        <http://example.org/libgraph/multidict>,
+        <http://example.org/libgraph/propcache> .
+
+<http://example.org/libgraph/zipp> a libgraph:Library .
+
+<http://example.org/libgraph/azure-mgmt-core> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core> .
+
+<http://example.org/libgraph/azure-monitor-opentelemetry-exporter> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/azure-identity>,
+        <http://example.org/libgraph/msrest>,
+        <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-sdk>,
+        <http://example.org/libgraph/psutil> .
+
+<http://example.org/libgraph/azure-storage-blob> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/cryptography>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/beartype> a libgraph:Library .
+
+<http://example.org/libgraph/cachetools> a libgraph:Library .
+
+<http://example.org/libgraph/comm> a libgraph:Library .
+
+<http://example.org/libgraph/email-validator> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/dnspython>,
+        <http://example.org/libgraph/idna> .
+
+<http://example.org/libgraph/frozenlist> a libgraph:Library .
+
+<http://example.org/libgraph/h11> a libgraph:Library .
+
+<http://example.org/libgraph/jeepney> a libgraph:Library .
+
+<http://example.org/libgraph/jupyterlab> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/async-lru>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/ipykernel>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/jupyter-lsp>,
+        <http://example.org/libgraph/jupyter-server>,
+        <http://example.org/libgraph/jupyterlab-server>,
+        <http://example.org/libgraph/notebook-shim>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/setuptools>,
+        <http://example.org/libgraph/tornado>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/jupyterlab-server> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/babel>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/json5>,
+        <http://example.org/libgraph/jsonschema>,
+        <http://example.org/libgraph/jupyter-server>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/requests> .
+
+<http://example.org/libgraph/matplotlib-inline> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/mcp> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/httpx-sse>,
+        <http://example.org/libgraph/jsonschema>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/pydantic-settings>,
+        <http://example.org/libgraph/pyjwt>,
+        <http://example.org/libgraph/python-multipart>,
+        <http://example.org/libgraph/pywin32>,
+        <http://example.org/libgraph/sse-starlette>,
+        <http://example.org/libgraph/starlette>,
+        <http://example.org/libgraph/typing-extensions>,
+        <http://example.org/libgraph/typing-inspection>,
+        <http://example.org/libgraph/uvicorn>,
+        <http://example.org/libgraph/websockets> .
+
+<http://example.org/libgraph/more-itertools> a libgraph:Library .
+
+<http://example.org/libgraph/msal> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cryptography>,
+        <http://example.org/libgraph/pyjwt>,
+        <http://example.org/libgraph/requests> .
+
+<http://example.org/libgraph/multidict> a libgraph:Library .
+
+<http://example.org/libgraph/nbconvert> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/beautifulsoup4>,
+        <http://example.org/libgraph/bleach>,
+        <http://example.org/libgraph/defusedxml>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/jupyterlab-pygments>,
+        <http://example.org/libgraph/markupsafe>,
+        <http://example.org/libgraph/mistune>,
+        <http://example.org/libgraph/nbclient>,
+        <http://example.org/libgraph/nbformat>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/pandocfilters>,
+        <http://example.org/libgraph/pygments>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/notebook-shim> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jupyter-server> .
+
+<http://example.org/libgraph/openai> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio>,
+        <http://example.org/libgraph/distro>,
+        <http://example.org/libgraph/httpx>,
+        <http://example.org/libgraph/jiter>,
+        <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/sniffio>,
+        <http://example.org/libgraph/tqdm>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation-wsgi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-instrumentation>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/opentelemetry-util-http> .
+
+<http://example.org/libgraph/opentelemetry-proto> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/protobuf> .
+
+<http://example.org/libgraph/pandas> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/numpy>,
+        <http://example.org/libgraph/python-dateutil>,
+        <http://example.org/libgraph/pytz>,
+        <http://example.org/libgraph/tzdata> .
+
+<http://example.org/libgraph/pillow> a libgraph:Library .
+
+<http://example.org/libgraph/pluggy> a libgraph:Library .
+
+<http://example.org/libgraph/prometheus-client> a libgraph:Library .
+
+<http://example.org/libgraph/prompt-toolkit> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/wcwidth> .
+
+<http://example.org/libgraph/propcache> a libgraph:Library .
+
+<http://example.org/libgraph/psutil> a libgraph:Library .
+
+<http://example.org/libgraph/ptyprocess> a libgraph:Library .
+
+<http://example.org/libgraph/py-key-value-aio> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/beartype>,
+        <http://example.org/libgraph/cachetools>,
+        <http://example.org/libgraph/diskcache>,
+        <http://example.org/libgraph/keyring>,
+        <http://example.org/libgraph/pathvalidate>,
+        <http://example.org/libgraph/py-key-value-shared>,
+        <http://example.org/libgraph/redis> .
+
+<http://example.org/libgraph/pyparsing> a libgraph:Library .
+
+<http://example.org/libgraph/python-json-logger> a libgraph:Library .
+
+<http://example.org/libgraph/python-multipart> a libgraph:Library .
+
+<http://example.org/libgraph/regex> a libgraph:Library .
+
+<http://example.org/libgraph/rfc3339-validator> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/six> .
+
+<http://example.org/libgraph/rfc3986-validator> a libgraph:Library .
+
+<http://example.org/libgraph/rich-toolkit> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/rich>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/rpds-py> a libgraph:Library .
+
+<http://example.org/libgraph/six> a libgraph:Library .
+
+<http://example.org/libgraph/sqlalchemy> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/greenlet>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/terminado> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/ptyprocess>,
+        <http://example.org/libgraph/pywinpty>,
+        <http://example.org/libgraph/tornado> .
+
+<http://example.org/libgraph/tqdm> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/colorama> .
+
+<http://example.org/libgraph/urllib3> a libgraph:Library .
+
+<http://example.org/libgraph/webencodings> a libgraph:Library .
+
+<http://example.org/libgraph/azure-common> a libgraph:Library .
+
+<http://example.org/libgraph/azure-identity> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/cryptography>,
+        <http://example.org/libgraph/msal>,
+        <http://example.org/libgraph/msal-extensions>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/cffi> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pycparser> .
+
+<http://example.org/libgraph/ipykernel> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/appnope>,
+        <http://example.org/libgraph/comm>,
+        <http://example.org/libgraph/debugpy>,
+        <http://example.org/libgraph/ipython>,
+        <http://example.org/libgraph/jupyter-client>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/matplotlib-inline>,
+        <http://example.org/libgraph/nest-asyncio>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/psutil>,
+        <http://example.org/libgraph/pyzmq>,
+        <http://example.org/libgraph/tornado>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/ipython> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/colorama>,
+        <http://example.org/libgraph/decorator>,
+        <http://example.org/libgraph/ipython-pygments-lexers>,
+        <http://example.org/libgraph/jedi>,
+        <http://example.org/libgraph/matplotlib-inline>,
+        <http://example.org/libgraph/pexpect>,
+        <http://example.org/libgraph/prompt-toolkit>,
+        <http://example.org/libgraph/pygments>,
+        <http://example.org/libgraph/stack-data>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/markupsafe> a libgraph:Library .
+
+<http://example.org/libgraph/msrest> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/azure-core>,
+        <http://example.org/libgraph/certifi>,
+        <http://example.org/libgraph/isodate>,
+        <http://example.org/libgraph/requests>,
+        <http://example.org/libgraph/requests-oauthlib> .
+
+<http://example.org/libgraph/nbformat> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/fastjsonschema>,
+        <http://example.org/libgraph/jsonschema>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/platformdirs> a libgraph:Library .
+
+<http://example.org/libgraph/protobuf> a libgraph:Library .
+
+<http://example.org/libgraph/pydantic-settings> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/pydantic>,
+        <http://example.org/libgraph/python-dotenv>,
+        <http://example.org/libgraph/typing-inspection> .
+
+<http://example.org/libgraph/pyjwt> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cryptography> .
+
+<http://example.org/libgraph/pytest> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/colorama>,
+        <http://example.org/libgraph/iniconfig>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/pluggy>,
+        <http://example.org/libgraph/pygments> .
+
+<http://example.org/libgraph/python-dotenv> a libgraph:Library .
+
+<http://example.org/libgraph/pywinpty> a libgraph:Library .
+
+<http://example.org/libgraph/pyyaml> a libgraph:Library .
+
+<http://example.org/libgraph/redis> a libgraph:Library .
+
+<http://example.org/libgraph/starlette> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio> .
+
+<http://example.org/libgraph/typer> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/rich>,
+        <http://example.org/libgraph/shellingham>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/typing-inspection> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/tzdata> a libgraph:Library .
+
+<http://example.org/libgraph/websockets> a libgraph:Library .
+
+<http://example.org/libgraph/attrs> a libgraph:Library .
+
+<http://example.org/libgraph/jupyter-client> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/python-dateutil>,
+        <http://example.org/libgraph/pyzmq>,
+        <http://example.org/libgraph/tornado>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/python-dateutil> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/six> .
+
+<http://example.org/libgraph/pyzmq> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cffi> .
+
+<http://example.org/libgraph/referencing> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/attrs>,
+        <http://example.org/libgraph/rpds-py> .
+
+<http://example.org/libgraph/wrapt> a libgraph:Library .
+
+<http://example.org/libgraph/certifi> a libgraph:Library .
+
+<http://example.org/libgraph/jsonschema> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/attrs>,
+        <http://example.org/libgraph/fqdn>,
+        <http://example.org/libgraph/idna>,
+        <http://example.org/libgraph/isoduration>,
+        <http://example.org/libgraph/jsonpointer>,
+        <http://example.org/libgraph/jsonschema-specifications>,
+        <http://example.org/libgraph/referencing>,
+        <http://example.org/libgraph/rfc3339-validator>,
+        <http://example.org/libgraph/rfc3986-validator>,
+        <http://example.org/libgraph/rfc3987-syntax>,
+        <http://example.org/libgraph/rpds-py>,
+        <http://example.org/libgraph/uri-template>,
+        <http://example.org/libgraph/webcolors> .
+
+<http://example.org/libgraph/jupyter-server> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio>,
+        <http://example.org/libgraph/argon2-cffi>,
+        <http://example.org/libgraph/jinja2>,
+        <http://example.org/libgraph/jupyter-client>,
+        <http://example.org/libgraph/jupyter-core>,
+        <http://example.org/libgraph/jupyter-events>,
+        <http://example.org/libgraph/jupyter-server-terminals>,
+        <http://example.org/libgraph/nbconvert>,
+        <http://example.org/libgraph/nbformat>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/prometheus-client>,
+        <http://example.org/libgraph/pywinpty>,
+        <http://example.org/libgraph/pyzmq>,
+        <http://example.org/libgraph/send2trash>,
+        <http://example.org/libgraph/terminado>,
+        <http://example.org/libgraph/tornado>,
+        <http://example.org/libgraph/traitlets>,
+        <http://example.org/libgraph/websocket-client> .
+
+<http://example.org/libgraph/opentelemetry-sdk> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/uvicorn> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/colorama>,
+        <http://example.org/libgraph/h11>,
+        <http://example.org/libgraph/httptools>,
+        <http://example.org/libgraph/python-dotenv>,
+        <http://example.org/libgraph/pyyaml>,
+        <http://example.org/libgraph/uvloop>,
+        <http://example.org/libgraph/watchfiles>,
+        <http://example.org/libgraph/websockets> .
+
+<http://example.org/libgraph/click> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/colorama> .
+
+<http://example.org/libgraph/colorama> a libgraph:Library .
+
+<http://example.org/libgraph/cryptography> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/cffi> .
+
+<http://example.org/libgraph/idna> a libgraph:Library .
+
+<http://example.org/libgraph/numpy> a libgraph:Library .
+
+<http://example.org/libgraph/anyio> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/idna> .
+
+<http://example.org/libgraph/httpx> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/anyio>,
+        <http://example.org/libgraph/certifi>,
+        <http://example.org/libgraph/click>,
+        <http://example.org/libgraph/httpcore>,
+        <http://example.org/libgraph/idna>,
+        <http://example.org/libgraph/pygments>,
+        <http://example.org/libgraph/rich> .
+
+<http://example.org/libgraph/pygments> a libgraph:Library .
+
+<http://example.org/libgraph/rich> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/markdown-it-py>,
+        <http://example.org/libgraph/pygments> .
+
+<http://example.org/libgraph/tornado> a libgraph:Library .
+
+<http://example.org/libgraph/jinja2> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/markupsafe> .
+
+<http://example.org/libgraph/jupyter-core> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/platformdirs>,
+        <http://example.org/libgraph/traitlets> .
+
+<http://example.org/libgraph/requests> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/certifi>,
+        <http://example.org/libgraph/charset-normalizer>,
+        <http://example.org/libgraph/idna>,
+        <http://example.org/libgraph/urllib3> .
+
+<http://example.org/libgraph/isodate> a libgraph:Library .
+
+<http://example.org/libgraph/opentelemetry-util-http> a libgraph:Library .
+
+<http://example.org/libgraph/pydantic> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/annotated-types>,
+        <http://example.org/libgraph/email-validator>,
+        <http://example.org/libgraph/pydantic-core>,
+        <http://example.org/libgraph/typing-extensions>,
+        <http://example.org/libgraph/typing-inspection> .
+
+<http://example.org/libgraph/opentelemetry-instrumentation> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/opentelemetry-semantic-conventions>,
+        <http://example.org/libgraph/packaging>,
+        <http://example.org/libgraph/wrapt> .
+
+<http://example.org/libgraph/opentelemetry-semantic-conventions> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/opentelemetry-api>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/packaging> a libgraph:Library .
+
+<http://example.org/libgraph/traitlets> a libgraph:Library .
+
+<http://example.org/libgraph/azure-core> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/requests>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/opentelemetry-api> a libgraph:Library ;
+    libgraph:uses_lib <http://example.org/libgraph/importlib-metadata>,
+        <http://example.org/libgraph/typing-extensions> .
+
+<http://example.org/libgraph/typing-extensions> a libgraph:Library .
+
+libgraph:Library a owl:Class ;
+    rdfs:label "Library" ;
+    rdfs:comment "A Python library in the dependency graph" .
+

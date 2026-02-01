@@ -11,7 +11,7 @@
       "Programming Language :: Python",
       "Programming Language :: Python :: 3"
     ],
-    "description": "# nbconvert\n\n### Jupyter Notebook Conversion\n\n[![Build Status](https://github.com/jupyter/nbconvert/actions/workflows/tests.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter/nbconvert/actions/workflows/tests.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/nbconvert/badge/?version=latest)](https://nbconvert.readthedocs.io/en/latest/?badge=latest)\n\nThe **nbconvert** tool, `jupyter nbconvert`, converts notebooks to various other\nformats via [Jinja] templates. The nbconvert tool allows you to convert an\n`.ipynb` notebook file into various static formats including:\n\n- HTML\n- LaTeX\n- PDF\n- Reveal JS\n- Markdown (md)\n- ReStructured Text (rst)\n- executable script\n\n## Usage\n\nFrom the command line, use nbconvert to convert a Jupyter notebook (_input_) to a\na different format (_output_). The basic command structure is:\n\n```\n$ jupyter nbconvert --to <output format> <input notebook>\n```\n\nwhere `<output format>` is the desired output format and `<input notebook>` is the\nfilename of the Jupyter notebook.\n\n### Example: Convert a notebook to HTML\n\nConvert Jupyter notebook file, `mynotebook.ipynb`, to HTML using:\n\n```\n$ jupyter nbconvert --to html mynotebook.ipynb\n```\n\nThis command creates an HTML output file named `mynotebook.html`.\n\n## Dev Install\n\nCheck if pandoc is installed (`pandoc --version`); if needed, install:\n\n```\nsudo apt-get install pandoc\n```\n\nOr\n\n```\nbrew install pandoc\n```\n\nInstall nbconvert for development using:\n\n```\ngit clone https://github.com/jupyter/nbconvert.git\ncd nbconvert\npip install -e .\n```\n\nRunning the tests after a dev install above:\n\n```\npip install nbconvert[test]\npy.test --pyargs nbconvert\n```\n\n## Documentation\n\n- [Documentation for Jupyter nbconvert](https://nbconvert.readthedocs.io/en/latest/)\n- [nbconvert examples on GitHub](https://github.com/jupyter/nbconvert-examples)\n- [Documentation for Project Jupyter](https://jupyter.readthedocs.io/en/latest/index.html)\n\n## Technical Support\n\n- [Issues and Bug Reports](https://github.com/jupyter/nbconvert/issues): A place to report\n  bugs or regressions found for nbconvert\n- [Community Technical Support and Discussion - Discourse](https://discourse.jupyter.org/): A place for\n  installation, configuration, and troubleshooting assistannce by the Jupyter community.\n  As a non-profit project and maintainers who are primarily volunteers, we encourage you\n  to ask questions and share your knowledge on Discourse.\n\n## Jupyter Resources\n\n- [Jupyter mailing list](https://groups.google.com/forum/#!forum/jupyter)\n- [Project Jupyter website](https://jupyter.org)\n\n## About the Jupyter Development Team\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project.\nThis includes all of the Jupyter subprojects.\n\nThe core team that coordinates development on GitHub can be found here:\nhttps://github.com/jupyter/.\n\n## Our Copyright Policy\n\nJupyter uses a shared copyright model. Each contributor maintains copyright\nover their contributions to Jupyter. But, it is important to note that these\ncontributions are typically only changes to the repositories. Thus, the Jupyter\nsource code, in its entirety is not the copyright of any single person or\ninstitution.  Instead, it is the collective copyright of the entire Jupyter\nDevelopment Team.  If individual contributors want to maintain a record of what\nchanges/contributions they have specific copyright on, they should indicate\ntheir copyright in the commit message of the change, when they commit the\nchange to one of the Jupyter repositories.\n\nWith this in mind, the following banner should be used in any source code file\nto indicate the copyright and license terms:\n\n```\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License.\n```\n\n[jinja]: http://jinja.pocoo.org/\n",
+    "description": "# nbconvert\n\n### Jupyter Notebook Conversion\n\n[![Build Status](https://github.com/jupyter/nbconvert/actions/workflows/tests.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter/nbconvert/actions/workflows/tests.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/nbconvert/badge/?version=latest)](https://nbconvert.readthedocs.io/en/latest/?badge=latest)\n\nThe **nbconvert** tool, `jupyter nbconvert`, converts notebooks to various other\nformats via [Jinja] templates. The nbconvert tool allows you to convert an\n`.ipynb` notebook file into various static formats including:\n\n- HTML\n- LaTeX\n- PDF\n- Reveal JS\n- Markdown (md)\n- ReStructured Text (rst)\n- executable script\n\n## Usage\n\nFrom the command line, use nbconvert to convert a Jupyter notebook (_input_) to a\na different format (_output_). The basic command structure is:\n\n```\n$ jupyter nbconvert --to <output format> <input notebook>\n```\n\nwhere `<output format>` is the desired output format and `<input notebook>` is the\nfilename of the Jupyter notebook.\n\n### Example: Convert a notebook to HTML\n\nConvert Jupyter notebook file, `mynotebook.ipynb`, to HTML using:\n\n```\n$ jupyter nbconvert --to html mynotebook.ipynb\n```\n\nThis command creates an HTML output file named `mynotebook.html`.\n\n## Dev Install\n\nCheck if pandoc is installed (`pandoc --version`); if needed, install:\n\n```\nsudo apt-get install pandoc\n```\n\nOr\n\n```\nbrew install pandoc\n```\n\nInstall nbconvert for development using:\n\n```\ngit clone https://github.com/jupyter/nbconvert.git\ncd nbconvert\npip install -e .\n```\n\nRunning the tests after a dev install above:\n\n```\npip install nbconvert[test]\npy.test --pyargs nbconvert\n```\n\n## Documentation\n\n- [Documentation for Jupyter nbconvert](https://nbconvert.readthedocs.io/en/latest/)\n- [nbconvert examples on GitHub](https://github.com/jupyter/nbconvert-examples)\n- [Documentation for Project Jupyter](https://jupyter.readthedocs.io/en/latest/index.html)\n\n## Technical Support\n\n- [Issues and Bug Reports](https://github.com/jupyter/nbconvert/issues): A place to report\n  bugs or regressions found for nbconvert\n- [Community Technical Support and Discussion - Discourse](https://discourse.jupyter.org/): A place for\n  installation, configuration, and troubleshooting assistannce by the Jupyter community.\n  As a non-profit project and maintainers who are primarily volunteers, we encourage you\n  to ask questions and share your knowledge on Discourse.\n\n## Jupyter Resources\n\n- [Jupyter mailing list](https://groups.google.com/forum/#!forum/jupyter)\n- [Project Jupyter website](https://jupyter.org)\n\n## About the Jupyter Development Team\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project.\nThis includes all of the Jupyter subprojects.\n\nThe core team that coordinates development on GitHub can be found here:\nhttps://github.com/jupyter/.\n\n## Our Copyright Policy\n\nJupyter uses a shared copyright model. Each contributor maintains copyright\nover their contributions to Jupyter. But, it is important to note that these\ncontributions are typically only changes to the repositories. Thus, the Jupyter\nsource code, in its entirety is not the copyright of any single person or\ninstitution. Instead, it is the collective copyright of the entire Jupyter\nDevelopment Team. If individual contributors want to maintain a record of what\nchanges/contributions they have specific copyright on, they should indicate\ntheir copyright in the commit message of the change, when they commit the\nchange to one of the Jupyter repositories.\n\nWith this in mind, the following banner should be used in any source code file\nto indicate the copyright and license terms:\n\n```\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License.\n```\n\n[jinja]: http://jinja.pocoo.org/\n",
     "description_content_type": "text/markdown",
     "docs_url": null,
     "download_url": null,
@@ -46,7 +46,7 @@
       "test",
       "webpdf"
     ],
-    "release_url": "https://pypi.org/project/nbconvert/7.16.6/",
+    "release_url": "https://pypi.org/project/nbconvert/7.17.0/",
     "requires_dist": [
       "beautifulsoup4",
       "bleach[css]!=5.0.0",
@@ -64,6 +64,7 @@
       "pygments>=2.4.1",
       "traitlets>=5.1",
       "flaky; extra == \"all\"",
+      "intersphinx-registry; extra == \"all\"",
       "ipykernel; extra == \"all\"",
       "ipython; extra == \"all\"",
       "ipywidgets>=7.5; extra == \"all\"",
@@ -73,15 +74,16 @@
       "pydata-sphinx-theme; extra == \"all\"",
       "pyqtwebengine>=5.15; extra == \"all\"",
       "pytest>=7; extra == \"all\"",
-      "sphinx==5.0.2; extra == \"all\"",
+      "sphinx>=5.0.2; extra == \"all\"",
       "sphinxcontrib-spelling; extra == \"all\"",
       "tornado>=6.1; extra == \"all\"",
+      "intersphinx-registry; extra == \"docs\"",
       "ipykernel; extra == \"docs\"",
       "ipython; extra == \"docs\"",
       "myst-parser; extra == \"docs\"",
       "nbsphinx>=0.2.12; extra == \"docs\"",
       "pydata-sphinx-theme; extra == \"docs\"",
-      "sphinx==5.0.2; extra == \"docs\"",
+      "sphinx>=5.0.2; extra == \"docs\"",
       "sphinxcontrib-spelling; extra == \"docs\"",
       "pyqtwebengine>=5.15; extra == \"qtpdf\"",
       "pyqtwebengine>=5.15; extra == \"qtpng\"",
@@ -92,13 +94,13 @@
       "pytest>=7; extra == \"test\"",
       "playwright; extra == \"webpdf\""
     ],
-    "requires_python": ">=3.8",
-    "summary": "Converting Jupyter Notebooks (.ipynb files) to other formats.  Output formats include asciidoc, html, latex, markdown, pdf, py, rst, script.  nbconvert can be used both as a Python library (`import nbconvert`) or as a command line tool (invoked as `jupyter nbconvert ...`).",
-    "version": "7.16.6",
+    "requires_python": ">=3.9",
+    "summary": "Convert Jupyter Notebooks (.ipynb files) to other formats.",
+    "version": "7.17.0",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 27165921,
+  "last_serial": 33903132,
   "releases": {
     "0.0.0": [],
     "4.0.0": [
@@ -3508,6 +3510,50 @@
         "yanked_reason": null
       }
     ],
+    "7.17.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0d4b8d5f796a792f8a25f6925a96032f098789f448571eb92011df1ae59e8ea8",
+          "md5": "281cc61433082330004460b37afcaf57",
+          "sha256": "4f99a63b337b9a23504347afdab24a11faa7d86b405e5c8f9881cd313336d518"
+        },
+        "downloads": -1,
+        "filename": "nbconvert-7.17.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "281cc61433082330004460b37afcaf57",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 261510,
+        "upload_time": "2026-01-29T16:37:46",
+        "upload_time_iso_8601": "2026-01-29T16:37:46.322969Z",
+        "url": "https://files.pythonhosted.org/packages/0d/4b/8d5f796a792f8a25f6925a96032f098789f448571eb92011df1ae59e8ea8/nbconvert-7.17.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "384781f886b699450d0569f7bc551df2b1673d18df7ff25cc0c21ca36ed8a5ff",
+          "md5": "317ed078e9954c4846d970ff3eb12efe",
+          "sha256": "1b2696f1b5be12309f6c7d707c24af604b87dfaf6d950794c7b07acab96dda78"
+        },
+        "downloads": -1,
+        "filename": "nbconvert-7.17.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "317ed078e9954c4846d970ff3eb12efe",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 862855,
+        "upload_time": "2026-01-29T16:37:48",
+        "upload_time_iso_8601": "2026-01-29T16:37:48.478695Z",
+        "url": "https://files.pythonhosted.org/packages/38/47/81f886b699450d0569f7bc551df2b1673d18df7ff25cc0c21ca36ed8a5ff/nbconvert-7.17.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "7.2.0": [
       {
         "comment_text": "",
@@ -4613,58 +4659,45 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "cc9acd673b2f773a12c992f41309ef81b99da1690426bd2f96957a7ade0d3ed7",
-        "md5": "559c9451198b11fedd190bfb7bf70e2a",
-        "sha256": "1375a7b67e0c2883678c48e506dc320febb57685e5ee67faa51b18a90f3a712b"
+        "blake2b_256": "0d4b8d5f796a792f8a25f6925a96032f098789f448571eb92011df1ae59e8ea8",
+        "md5": "281cc61433082330004460b37afcaf57",
+        "sha256": "4f99a63b337b9a23504347afdab24a11faa7d86b405e5c8f9881cd313336d518"
       },
       "downloads": -1,
-      "filename": "nbconvert-7.16.6-py3-none-any.whl",
+      "filename": "nbconvert-7.17.0-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "559c9451198b11fedd190bfb7bf70e2a",
+      "md5_digest": "281cc61433082330004460b37afcaf57",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
-      "requires_python": ">=3.8",
-      "size": 258525,
-      "upload_time": "2025-01-28T09:29:12",
-      "upload_time_iso_8601": "2025-01-28T09:29:12.551246Z",
-      "url": "https://files.pythonhosted.org/packages/cc/9a/cd673b2f773a12c992f41309ef81b99da1690426bd2f96957a7ade0d3ed7/nbconvert-7.16.6-py3-none-any.whl",
+      "requires_python": ">=3.9",
+      "size": 261510,
+      "upload_time": "2026-01-29T16:37:46",
+      "upload_time_iso_8601": "2026-01-29T16:37:46.322969Z",
+      "url": "https://files.pythonhosted.org/packages/0d/4b/8d5f796a792f8a25f6925a96032f098789f448571eb92011df1ae59e8ea8/nbconvert-7.17.0-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "a359f28e15fc47ffb73af68a8d9b47367a8630d76e97ae85ad18271b9db96fdf",
-        "md5": "2c7d88e54a1bf6185cd95ca334b1f5df",
-        "sha256": "576a7e37c6480da7b8465eefa66c17844243816ce1ccc372633c6b71c3c0f582"
+        "blake2b_256": "384781f886b699450d0569f7bc551df2b1673d18df7ff25cc0c21ca36ed8a5ff",
+        "md5": "317ed078e9954c4846d970ff3eb12efe",
+        "sha256": "1b2696f1b5be12309f6c7d707c24af604b87dfaf6d950794c7b07acab96dda78"
       },
       "downloads": -1,
-      "filename": "nbconvert-7.16.6.tar.gz",
+      "filename": "nbconvert-7.17.0.tar.gz",
       "has_sig": false,
-      "md5_digest": "2c7d88e54a1bf6185cd95ca334b1f5df",
+      "md5_digest": "317ed078e9954c4846d970ff3eb12efe",
       "packagetype": "sdist",
       "python_version": "source",
-      "requires_python": ">=3.8",
-      "size": 857715,
-      "upload_time": "2025-01-28T09:29:14",
-      "upload_time_iso_8601": "2025-01-28T09:29:14.724979Z",
-      "url": "https://files.pythonhosted.org/packages/a3/59/f28e15fc47ffb73af68a8d9b47367a8630d76e97ae85ad18271b9db96fdf/nbconvert-7.16.6.tar.gz",
+      "requires_python": ">=3.9",
+      "size": 862855,
+      "upload_time": "2026-01-29T16:37:48",
+      "upload_time_iso_8601": "2026-01-29T16:37:48.478695Z",
+      "url": "https://files.pythonhosted.org/packages/38/47/81f886b699450d0569f7bc551df2b1673d18df7ff25cc0c21ca36ed8a5ff/nbconvert-7.17.0.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }
   ],
-  "vulnerabilities": [
-    {
-      "aliases": [
-        "CVE-2025-53000"
-      ],
-      "details": "### Summary\n\nOn Windows, converting a notebook containing SVG output to a PDF results in unauthorized code execution. Specifically, a third party can create a `inkscape.bat` file that defines a [Windows batch script](https://en.wikipedia.org/wiki/Batch_file), capable of arbitrary code execution.\n\nWhen a user runs `jupyter nbconvert --to pdf` on a notebook containing SVG output to a PDF on a Windows platform from this directory, the `inkscape.bat` file is run unexpectedly.\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n`nbconvert` searches for an `inkscape` executable when converting notebooks to PDFs here: https://github.com/jupyter/nbconvert/blob/4f61702f5c7524d8a3c4ac0d5fc33a6ac2fa36a7/nbconvert/preprocessors/svg2pdf.py#L104\n\nThe MITRE page on [CWE-427 (Uncontrolled Search Path Element)](https://cwe.mitre.org/data/definitions/427.html) summarizes the root cause succinctly:\n\n> In Windows-based systems, when the `LoadLibrary` or `LoadLibraryEx` function is called with a DLL name that does not contain a fully qualified path, the function follows a search order that includes two path elements that might be uncontrolled:\n> - the directory from which the program has been loaded\n> - the current working directory\n\n### PoC\n\n_Complete instructions, including specific configuration details, to reproduce the vulnerability._\n\n1. Create a directory containing: \n\n    - A hidden bat file called `inkscape.bat` containing `msg * \"You've been hacked!\"`\n\n    - A dummy ipynb file called `Machine_Learning.ipynb`\n\n2. Run the command `jupyter nbconvert --to pdf Machine_Learning.ipynb`.\n\n3. Wait a few seconds, and you should see a popup showing the message \"You've been hacked!\" \n\n### Impact\n\nAll Windows users.",
-      "fixed_in": [],
-      "id": "GHSA-xm59-rqc7-hhvf",
-      "link": "https://osv.dev/vulnerability/GHSA-xm59-rqc7-hhvf",
-      "source": "osv",
-      "summary": null,
-      "withdrawn": null
-    }
-  ]
+  "vulnerabilities": []
 }

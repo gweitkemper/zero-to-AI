@@ -1,6 +1,6 @@
 [project]
 name = "zero-to-AI"
-version = "0.1.0"
+version = "1.0.0"
 
 # Note: this list of dependencies is intentionally larger than necessary
 # as some of these aren't used in the zero-to-AI project.  I wanted to
@@ -51,6 +51,7 @@ dependencies = [
   "opentelemetry-sdk==1.38.0",
   "pandas>=2.3.0", 
   "pgvector>=0.4.1",
+  "polars>=1.37.0",
   "psutil>=7.1.1",
   "psycopg2-binary>=2.9.11",
   "pydantic-core>=2.41.0",
@@ -64,12 +65,14 @@ dependencies = [
   "python-json-logger>=4.0.0",
   "python-multipart>=0.0.20",
   "pytz",
+  "rdflib>=7.5.0",
   "six==1.17.0",
   "sqlalchemy_utils",
   "SQLAlchemy>=2.0.44",
   "streamlit>=1.52.2",
   "tenacity>=9.1.2",
   "tiktoken>=0.12.0",
+  "toon-python",
   "uvicorn==0.38.0",
   "watchdog"
 ]

@@ -17,8 +17,6 @@
       "Intended Audience :: End Users/Desktop",
       "Intended Audience :: Other Audience",
       "Intended Audience :: System Administrators",
-      "License :: OSI Approved :: MIT License",
-      "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
       "Operating System :: MacOS",
       "Operating System :: MacOS :: MacOS X",
       "Operating System :: Microsoft",
@@ -36,6 +34,7 @@
       "Programming Language :: Python :: 3.10",
       "Programming Language :: Python :: 3.11",
       "Programming Language :: Python :: 3.12",
+      "Programming Language :: Python :: 3.13",
       "Programming Language :: Python :: 3.7",
       "Programming Language :: Python :: 3.8",
       "Programming Language :: Python :: 3.9",
@@ -69,12 +68,16 @@
       "last_month": -1,
       "last_week": -1
     },
-    "dynamic": null,
+    "dynamic": [
+      "License-File"
+    ],
     "home_page": null,
     "keywords": "progressbar, progressmeter, progress, bar, meter, rate, eta, console, terminal, time",
     "license": "MPL-2.0 AND MIT",
     "license_expression": null,
-    "license_files": null,
+    "license_files": [
+      "LICENCE"
+    ],
     "maintainer": null,
     "maintainer_email": "tqdm developers <devs@tqdm.ml>",
     "name": "tqdm",
@@ -94,7 +97,7 @@
       "telegram",
       "notebook"
     ],
-    "release_url": "https://pypi.org/project/tqdm/4.67.1/",
+    "release_url": "https://pypi.org/project/tqdm/4.67.2/",
     "requires_dist": [
       "colorama; platform_system == \"Windows\"",
       "pytest>=6; extra == \"dev\"",
@@ -109,11 +112,11 @@
     ],
     "requires_python": ">=3.7",
     "summary": "Fast, Extensible Progress Meter",
-    "version": "4.67.1",
+    "version": "4.67.2",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 26150460,
+  "last_serial": 33937342,
   "releases": {
     "1.0": [
       {
@@ -6485,6 +6488,50 @@
         "yanked_reason": null
       }
     ],
+    "4.67.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f5e231eac96de2915cf20ccaed0225035db149dfb9165a9ed28d4b252ef3f7f7",
+          "md5": "526d00a6a016b9ea4ae0eb3167a5cd75",
+          "sha256": "9a12abcbbff58b6036b2167d9d3853042b9d436fe7330f06ae047867f2f8e0a7"
+        },
+        "downloads": -1,
+        "filename": "tqdm-4.67.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "526d00a6a016b9ea4ae0eb3167a5cd75",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.7",
+        "size": 78354,
+        "upload_time": "2026-01-30T23:12:04",
+        "upload_time_iso_8601": "2026-01-30T23:12:04.368880Z",
+        "url": "https://files.pythonhosted.org/packages/f5/e2/31eac96de2915cf20ccaed0225035db149dfb9165a9ed28d4b252ef3f7f7/tqdm-4.67.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "27894b0001b2dab8df0a5ee2787dcbe771de75ded01f18f1f8d53dedeea2882b",
+          "md5": "09616e87363b3f83fdeefef3469a21ca",
+          "sha256": "649aac53964b2cb8dec76a14b405a4c0d13612cb8933aae547dd144eacc99653"
+        },
+        "downloads": -1,
+        "filename": "tqdm-4.67.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "09616e87363b3f83fdeefef3469a21ca",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.7",
+        "size": 169514,
+        "upload_time": "2026-01-30T23:12:06",
+        "upload_time_iso_8601": "2026-01-30T23:12:06.555344Z",
+        "url": "https://files.pythonhosted.org/packages/27/89/4b0001b2dab8df0a5ee2787dcbe771de75ded01f18f1f8d53dedeea2882b/tqdm-4.67.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "4.7.0": [
       {
         "comment_text": "",
@@ -7138,44 +7185,44 @@
   },
   "urls": [
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "d030dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14",
-        "md5": "bd15157908421dd53a464cf5f88082ab",
-        "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+        "blake2b_256": "f5e231eac96de2915cf20ccaed0225035db149dfb9165a9ed28d4b252ef3f7f7",
+        "md5": "526d00a6a016b9ea4ae0eb3167a5cd75",
+        "sha256": "9a12abcbbff58b6036b2167d9d3853042b9d436fe7330f06ae047867f2f8e0a7"
       },
       "downloads": -1,
-      "filename": "tqdm-4.67.1-py3-none-any.whl",
+      "filename": "tqdm-4.67.2-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "bd15157908421dd53a464cf5f88082ab",
+      "md5_digest": "526d00a6a016b9ea4ae0eb3167a5cd75",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.7",
-      "size": 78540,
-      "upload_time": "2024-11-24T20:12:19",
-      "upload_time_iso_8601": "2024-11-24T20:12:19.698181Z",
-      "url": "https://files.pythonhosted.org/packages/d0/30/dc54f88dd4a2b5dc8a0279bdd7270e735851848b762aeb1c1184ed1f6b14/tqdm-4.67.1-py3-none-any.whl",
+      "size": 78354,
+      "upload_time": "2026-01-30T23:12:04",
+      "upload_time_iso_8601": "2026-01-30T23:12:04.368880Z",
+      "url": "https://files.pythonhosted.org/packages/f5/e2/31eac96de2915cf20ccaed0225035db149dfb9165a9ed28d4b252ef3f7f7/tqdm-4.67.2-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
-      "comment_text": "",
+      "comment_text": null,
       "digests": {
-        "blake2b_256": "a84b29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d",
-        "md5": "aca803dd7ac5c4ae233977aff41b7f7c",
-        "sha256": "f8aef9c52c08c13a65f30ea34f4e5aac3fd1a34959879d7e59e63027286627f2"
+        "blake2b_256": "27894b0001b2dab8df0a5ee2787dcbe771de75ded01f18f1f8d53dedeea2882b",
+        "md5": "09616e87363b3f83fdeefef3469a21ca",
+        "sha256": "649aac53964b2cb8dec76a14b405a4c0d13612cb8933aae547dd144eacc99653"
       },
       "downloads": -1,
-      "filename": "tqdm-4.67.1.tar.gz",
+      "filename": "tqdm-4.67.2.tar.gz",
       "has_sig": false,
-      "md5_digest": "aca803dd7ac5c4ae233977aff41b7f7c",
+      "md5_digest": "09616e87363b3f83fdeefef3469a21ca",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.7",
-      "size": 169737,
-      "upload_time": "2024-11-24T20:12:22",
-      "upload_time_iso_8601": "2024-11-24T20:12:22.481923Z",
-      "url": "https://files.pythonhosted.org/packages/a8/4b/29b4ef32e036bb34e4ab51796dd745cdba7ed47ad142a9f4a1eb8e0c744d/tqdm-4.67.1.tar.gz",
+      "size": 169514,
+      "upload_time": "2026-01-30T23:12:06",
+      "upload_time_iso_8601": "2026-01-30T23:12:06.555344Z",
+      "url": "https://files.pythonhosted.org/packages/27/89/4b0001b2dab8df0a5ee2787dcbe771de75ded01f18f1f8d53dedeea2882b/tqdm-4.67.2.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

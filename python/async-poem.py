@@ -2,6 +2,7 @@ import asyncio
 import random
 import sys
 
+# Simple example of asynchronous programming in Python.
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
 

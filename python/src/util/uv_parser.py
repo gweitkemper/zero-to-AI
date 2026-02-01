@@ -15,8 +15,8 @@ class UVParser:
 
     def parse_pip_list(self, infile: str = "data/uv/uv-pip-list.txt") -> dict:
         """
-        The default input file was created by the venv.sh script.  
-        """ 
+        The default input file was created by the venv.sh script.
+        """
         try:
             data = dict()
             lines = FS.read_lines(infile)
@@ -36,8 +36,8 @@ class UVParser:
 
     def parse_tree(self, infile: str = "data/uv/uv-tree.txt") -> list:
         """
-        The default input file was created by the venv.sh script.  
-        """ 
+        The default input file was created by the venv.sh script.
+        """
         try:
             self.graph_libs = list()
             counter = Counter()
@@ -98,7 +98,9 @@ class UVParser:
                     else:
                         dep = lib["name"]
                         dep_idx = lib["index"]
-                        print(f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}")
+                        print(
+                            f"{idx} {lib_index} adding dep: {dep} at index {dep_idx} for lib {lib_name} {lib_index}"
+                        )
                         dependencies.append(dep)
         lib["dependencies"] = dependencies
         print(f"lib {lib_name} -> {dependencies}")

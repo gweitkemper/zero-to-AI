@@ -111,7 +111,7 @@
       "unleash",
       "google-genai"
     ],
-    "release_url": "https://pypi.org/project/sentry-sdk/2.50.0/",
+    "release_url": "https://pypi.org/project/sentry-sdk/2.51.0/",
     "requires_dist": [
       "urllib3>=1.26.11",
       "certifi",
@@ -170,11 +170,11 @@
     ],
     "requires_python": ">=3.6",
     "summary": "Python client for Sentry (https://sentry.io)",
-    "version": "2.50.0",
+    "version": "2.51.0",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33679734,
+  "last_serial": 33865744,
   "releases": {
     "0.1.0": [
       {
@@ -13311,6 +13311,94 @@
         "yanked_reason": null
       }
     ],
+    "2.51.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a0dadf379404d484ca9dede4ad8abead5de828cdcff35623cd44f0351cf6869c",
+          "md5": "5de4ea48b03510320ec4cd103efba409",
+          "sha256": "e21016d318a097c2b617bb980afd9fc737e1efc55f9b4f0cdc819982c9717d5f"
+        },
+        "downloads": -1,
+        "filename": "sentry_sdk-2.51.0-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "5de4ea48b03510320ec4cd103efba409",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": ">=3.6",
+        "size": 431426,
+        "upload_time": "2026-01-28T10:29:48",
+        "upload_time_iso_8601": "2026-01-28T10:29:48.868455Z",
+        "url": "https://files.pythonhosted.org/packages/a0/da/df379404d484ca9dede4ad8abead5de828cdcff35623cd44f0351cf6869c/sentry_sdk-2.51.0-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6f9f094bbb6be5cf218ab6712c6528310687f3d3fe8818249fcfe1d74192f7c5",
+          "md5": "0cbfca544888d6fbb55483d8e4c87aed",
+          "sha256": "b89d64577075fd8c13088bc3609a2ce77a154e5beb8cba7cc16560b0539df4f7"
+        },
+        "downloads": -1,
+        "filename": "sentry_sdk-2.51.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0cbfca544888d6fbb55483d8e4c87aed",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.6",
+        "size": 407447,
+        "upload_time": "2026-01-28T10:29:50",
+        "upload_time_iso_8601": "2026-01-28T10:29:50.962622Z",
+        "url": "https://files.pythonhosted.org/packages/6f/9f/094bbb6be5cf218ab6712c6528310687f3d3fe8818249fcfe1d74192f7c5/sentry_sdk-2.51.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2.51.0a1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "0fe5a0f9e019cbc5ad14ba5ad2cc2a668399ffa289c74d083f0b119812fd6285",
+          "md5": "c3c1efcab25f58bdda99174a7b762ea0",
+          "sha256": "03fdde2bd769bf7d9958e2fdb422aba2a02b1fe04cea83d18c6400e98646a458"
+        },
+        "downloads": -1,
+        "filename": "sentry_sdk-2.51.0a1-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "c3c1efcab25f58bdda99174a7b762ea0",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": ">=3.6",
+        "size": 441552,
+        "upload_time": "2026-01-28T09:40:58",
+        "upload_time_iso_8601": "2026-01-28T09:40:58.670069Z",
+        "url": "https://files.pythonhosted.org/packages/0f/e5/a0f9e019cbc5ad14ba5ad2cc2a668399ffa289c74d083f0b119812fd6285/sentry_sdk-2.51.0a1-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f22dcd0d1dc77e460e14a1b8dfa1609edd415e082513c3c1f310eb18b104c763",
+          "md5": "967b0b50984b8506a8e60a3a7974fb35",
+          "sha256": "6fcc8e396024c97c02cc7875d8409e90a85b82fbd444055e542de114342e6fb4"
+        },
+        "downloads": -1,
+        "filename": "sentry_sdk-2.51.0a1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "967b0b50984b8506a8e60a3a7974fb35",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.6",
+        "size": 415447,
+        "upload_time": "2026-01-28T09:41:00",
+        "upload_time_iso_8601": "2026-01-28T09:41:00.640612Z",
+        "url": "https://files.pythonhosted.org/packages/f2/2d/cd0d1dc77e460e14a1b8dfa1609edd415e082513c3c1f310eb18b104c763/sentry_sdk-2.51.0a1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "2.6.0": [
       {
         "comment_text": "",
@@ -13844,42 +13932,42 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "4e5bcbc2bb9569f03c8e15d928357e7e6179e5cfab45544a3bbac8aec4caf9be",
-        "md5": "1545ee6c69f5e882a2c82176c7d3809f",
-        "sha256": "0ef0ed7168657ceb5a0be081f4102d92042a125462d1d1a29277992e344e749e"
+        "blake2b_256": "a0dadf379404d484ca9dede4ad8abead5de828cdcff35623cd44f0351cf6869c",
+        "md5": "5de4ea48b03510320ec4cd103efba409",
+        "sha256": "e21016d318a097c2b617bb980afd9fc737e1efc55f9b4f0cdc819982c9717d5f"
       },
       "downloads": -1,
-      "filename": "sentry_sdk-2.50.0-py2.py3-none-any.whl",
+      "filename": "sentry_sdk-2.51.0-py2.py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "1545ee6c69f5e882a2c82176c7d3809f",
+      "md5_digest": "5de4ea48b03510320ec4cd103efba409",
       "packagetype": "bdist_wheel",
       "python_version": "py2.py3",
       "requires_python": ">=3.6",
-      "size": 424961,
-      "upload_time": "2026-01-20T12:53:14",
-      "upload_time_iso_8601": "2026-01-20T12:53:14.826260Z",
-      "url": "https://files.pythonhosted.org/packages/4e/5b/cbc2bb9569f03c8e15d928357e7e6179e5cfab45544a3bbac8aec4caf9be/sentry_sdk-2.50.0-py2.py3-none-any.whl",
+      "size": 431426,
+      "upload_time": "2026-01-28T10:29:48",
+      "upload_time_iso_8601": "2026-01-28T10:29:48.868455Z",
+      "url": "https://files.pythonhosted.org/packages/a0/da/df379404d484ca9dede4ad8abead5de828cdcff35623cd44f0351cf6869c/sentry_sdk-2.51.0-py2.py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "158a3c4f53d32c21012e9870913544e56bfa9e931aede080779a0f177513f534",
-        "md5": "3bcf3a6ce784e64de695fa913e0f1bae",
-        "sha256": "873437a989ee1b8b25579847bae8384515bf18cfed231b06c591b735c1781fe3"
+        "blake2b_256": "6f9f094bbb6be5cf218ab6712c6528310687f3d3fe8818249fcfe1d74192f7c5",
+        "md5": "0cbfca544888d6fbb55483d8e4c87aed",
+        "sha256": "b89d64577075fd8c13088bc3609a2ce77a154e5beb8cba7cc16560b0539df4f7"
       },
       "downloads": -1,
-      "filename": "sentry_sdk-2.50.0.tar.gz",
+      "filename": "sentry_sdk-2.51.0.tar.gz",
       "has_sig": false,
-      "md5_digest": "3bcf3a6ce784e64de695fa913e0f1bae",
+      "md5_digest": "0cbfca544888d6fbb55483d8e4c87aed",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.6",
-      "size": 401233,
-      "upload_time": "2026-01-20T12:53:16",
-      "upload_time_iso_8601": "2026-01-20T12:53:16.244789Z",
-      "url": "https://files.pythonhosted.org/packages/15/8a/3c4f53d32c21012e9870913544e56bfa9e931aede080779a0f177513f534/sentry_sdk-2.50.0.tar.gz",
+      "size": 407447,
+      "upload_time": "2026-01-28T10:29:50",
+      "upload_time_iso_8601": "2026-01-28T10:29:50.962622Z",
+      "url": "https://files.pythonhosted.org/packages/6f/9f/094bbb6be5cf218ab6712c6528310687f3d3fe8818249fcfe1d74192f7c5/sentry_sdk-2.51.0.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

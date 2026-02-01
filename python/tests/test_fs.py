@@ -162,7 +162,7 @@ def test_walk():
 
     entries = FS.walk("src", include_dirs=[], include_types=["py"])
     print(json.dumps(entries, sort_keys=True, indent=2))
-    assert len(entries) == 23
+    assert len(entries) == 24
     bytes_found = False
     for e in entries:
         if e["base"] == "bytes.py":

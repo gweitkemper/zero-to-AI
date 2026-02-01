@@ -17,7 +17,7 @@
       "Programming Language :: Python :: 3.9",
       "Topic :: Software Development :: Libraries :: Python Modules"
     ],
-    "description": "cachetools\n========================================================================\n\n.. image:: https://img.shields.io/pypi/v/cachetools\n   :target: https://pypi.org/project/cachetools/\n   :alt: Latest PyPI version\n\n.. image:: https://img.shields.io/github/actions/workflow/status/tkem/cachetools/ci.yml\n   :target: https://github.com/tkem/cachetools/actions/workflows/ci.yml\n   :alt: CI build status\n\n.. image:: https://img.shields.io/readthedocs/cachetools\n   :target: https://cachetools.readthedocs.io/\n   :alt: Documentation build status\n\n.. image:: https://img.shields.io/codecov/c/github/tkem/cachetools/master.svg\n   :target: https://codecov.io/gh/tkem/cachetools\n   :alt: Test coverage\n\n.. image:: https://img.shields.io/librariesio/sourcerank/pypi/cachetools\n   :target: https://libraries.io/pypi/cachetools\n   :alt: Libraries.io SourceRank\n\n.. image:: https://img.shields.io/github/license/tkem/cachetools\n   :target: https://raw.github.com/tkem/cachetools/master/LICENSE\n   :alt: License\n\n.. image:: https://img.shields.io/badge/code%20style-black-000000.svg\n   :target: https://github.com/psf/black\n   :alt: Code style: black\n\n\nThis module provides various memoizing collections and decorators,\nincluding variants of the Python Standard Library's `@lru_cache`_\nfunction decorator.\n\n.. code-block:: python\n\n   from cachetools import cached, LRUCache, TTLCache\n\n   # speed up calculating Fibonacci numbers with dynamic programming\n   @cached(cache={})\n   def fib(n):\n       return n if n < 2 else fib(n - 1) + fib(n - 2)\n\n   # cache least recently used Python Enhancement Proposals\n   @cached(cache=LRUCache(maxsize=32))\n   def get_pep(num):\n       url = 'http://www.python.org/dev/peps/pep-%04d/' % num\n       with urllib.request.urlopen(url) as s:\n           return s.read()\n\n   # cache weather data for no longer than ten minutes\n   @cached(cache=TTLCache(maxsize=1024, ttl=600))\n   def get_weather(place):\n       return owm.weather_at_place(place).get_weather()\n\nFor the purpose of this module, a *cache* is a mutable_ mapping_ of a\nfixed maximum size.  When the cache is full, i.e. by adding another\nitem the cache would exceed its maximum size, the cache must choose\nwhich item(s) to discard based on a suitable `cache algorithm`_.\n\nThis module provides multiple cache classes based on different cache\nalgorithms, as well as decorators for easily memoizing function and\nmethod calls.\n\n\nInstallation\n------------------------------------------------------------------------\n\ncachetools is available from PyPI_ and can be installed by running::\n\n  pip install cachetools\n\nTyping stubs for this package are provided by typeshed_ and can be\ninstalled by running::\n\n  pip install types-cachetools\n\n\nProject Resources\n------------------------------------------------------------------------\n\n- `Documentation`_\n- `Issue tracker`_\n- `Source code`_\n- `Change log`_\n\n\nRelated Projects\n------------------------------------------------------------------------\n\n- asyncache_: Helpers to use cachetools_ with asyncio.\n- cachetools-async_: Helpers to use cachetools_ with asyncio.\n- cacheing_: Pure Python Cacheing Library.\n- CacheToolsUtils_: Stackable cache classes for sharing, encryption,\n  statistics *and more* on top of cachetools_, redis_ and memcached_.\n- shelved-cache_: Persistent cache implementation for Python\n  cachetools_.\n\n\nLicense\n------------------------------------------------------------------------\n\nCopyright (c) 2014-2025 Thomas Kemmer.\n\nLicensed under the `MIT License`_.\n\n\n.. _@lru_cache: https://docs.python.org/3/library/functools.html#functools.lru_cache\n.. _mutable: https://docs.python.org/dev/glossary.html#term-mutable\n.. _mapping: https://docs.python.org/dev/glossary.html#term-mapping\n.. _cache algorithm: https://en.wikipedia.org/wiki/Cache_algorithms\n\n.. _PyPI: https://pypi.org/project/cachetools/\n.. _typeshed: https://github.com/python/typeshed/\n.. _Documentation: https://cachetools.readthedocs.io/\n.. _Issue tracker: https://github.com/tkem/cachetools/issues/\n.. _Source code: https://github.com/tkem/cachetools/\n.. _Change log: https://github.com/tkem/cachetools/blob/master/CHANGELOG.rst\n.. _MIT License: https://raw.github.com/tkem/cachetools/master/LICENSE\n\n.. _asyncache: https://pypi.org/project/asyncache/\n.. _cachetools-async: https://pypi.org/project/cachetools-async/\n.. _cacheing: https://pypi.org/project/cacheing/\n.. _CacheToolsUtils: https://pypi.org/project/CacheToolsUtils/\n.. _shelved-cache: https://pypi.org/project/shelved-cache/\n.. _cachetools: https://pypi.org/project/cachetools/\n.. _redis: https://redis.io/\n.. _memcached: https://memcached.org/\n",
+    "description": "cachetools\n========================================================================\n\n.. image:: https://img.shields.io/pypi/v/cachetools\n   :target: https://pypi.org/project/cachetools/\n   :alt: Latest PyPI version\n\n.. image:: https://img.shields.io/github/actions/workflow/status/tkem/cachetools/ci.yml\n   :target: https://github.com/tkem/cachetools/actions/workflows/ci.yml\n   :alt: CI build status\n\n.. image:: https://img.shields.io/readthedocs/cachetools\n   :target: https://cachetools.readthedocs.io/\n   :alt: Documentation build status\n\n.. image:: https://img.shields.io/codecov/c/github/tkem/cachetools/master.svg\n   :target: https://codecov.io/gh/tkem/cachetools\n   :alt: Test coverage\n\n.. image:: https://img.shields.io/librariesio/sourcerank/pypi/cachetools\n   :target: https://libraries.io/pypi/cachetools\n   :alt: Libraries.io SourceRank\n\n.. image:: https://img.shields.io/github/license/tkem/cachetools\n   :target: https://raw.github.com/tkem/cachetools/master/LICENSE\n   :alt: License\n\n.. image:: https://img.shields.io/badge/code%20style-black-000000.svg\n   :target: https://github.com/psf/black\n   :alt: Code style: black\n\n\nThis module provides various memoizing collections and decorators,\nincluding variants of the Python Standard Library's `@lru_cache`_\nfunction decorator.\n\n.. code-block:: python\n\n   from cachetools import cached, LRUCache, TTLCache\n\n   # speed up calculating Fibonacci numbers with dynamic programming\n   @cached(cache={})\n   def fib(n):\n       return n if n < 2 else fib(n - 1) + fib(n - 2)\n\n   # cache least recently used Python Enhancement Proposals\n   @cached(cache=LRUCache(maxsize=32))\n   def get_pep(num):\n       url = 'http://www.python.org/dev/peps/pep-%04d/' % num\n       with urllib.request.urlopen(url) as s:\n           return s.read()\n\n   # cache weather data for no longer than ten minutes\n   @cached(cache=TTLCache(maxsize=1024, ttl=600))\n   def get_weather(place):\n       return owm.weather_at_place(place).get_weather()\n\nFor the purpose of this module, a *cache* is a mutable_ mapping_ of a\nfixed maximum size.  When the cache is full, i.e. by adding another\nitem the cache would exceed its maximum size, the cache must choose\nwhich item(s) to discard based on a suitable `cache algorithm`_.\n\nThis module provides multiple cache classes based on different cache\nalgorithms, as well as decorators for easily memoizing function and\nmethod calls.\n\n\nInstallation\n------------------------------------------------------------------------\n\ncachetools is available from PyPI_ and can be installed by running::\n\n  pip install cachetools\n\nTyping stubs for this package are provided by typeshed_ and can be\ninstalled by running::\n\n  pip install types-cachetools\n\n\nProject Resources\n------------------------------------------------------------------------\n\n- `Documentation`_\n- `Issue tracker`_\n- `Source code`_\n- `Change log`_\n\n\nRelated Projects\n------------------------------------------------------------------------\n\n- asyncache_: Helpers to use cachetools_ with asyncio.\n- cachetools-async_: Helpers to use cachetools_ with asyncio.\n- cacheing_: Pure Python Cacheing Library.\n- CacheToolsUtils_: Stackable cache classes for sharing, encryption,\n  statistics *and more* on top of cachetools_, redis_ and memcached_.\n- shelved-cache_: Persistent cache implementation for Python\n  cachetools_.\n\n\nLicense\n------------------------------------------------------------------------\n\nCopyright (c) 2014-2026 Thomas Kemmer.\n\nLicensed under the `MIT License`_.\n\n\n.. _@lru_cache: https://docs.python.org/3/library/functools.html#functools.lru_cache\n.. _mutable: https://docs.python.org/dev/glossary.html#term-mutable\n.. _mapping: https://docs.python.org/dev/glossary.html#term-mapping\n.. _cache algorithm: https://en.wikipedia.org/wiki/Cache_algorithms\n\n.. _PyPI: https://pypi.org/project/cachetools/\n.. _typeshed: https://github.com/python/typeshed/\n.. _Documentation: https://cachetools.readthedocs.io/\n.. _Issue tracker: https://github.com/tkem/cachetools/issues/\n.. _Source code: https://github.com/tkem/cachetools/\n.. _Change log: https://github.com/tkem/cachetools/blob/master/CHANGELOG.rst\n.. _MIT License: https://raw.github.com/tkem/cachetools/master/LICENSE\n\n.. _asyncache: https://pypi.org/project/asyncache/\n.. _cachetools-async: https://pypi.org/project/cachetools-async/\n.. _cacheing: https://pypi.org/project/cacheing/\n.. _CacheToolsUtils: https://pypi.org/project/CacheToolsUtils/\n.. _shelved-cache: https://pypi.org/project/shelved-cache/\n.. _cachetools: https://pypi.org/project/cachetools/\n.. _redis: https://redis.io/\n.. _memcached: https://memcached.org/\n",
     "description_content_type": "text/x-rst",
     "docs_url": null,
     "download_url": null,
@@ -46,15 +46,15 @@
       "Homepage": "https://github.com/tkem/cachetools/"
     },
     "provides_extra": null,
-    "release_url": "https://pypi.org/project/cachetools/6.2.4/",
+    "release_url": "https://pypi.org/project/cachetools/6.2.6/",
     "requires_dist": null,
     "requires_python": ">=3.9",
     "summary": "Extensible memoizing collections and decorators",
-    "version": "6.2.4",
+    "version": "6.2.6",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33012751,
+  "last_serial": 33850455,
   "releases": {
     "0.0.0": [
       {
@@ -2397,48 +2397,136 @@
         "yanked": false,
         "yanked_reason": null
       }
+    ],
+    "6.2.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e3a624169d70ec5264b65ba54ba49b3d10f46d6b1ad97e185c94556539b3dfc8",
+          "md5": "b47905dd272e1e9f4292f5218fb58d1a",
+          "sha256": "db3ae5465e90befb7c74720dd9308d77a09b7cf13433570e07caa0845c30d5fe"
+        },
+        "downloads": -1,
+        "filename": "cachetools-6.2.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "b47905dd272e1e9f4292f5218fb58d1a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 11553,
+        "upload_time": "2026-01-25T14:57:39",
+        "upload_time_iso_8601": "2026-01-25T14:57:39.112930Z",
+        "url": "https://files.pythonhosted.org/packages/e3/a6/24169d70ec5264b65ba54ba49b3d10f46d6b1ad97e185c94556539b3dfc8/cachetools-6.2.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "86e718ea2907d2ca91e9c0697596b8e60cd485b091152eb4109fad1e468e457d",
+          "md5": "64ba683c5db81ae890cb2a9211d54a2c",
+          "sha256": "6d8bfbba1ba94412fb9d9196c4da7a87e9d4928fffc5e93542965dca4740c77f"
+        },
+        "downloads": -1,
+        "filename": "cachetools-6.2.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "64ba683c5db81ae890cb2a9211d54a2c",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 32168,
+        "upload_time": "2026-01-25T14:57:40",
+        "upload_time_iso_8601": "2026-01-25T14:57:40.349941Z",
+        "url": "https://files.pythonhosted.org/packages/86/e7/18ea2907d2ca91e9c0697596b8e60cd485b091152eb4109fad1e468e457d/cachetools-6.2.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "6.2.6": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9045f458fa2c388e79dd9d8b9b0c99f1d31b568f27388f2fdba7bb66bbc0c6ed",
+          "md5": "2cbca03789ddecaf7fa2219259c9f745",
+          "sha256": "8c9717235b3c651603fff0076db52d6acbfd1b338b8ed50256092f7ce9c85bda"
+        },
+        "downloads": -1,
+        "filename": "cachetools-6.2.6-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2cbca03789ddecaf7fa2219259c9f745",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 11668,
+        "upload_time": "2026-01-27T20:32:58",
+        "upload_time_iso_8601": "2026-01-27T20:32:58.527072Z",
+        "url": "https://files.pythonhosted.org/packages/90/45/f458fa2c388e79dd9d8b9b0c99f1d31b568f27388f2fdba7bb66bbc0c6ed/cachetools-6.2.6-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "3991d9ae9a66b01102a18cd16db0cf4cd54187ffe10f0865cc80071a4104fbb3",
+          "md5": "d3f1fac09946b982613c648c9437f649",
+          "sha256": "16c33e1f276b9a9c0b49ab5782d901e3ad3de0dd6da9bf9bcd29ac5672f2f9e6"
+        },
+        "downloads": -1,
+        "filename": "cachetools-6.2.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d3f1fac09946b982613c648c9437f649",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 32363,
+        "upload_time": "2026-01-27T20:32:59",
+        "upload_time_iso_8601": "2026-01-27T20:32:59.956685Z",
+        "url": "https://files.pythonhosted.org/packages/39/91/d9ae9a66b01102a18cd16db0cf4cd54187ffe10f0865cc80071a4104fbb3/cachetools-6.2.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
     ]
   },
   "urls": [
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "2cfc1d7b80d0eb7b714984ce40efc78859c022cd930e402f599d8ca9e39c78a4",
-        "md5": "e1b1b278bd4469d46a9c664961492fd5",
-        "sha256": "69a7a52634fed8b8bf6e24a050fb60bff1c9bd8f6d24572b99c32d4e71e62a51"
+        "blake2b_256": "9045f458fa2c388e79dd9d8b9b0c99f1d31b568f27388f2fdba7bb66bbc0c6ed",
+        "md5": "2cbca03789ddecaf7fa2219259c9f745",
+        "sha256": "8c9717235b3c651603fff0076db52d6acbfd1b338b8ed50256092f7ce9c85bda"
       },
       "downloads": -1,
-      "filename": "cachetools-6.2.4-py3-none-any.whl",
+      "filename": "cachetools-6.2.6-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "e1b1b278bd4469d46a9c664961492fd5",
+      "md5_digest": "2cbca03789ddecaf7fa2219259c9f745",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.9",
-      "size": 11551,
-      "upload_time": "2025-12-15T18:24:52",
-      "upload_time_iso_8601": "2025-12-15T18:24:52.332522Z",
-      "url": "https://files.pythonhosted.org/packages/2c/fc/1d7b80d0eb7b714984ce40efc78859c022cd930e402f599d8ca9e39c78a4/cachetools-6.2.4-py3-none-any.whl",
+      "size": 11668,
+      "upload_time": "2026-01-27T20:32:58",
+      "upload_time_iso_8601": "2026-01-27T20:32:58.527072Z",
+      "url": "https://files.pythonhosted.org/packages/90/45/f458fa2c388e79dd9d8b9b0c99f1d31b568f27388f2fdba7bb66bbc0c6ed/cachetools-6.2.6-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "bc1dede8680603f6016887c062a2cf4fc8fdba905866a3ab8831aa8aa651320c",
-        "md5": "1501ed3542a4ea9212d74e3bf5974bdc",
-        "sha256": "82c5c05585e70b6ba2d3ae09ea60b79548872185d2f24ae1f2709d37299fd607"
+        "blake2b_256": "3991d9ae9a66b01102a18cd16db0cf4cd54187ffe10f0865cc80071a4104fbb3",
+        "md5": "d3f1fac09946b982613c648c9437f649",
+        "sha256": "16c33e1f276b9a9c0b49ab5782d901e3ad3de0dd6da9bf9bcd29ac5672f2f9e6"
       },
       "downloads": -1,
-      "filename": "cachetools-6.2.4.tar.gz",
+      "filename": "cachetools-6.2.6.tar.gz",
       "has_sig": false,
-      "md5_digest": "1501ed3542a4ea9212d74e3bf5974bdc",
+      "md5_digest": "d3f1fac09946b982613c648c9437f649",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.9",
-      "size": 31731,
-      "upload_time": "2025-12-15T18:24:53",
-      "upload_time_iso_8601": "2025-12-15T18:24:53.744849Z",
-      "url": "https://files.pythonhosted.org/packages/bc/1d/ede8680603f6016887c062a2cf4fc8fdba905866a3ab8831aa8aa651320c/cachetools-6.2.4.tar.gz",
+      "size": 32363,
+      "upload_time": "2026-01-27T20:32:59",
+      "upload_time_iso_8601": "2026-01-27T20:32:59.956685Z",
+      "url": "https://files.pythonhosted.org/packages/39/91/d9ae9a66b01102a18cd16db0cf4cd54187ffe10f0865cc80071a4104fbb3/cachetools-6.2.6.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

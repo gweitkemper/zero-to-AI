@@ -218,9 +218,8 @@ pytest -v tests/test_fs.py  # execute the unit test for just the fs module
 TODO - capture a screenshot of the pytest test results
 
 <p align="center">
-   <img src="img/pytest-test-results.png" width="60%">
+   <img src="img/pytest-unit-test-results.png" width="90%">
 </p>
-
 
 <br><br><br>
 
@@ -229,16 +228,18 @@ TODO - capture a screenshot of the pytest test results
 - You'll want to know what parts of your code were tested, and which weren't
 - Code coverage
 - pytest-cov library
+- Run the tests script, then open file htmlcov/index.html in your browser
 
-TODO - capture a screenshot of the code coverage summary and details
+### Code Coverage Summary Report 
 
 <p align="center">
-   <img src="img/code-coverage-summary.png" width="60%">
+   <img src="img/test-coverage-summary.png" width="90%">
 </p>
 
+### Code Coverage Details for one Module
 
 <p align="center">
-   <img src="img/code-coverage-details.png" width="60%">
+   <img src="img/test-coverage-details.png" width="90%">
 </p>
 
 <br><br><br>
@@ -282,7 +283,8 @@ pylint --errors-only *.py src
 - [GitHub Actions](https://github.com/features/actions)
 - [Azure DevOps](https://azure.microsoft.com/en-us/products/devops)
 
-See the minimal **GitHub Actions** for this repository - the **.github/** directory.
+See the **GitHub Actions** for this repository -
+file **.github/workflows/python_lint_and_test.yml**
 
 ### Pipeline Example 
 
@@ -300,4 +302,9 @@ See the minimal **GitHub Actions** for this repository - the **.github/** direct
 
 - Deploy the application with Terraform, ARM, Bicep, etc
 
+
 <br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)

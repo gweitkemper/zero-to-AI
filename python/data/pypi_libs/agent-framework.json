@@ -45,17 +45,17 @@
       "source": "https://github.com/microsoft/agent-framework/tree/main/python"
     },
     "provides_extra": null,
-    "release_url": "https://pypi.org/project/agent-framework/1.0.0b260123/",
+    "release_url": "https://pypi.org/project/agent-framework/1.0.0b260130/",
     "requires_dist": [
-      "agent-framework-core[all]==1.0.0b260123"
+      "agent-framework-core[all]==1.0.0b260130"
     ],
     "requires_python": ">=3.10",
     "summary": "Microsoft Agent Framework for building AI Agents with Python. This package contains all the core and optional packages.",
-    "version": "1.0.0b260123",
+    "version": "1.0.0b260130",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33768049,
+  "last_serial": 33932792,
   "releases": {
     "1.0.0b251001": [
       {
@@ -1068,48 +1068,180 @@
         "yanked": false,
         "yanked_reason": null
       }
+    ],
+    "1.0.0b260127": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "963b227e88623fbd794d030a6e6282ed86b2ff579eadae75dbac47ade64e6735",
+          "md5": "fb3ada3fc79065d9a688079e137cd661",
+          "sha256": "1b001755ef052c7dd367ce9d6e06c96ab747a44a385dc7ef06b97e320cb45d6d"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260127-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "fb3ada3fc79065d9a688079e137cd661",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 5554,
+        "upload_time": "2026-01-27T21:24:23",
+        "upload_time_iso_8601": "2026-01-27T21:24:23.581477Z",
+        "url": "https://files.pythonhosted.org/packages/96/3b/227e88623fbd794d030a6e6282ed86b2ff579eadae75dbac47ade64e6735/agent_framework-1.0.0b260127-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "f4bf5e9cd4b6b01d85472ef17dd8a845760dc9a8e565f618bf6bfa98c8d1f734",
+          "md5": "58f0b2057ebbaf5dfb3e3c9a98f9a082",
+          "sha256": "356d725f9479e595543bda70154f5d88c37e13106853dc6b2aa6206d04e82de6"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260127.tar.gz",
+        "has_sig": false,
+        "md5_digest": "58f0b2057ebbaf5dfb3e3c9a98f9a082",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 3463857,
+        "upload_time": "2026-01-27T21:24:50",
+        "upload_time_iso_8601": "2026-01-27T21:24:50.706360Z",
+        "url": "https://files.pythonhosted.org/packages/f4/bf/5e9cd4b6b01d85472ef17dd8a845760dc9a8e565f618bf6bfa98c8d1f734/agent_framework-1.0.0b260127.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b260128": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b277d68f3f389994055f85092db68ac7a7722b84bc3dd3099564d49447e6de25",
+          "md5": "7fc78f347b41c925559f4d95c0ed25de",
+          "sha256": "1630514cbb21004b51e31694b40ad798b3a598aa9c0b3c9cc532eb98e24ac78c"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260128-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "7fc78f347b41c925559f4d95c0ed25de",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 5553,
+        "upload_time": "2026-01-28T21:32:02",
+        "upload_time_iso_8601": "2026-01-28T21:32:02.991433Z",
+        "url": "https://files.pythonhosted.org/packages/b2/77/d68f3f389994055f85092db68ac7a7722b84bc3dd3099564d49447e6de25/agent_framework-1.0.0b260128-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7fb3b4f73c8c00959f23509c2fb902b25ee089b760d730b05eaf81e633e7dad0",
+          "md5": "40ab60c829e7f4e9358f69e8290ad15f",
+          "sha256": "9504052cd45a3cb5c6c9777ebbc479713698db700bd1b438b1134fea0f77c5ab"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260128.tar.gz",
+        "has_sig": false,
+        "md5_digest": "40ab60c829e7f4e9358f69e8290ad15f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 3472441,
+        "upload_time": "2026-01-28T21:32:00",
+        "upload_time_iso_8601": "2026-01-28T21:32:00.304377Z",
+        "url": "https://files.pythonhosted.org/packages/7f/b3/b4f73c8c00959f23509c2fb902b25ee089b760d730b05eaf81e633e7dad0/agent_framework-1.0.0b260128.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "1.0.0b260130": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bb3d2a8efa9085c7fec503a64038f986faf0cdf7f5de853c4ae30724e2e2bda6",
+          "md5": "8edcb70c9520444d71df0d8b81c94508",
+          "sha256": "b9ba1487f91ab22031e01b5c09e5649181fd717f807d94f22ec43a409c43cde1"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260130-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "8edcb70c9520444d71df0d8b81c94508",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 5552,
+        "upload_time": "2026-01-30T19:00:58",
+        "upload_time_iso_8601": "2026-01-30T19:00:58.787543Z",
+        "url": "https://files.pythonhosted.org/packages/bb/3d/2a8efa9085c7fec503a64038f986faf0cdf7f5de853c4ae30724e2e2bda6/agent_framework-1.0.0b260130-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9310ba51bf04ea2900897a221664e4e673dcc7a7a58a6658eeb85115e920d9b4",
+          "md5": "610c5ced41641739f20512131d90d166",
+          "sha256": "50e13b74366b8092cb81769f07b3b42d6ddc8888a51244933c3214df591b7108"
+        },
+        "downloads": -1,
+        "filename": "agent_framework-1.0.0b260130.tar.gz",
+        "has_sig": false,
+        "md5_digest": "610c5ced41641739f20512131d90d166",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 3506765,
+        "upload_time": "2026-01-30T19:00:57",
+        "upload_time_iso_8601": "2026-01-30T19:00:57.439051Z",
+        "url": "https://files.pythonhosted.org/packages/93/10/ba51bf04ea2900897a221664e4e673dcc7a7a58a6658eeb85115e920d9b4/agent_framework-1.0.0b260130.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
     ]
   },
   "urls": [
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "9f3c5b7b22a33f21ad5eb6f270c4d680b73d4f9fa2de2611bb693cb67e72b5e6",
-        "md5": "53c98ec99b66f9be5d706977d44738ab",
-        "sha256": "61c2c6a7f31434631c09207ea7df0d9efb6f7a969139d43eab144a5dc8c073b5"
+        "blake2b_256": "bb3d2a8efa9085c7fec503a64038f986faf0cdf7f5de853c4ae30724e2e2bda6",
+        "md5": "8edcb70c9520444d71df0d8b81c94508",
+        "sha256": "b9ba1487f91ab22031e01b5c09e5649181fd717f807d94f22ec43a409c43cde1"
       },
       "downloads": -1,
-      "filename": "agent_framework-1.0.0b260123-py3-none-any.whl",
+      "filename": "agent_framework-1.0.0b260130-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "53c98ec99b66f9be5d706977d44738ab",
+      "md5_digest": "8edcb70c9520444d71df0d8b81c94508",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.10",
       "size": 5552,
-      "upload_time": "2026-01-23T23:56:16",
-      "upload_time_iso_8601": "2026-01-23T23:56:16.271791Z",
-      "url": "https://files.pythonhosted.org/packages/9f/3c/5b7b22a33f21ad5eb6f270c4d680b73d4f9fa2de2611bb693cb67e72b5e6/agent_framework-1.0.0b260123-py3-none-any.whl",
+      "upload_time": "2026-01-30T19:00:58",
+      "upload_time_iso_8601": "2026-01-30T19:00:58.787543Z",
+      "url": "https://files.pythonhosted.org/packages/bb/3d/2a8efa9085c7fec503a64038f986faf0cdf7f5de853c4ae30724e2e2bda6/agent_framework-1.0.0b260130-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "bef71e09d5d396e2dea0867ef1c242b894232309e2b652b638ea9aa3a1851e7c",
-        "md5": "4e5b4b0cd2a1c535f778e685b1cca78e",
-        "sha256": "47741053e31f64106fb35eebff5d2a0b165333ef5b5aabec57aa43873d88a822"
+        "blake2b_256": "9310ba51bf04ea2900897a221664e4e673dcc7a7a58a6658eeb85115e920d9b4",
+        "md5": "610c5ced41641739f20512131d90d166",
+        "sha256": "50e13b74366b8092cb81769f07b3b42d6ddc8888a51244933c3214df591b7108"
       },
       "downloads": -1,
-      "filename": "agent_framework-1.0.0b260123.tar.gz",
+      "filename": "agent_framework-1.0.0b260130.tar.gz",
       "has_sig": false,
-      "md5_digest": "4e5b4b0cd2a1c535f778e685b1cca78e",
+      "md5_digest": "610c5ced41641739f20512131d90d166",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.10",
-      "size": 3385836,
-      "upload_time": "2026-01-23T23:56:19",
-      "upload_time_iso_8601": "2026-01-23T23:56:19.784203Z",
-      "url": "https://files.pythonhosted.org/packages/be/f7/1e09d5d396e2dea0867ef1c242b894232309e2b652b638ea9aa3a1851e7c/agent_framework-1.0.0b260123.tar.gz",
+      "size": 3506765,
+      "upload_time": "2026-01-30T19:00:57",
+      "upload_time_iso_8601": "2026-01-30T19:00:57.439051Z",
+      "url": "https://files.pythonhosted.org/packages/93/10/ba51bf04ea2900897a221664e4e673dcc7a7a58a6658eeb85115e920d9b4/agent_framework-1.0.0b260130.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

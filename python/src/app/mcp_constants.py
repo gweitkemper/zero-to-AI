@@ -1,3 +1,9 @@
+"""
+Constant values used by the M26 MCP Server.
+Chris Joakim, 3Cloud/Cognizant, 2026
+"""
+
+
 class MCPConstants:
     """
     Application constants such as for the M26 MCP Server.

@@ -46,13 +46,13 @@ async def check_env():
 
 
 async def generate_embedding():
-    ai_util = AOAIUtil() 
+    ai_util = AOAIUtil()
     embedding = await ai_util.generate_embeddings("Hello, world!")
     print(embedding)
 
 
 async def generate_completion():
-    ai_util = AOAIUtil() 
+    ai_util = AOAIUtil()
     system_context = "You are a helpful assistant who knows Major League Baseball."
     user_prompt = "What uniform number did Mickey Mantle wear?"
     completion = await ai_util.generate_completion(system_context, user_prompt)
@@ -154,8 +154,6 @@ def generate_completion_with_md_prompt():
     print(completion.model_dump_json(indent=2))
 
 
-
-
 def text_summarization_md():
     return """
 ## Purpose
@@ -185,7 +183,6 @@ def industrial_disease_lyrics_md():
 {}
 
 """.format(text).lstrip()
-
 
 
 async def main():

@@ -21,11 +21,8 @@ class AISearchUtil:
         self.query_key_name = os.getenv("AZURE_AI_SEARCH_QUERY_KEY_NAME")
         self.cosmos_conn_str = os.getenv("AZURE_COSMOSDB_NOSQL_RO_CONN_STR")
 
-        self.headers = {
-            "Content-Type": "application/json", 
-            "api-key": self.service_key
-        }
-    
+        self.headers = {"Content-Type": "application/json", "api-key": self.service_key}
+
         if True:
             print(f"AISearchUtil initialized; service_name: {self.service_name}")
             print(f"AISearchUtil initialized; service_key:  {self.service_key}")

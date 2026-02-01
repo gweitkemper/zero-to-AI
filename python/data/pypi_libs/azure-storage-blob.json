@@ -55,7 +55,7 @@
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33390942,
+  "last_serial": 33845064,
   "releases": {
     "0.37.0": [
       {
@@ -2957,6 +2957,50 @@
         "upload_time": "2025-12-04T21:13:58",
         "upload_time_iso_8601": "2025-12-04T21:13:58.152712Z",
         "url": "https://files.pythonhosted.org/packages/12/46/3499d7946ac4ab822919619ba8333f34d49df5efc769ca0a22989814d8c6/azure_storage_blob-12.28.0b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "12.29.0b1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "e71af356cbfbcd8c2a1cbe8e8edce4d4b0f9a776fcc91759e34e5b980897bb23",
+          "md5": "4dd99e506ce3925f38a8c661912ae37f",
+          "sha256": "64702c0c67b7ac709feb80aacb61183bb5960ad615d36c43e95fe197c9bf610c"
+        },
+        "downloads": -1,
+        "filename": "azure_storage_blob-12.29.0b1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "4dd99e506ce3925f38a8c661912ae37f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 434480,
+        "upload_time": "2026-01-27T16:30:35",
+        "upload_time_iso_8601": "2026-01-27T16:30:35.091799Z",
+        "url": "https://files.pythonhosted.org/packages/e7/1a/f356cbfbcd8c2a1cbe8e8edce4d4b0f9a776fcc91759e34e5b980897bb23/azure_storage_blob-12.29.0b1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "d4e1f4b957d7f080c9f58b5d4e5a6b026fb745e7d6273d7f9147d26724f842df",
+          "md5": "40b0c6c55ecf566b95c1fd66ccad93ee",
+          "sha256": "6fe4c61984178f970af36fdac47a67abcc9c80bbb5ac3c1c4947682d66626764"
+        },
+        "downloads": -1,
+        "filename": "azure_storage_blob-12.29.0b1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "40b0c6c55ecf566b95c1fd66ccad93ee",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 612000,
+        "upload_time": "2026-01-27T16:30:30",
+        "upload_time_iso_8601": "2026-01-27T16:30:30.356859Z",
+        "url": "https://files.pythonhosted.org/packages/d4/e1/f4b957d7f080c9f58b5d4e5a6b026fb745e7d6273d7f9147d26724f842df/azure_storage_blob-12.29.0b1.tar.gz",
         "yanked": false,
         "yanked_reason": null
       }

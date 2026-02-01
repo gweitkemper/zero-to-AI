@@ -1,8 +1,12 @@
 """
 Usage:
-    Data wrangling with DuckDB with local and remote files.
+    Data wrangling with duckdb, polars, toon-python, etc.
+    with both local and remote files.
     python main-wrangling.py <func>
-    python main-wrangling.py postal_codes_nc
+    python main-wrangling.py help
+    python main-wrangling.py postal_codes_nc_csv_to_json
+    python main-wrangling.py center_of_nc_with_polars
+    python main-wrangling.py postal_codes_nc_csv_to_toon
     python main-wrangling.py imdb
     python main-wrangling.py openflights
     python main-wrangling.py augment_openflights_airports
@@ -11,6 +15,7 @@ Usage:
     python main-wrangling.py create_cosmosdb_pypi_lib_documents
     python main-wrangling.py add_embeddings_to_cosmosdb_documents
     python main-wrangling.py uv_parse
+    python main-wrangling.py gen_graph_data
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -31,10 +36,14 @@ from typing import Any
 
 import duckdb
 
+import polars as pl
+
 from docopt import docopt
 from dotenv import load_dotenv
 
 from geopy.geocoders import Nominatim
+
+from toon_python import encode, EncodeOptions, Delimiter
 
 from src.ai.aoai_util import AOAIUtil
 from src.io.fs import FS
@@ -48,7 +57,7 @@ def print_options():
     print(arguments)
 
 
-def postal_codes_nc():
+def postal_codes_nc_csv_to_json():
     """
     Read a local CSV file with DuckDB.
     Then query it with SQL.
@@ -67,8 +76,57 @@ def postal_codes_nc():
 
     # Transform the CSV data into a JSON file.
     # DuckDB has some dataframe methods - df().
-    outfile = "tmp/postal_codes_nc.json"
+    outfile = "data/postal_codes/postal_codes_nc.json"
     rel.df().to_json(outfile, orient="records", lines=True)
+    print(f"file written: {outfile}")
+
+
+"""
+Prompt to Cursor:
+Complete the 'center_of_nc_with_polars' method using Polars.
+Calculate the average latitude and longitude of the postal codes
+in North Carolina by processing the df variable.
+Display the average latitude and longitude of the state.
+"""
+
+
+def center_of_nc_with_polars():
+    # Read the CSV file into a Polars dataframe (df)
+    df = pl.read_csv("data/postal_codes/postal_codes_nc.csv")
+
+    # Explore the dataframe (EDA)
+    print(df.head())
+    print(df.tail())
+    print(df.describe())
+    print(df.dtypes)
+    print(df.columns)
+    print(df.shape)
+
+    # Calculate the center of the state (average of the latitude and longitude)
+    avg_lat = df.select(pl.col("latitude").mean()).item()
+    avg_lon = df.select(pl.col("longitude").mean()).item()
+    print(
+        f"North Carolina center (avg of postal codes): latitude={avg_lat:.6f}, longitude={avg_lon:.6f}"
+    )
+
+
+"""
+Prompt to Cursor:
+Complete the 'postal_codes_nc_csv_to_toon' method using the toon-python library.
+Read the given CSV file and write the corresponding Toon file in the
+same directory.
+"""
+
+
+def postal_codes_nc_csv_to_toon():
+    infile = "data/postal_codes/postal_codes_nc.csv"
+    outfile = "data/postal_codes/postal_codes_nc.toon"
+
+    df = pl.read_csv(infile)
+    rows = df.to_dicts()
+    data = {"postal_codes": rows}
+    toon_str = encode(data)
+    FS.write(toon_str, outfile)
     print(f"file written: {outfile}")
 
 
@@ -287,14 +345,19 @@ def is_valid_iata_code(iata_code: str) -> bool:
     print(f"is_valid_iata_code: {iata_code} -> {result}")
     return result
 
+
 def gen_pypi_download_lib_json_script():
     pip_list_lines = FS.read_lines("data/uv/uv-pip-list.txt")
     lib_names = list[str]()
     script_lines = list[str]()
     script_lines.append("#!/bin/bash")
     script_lines.append("")
-    script_lines.append("# This script downloads the JSON metadata for each library in the uv-pip-list.txt file.")
-    script_lines.append("# It then saves the JSON to a library-specific file in the data/pypi directory.")
+    script_lines.append(
+        "# This script downloads the JSON metadata for each library in the uv-pip-list.txt file."
+    )
+    script_lines.append(
+        "# It then saves the JSON to a library-specific file in the data/pypi directory."
+    )
     script_lines.append("# Chris Joakim, 3Cloud/Cognizant, 2026")
     script_lines.append("")
 
@@ -310,13 +373,16 @@ def gen_pypi_download_lib_json_script():
 
     lib_count = len(lib_names)
     for idx, name in enumerate(sorted(lib_names)):
-        script_lines.append(f"echo \"{idx+1}/{lib_count}: {name}\"")
-        script_lines.append(f"curl -s -L https://pypi.python.org/pypi/{name}/json | jq > data/pypi_libs/{name}.json")
+        script_lines.append(f'echo "{idx + 1}/{lib_count}: {name}"')
+        script_lines.append(
+            f"curl -s -L https://pypi.python.org/pypi/{name}/json | jq > data/pypi_libs/{name}.json"
+        )
         script_lines.append("sleep 1")
         script_lines.append("")
 
     script_lines.append("")
     FS.write_lines(script_lines, "pypi_download_lib_json.sh")
+
 
 def explore_downloaded_pypi_libs():
     """
@@ -328,7 +394,7 @@ def explore_downloaded_pypi_libs():
         try:
             infile = f"data/pypi_libs/{file}"
             data = FS.read_json(infile)
-            print(f"{idx+1}/{len(files)}: {file}")
+            print(f"{idx + 1}/{len(files)}: {file}")
 
             for key in data.keys():
                 c.increment(key)
@@ -354,7 +420,7 @@ async def create_cosmosdb_pypi_lib_documents():
                 data = FS.read_json(infile)
                 doc = dict()
                 name = data["info"]["name"]
-                #doc["id"] = <-- can be automatically populated by cosmosdb
+                # doc["id"] = <-- can be automatically populated by cosmosdb
                 doc["id"] = None
                 doc["pk"] = "pypi"
                 doc["name"] = name
@@ -384,6 +450,7 @@ async def create_cosmosdb_pypi_lib_documents():
             print(f"Error: {e} on name: {name}")
             print(traceback.format_exc())
 
+
 def prune_classifiers(classifiers: list) -> list:
     if isinstance(classifiers, list):
         new_list = list()
@@ -400,7 +467,7 @@ def prune_classifiers(classifiers: list) -> list:
 
 
 async def add_embeddings_to_cosmosdb_documents():
-    ai_util = AOAIUtil() 
+    ai_util = AOAIUtil()
     files = FS.list_files_in_dir("data/cosmosdb")
     for idx, file in enumerate(sorted(files)):
         try:
@@ -433,14 +500,25 @@ def truncate_cosmosdb_document(doc: dict, max_length: int) -> dict:
             continue_to_process = False
     return doc
 
+
 async def uv_parse():
     try:
         uv_parser = UVParser()
-        leaf_nodes = uv_parser.parse_tree()
-        FS.write_json(leaf_nodes, "data/uv/uv-tree-nodes.json")
+        uv_parser.parse_tree()
     except Exception as e:
         print(f"Error: {e}")
-        print(traceback.format_exc())   
+        print(traceback.format_exc())
+
+
+def gen_graph_data():
+    infile = "data/uv/uv-tree-libs.json"
+    outfile = "data/rdf/graph-libs.json"
+    libs_list = FS.read_json(infile)
+    libs_dict = dict()
+    for lib in libs_list:
+        libs_dict[lib["name"]] = dict()
+
+    FS.write_json(libs_dict, outfile)
 
 
 if __name__ == "__main__":
@@ -451,8 +529,12 @@ if __name__ == "__main__":
             load_dotenv(override=True)
             logging.getLogger().setLevel(logging.WARNING)
             func = sys.argv[1].lower()
-            if func == "postal_codes_nc":
-                postal_codes_nc()
+            if func == "postal_codes_nc_csv_to_json":
+                postal_codes_nc_csv_to_json()
+            elif func == "center_of_nc_with_polars":
+                center_of_nc_with_polars()
+            elif func == "postal_codes_nc_csv_to_toon":
+                postal_codes_nc_csv_to_toon()
             elif func == "imdb":
                 imdb()
             elif func == "openflights":
@@ -469,6 +551,8 @@ if __name__ == "__main__":
                 asyncio.run(add_embeddings_to_cosmosdb_documents())
             elif func == "uv_parse":
                 asyncio.run(uv_parse())
+            elif func == "gen_graph_data":
+                gen_graph_data()
             else:
                 print_options()
     except Exception as e:

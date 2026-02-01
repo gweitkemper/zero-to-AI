@@ -45,9 +45,10 @@
     "provides_extra": [
       "metrics"
     ],
-    "release_url": "https://pypi.org/project/pydocket/0.17.1/",
+    "release_url": "https://pypi.org/project/pydocket/0.17.5/",
     "requires_dist": [
       "cloudpickle>=3.1.1",
+      "croniter>=6",
       "exceptiongroup>=1.2.0; python_version < \"3.11\"",
       "fakeredis[lua]>=2.32.1",
       "opentelemetry-api>=1.33.0",
@@ -56,17 +57,18 @@
       "python-json-logger>=2.0.7",
       "redis>=5",
       "rich>=13.9.4",
+      "taskgroup>=0.2.2; python_version < \"3.11\"",
       "typer>=0.15.1",
       "typing-extensions>=4.12.0",
       "opentelemetry-sdk>=1.33.0; extra == \"metrics\""
     ],
     "requires_python": ">=3.10",
     "summary": "A distributed background task system for Python functions",
-    "version": "0.17.1",
+    "version": "0.17.5",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33775568,
+  "last_serial": 33932463,
   "releases": {
     "0.0.1": [
       {
@@ -1696,6 +1698,50 @@
         "yanked_reason": null
       }
     ],
+    "0.17.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "53744c9b70753d5721165047e6428ac239ca083118474794deaca5a27d0ab212",
+          "md5": "db315edf736c1042eae964a28795e48a",
+          "sha256": "f43743b84b4e3d614d99b0cad2deebab028104c217745406ecf9e1efb8926e04"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "db315edf736c1042eae964a28795e48a",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 91628,
+        "upload_time": "2026-01-26T16:07:55",
+        "upload_time_iso_8601": "2026-01-26T16:07:55.018087Z",
+        "url": "https://files.pythonhosted.org/packages/53/74/4c9b70753d5721165047e6428ac239ca083118474794deaca5a27d0ab212/pydocket-0.17.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "90171fb6309e40bbee999c5d881b8213a1078968412d855e064a9a94cfb9eeef",
+          "md5": "01d8ce65a61f3b4315b64003218b469a",
+          "sha256": "8f02c68952701eb1b3a70d439b76392d15f1eb9568d0bde6a69997ea5c79c89f"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "01d8ce65a61f3b4315b64003218b469a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 329829,
+        "upload_time": "2026-01-26T16:07:56",
+        "upload_time_iso_8601": "2026-01-26T16:07:56.217037Z",
+        "url": "https://files.pythonhosted.org/packages/90/17/1fb6309e40bbee999c5d881b8213a1078968412d855e064a9a94cfb9eeef/pydocket-0.17.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "0.17.2b1": [
       {
         "comment_text": null,
@@ -1736,6 +1782,226 @@
         "upload_time": "2026-01-24T13:07:35",
         "upload_time_iso_8601": "2026-01-24T13:07:35.034823Z",
         "url": "https://files.pythonhosted.org/packages/87/3d/9fd9ecbf96e07f68a2e306037b320cd70760e540575cb76f4fbae37a6ffc/pydocket-0.17.2b1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.17.2b2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "6e8520a8ed837622b2b880e56642b5df8d8abcafd1793ab500ed834a47b4b652",
+          "md5": "76fe1553686caa4f58014e26d5aee072",
+          "sha256": "233d6a7e8a995d19188ec89fefae7703875a12b4dddf1454fc1b037216aad64c"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2b2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "76fe1553686caa4f58014e26d5aee072",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 91193,
+        "upload_time": "2026-01-25T21:10:31",
+        "upload_time_iso_8601": "2026-01-25T21:10:31.854026Z",
+        "url": "https://files.pythonhosted.org/packages/6e/85/20a8ed837622b2b880e56642b5df8d8abcafd1793ab500ed834a47b4b652/pydocket-0.17.2b2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9a8e680fdc3f40476926565e51b88060613b558e34eed99b8942a815ccffef3f",
+          "md5": "66b5ac427deb796bed9a8fd3404b0a44",
+          "sha256": "21bd3dfae8ff694ca181727b18a76393fe52eca3325c814fc389c3054c10d8cc"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2b2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "66b5ac427deb796bed9a8fd3404b0a44",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 328757,
+        "upload_time": "2026-01-25T21:10:33",
+        "upload_time_iso_8601": "2026-01-25T21:10:33.001543Z",
+        "url": "https://files.pythonhosted.org/packages/9a/8e/680fdc3f40476926565e51b88060613b558e34eed99b8942a815ccffef3f/pydocket-0.17.2b2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.17.2b3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "70da0fe46d7aa3a6084c3715c462d9b16dffca18092fac0eec7d9299d7b46a83",
+          "md5": "02d37ad731c49ea8b4bb24789f79b7a5",
+          "sha256": "f54ab37ded42120201d22faad1acbfee53cc413bb35fe2064d557ff8007f9fb9"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2b3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "02d37ad731c49ea8b4bb24789f79b7a5",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 91656,
+        "upload_time": "2026-01-26T01:53:36",
+        "upload_time_iso_8601": "2026-01-26T01:53:36.518893Z",
+        "url": "https://files.pythonhosted.org/packages/70/da/0fe46d7aa3a6084c3715c462d9b16dffca18092fac0eec7d9299d7b46a83/pydocket-0.17.2b3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "35fdb2789629c35bc08074a223725738d2d8fe4df4b4eefe5ed8c5ad3668430e",
+          "md5": "2c042f11d8f941c0f2cf0892766d0324",
+          "sha256": "08c94837fe45494b1b442f7248ffeaf33c043786e7c14770c8320d666244e067"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.2b3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2c042f11d8f941c0f2cf0892766d0324",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 329299,
+        "upload_time": "2026-01-26T01:53:38",
+        "upload_time_iso_8601": "2026-01-26T01:53:38.112634Z",
+        "url": "https://files.pythonhosted.org/packages/35/fd/b2789629c35bc08074a223725738d2d8fe4df4b4eefe5ed8c5ad3668430e/pydocket-0.17.2b3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.17.3": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ea3b29c69e4f88f5e5ea5e90e3cf93493cafb68bf9a2f625b916cc26ab1def89",
+          "md5": "528bd571e680994cc0b5726fe18329e7",
+          "sha256": "9ef2c6e855f52a3210acff300bcbcc45773d79295e2deddcc7aef7f67b2a5ba7"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.3-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "528bd571e680994cc0b5726fe18329e7",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 91626,
+        "upload_time": "2026-01-27T01:08:05",
+        "upload_time_iso_8601": "2026-01-27T01:08:05.085579Z",
+        "url": "https://files.pythonhosted.org/packages/ea/3b/29c69e4f88f5e5ea5e90e3cf93493cafb68bf9a2f625b916cc26ab1def89/pydocket-0.17.3-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ec65eb3b4f7afac80308d74bab2a668b31f074524ff6fbc664a685c6ed7c8885",
+          "md5": "df9983d25b6bb9b50105d66499188f07",
+          "sha256": "8922b4ca5f3f428e69b7695b9b5a313bbedc3ce35c74045cadcd89f7c0e6ac2d"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "df9983d25b6bb9b50105d66499188f07",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 329828,
+        "upload_time": "2026-01-27T01:08:06",
+        "upload_time_iso_8601": "2026-01-27T01:08:06.514994Z",
+        "url": "https://files.pythonhosted.org/packages/ec/65/eb3b4f7afac80308d74bab2a668b31f074524ff6fbc664a685c6ed7c8885/pydocket-0.17.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.17.4": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "533122fc9aac1bbf65d9c8a4a9bca4736c7d5857901f9623c3da90c091d9736d",
+          "md5": "219cbc72037d770038c221dd94ae8630",
+          "sha256": "43a810828665e85fa2dcf4557727795aa851eda3cecba6b71d149bf78f337ce4"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.4-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "219cbc72037d770038c221dd94ae8630",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 93161,
+        "upload_time": "2026-01-30T17:18:25",
+        "upload_time_iso_8601": "2026-01-30T17:18:25.762673Z",
+        "url": "https://files.pythonhosted.org/packages/53/31/22fc9aac1bbf65d9c8a4a9bca4736c7d5857901f9623c3da90c091d9736d/pydocket-0.17.4-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "34d2606dd2e093bd2df92425a595a760c32a5dd2f349e53f3e21ba3333dc03ee",
+          "md5": "194dbab8938601d2a8e81f78e9dba60e",
+          "sha256": "42a5f9d8b659fc6b5468f996cc171983b6cc28b3a56420f691a7a67f3832fabf"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "194dbab8938601d2a8e81f78e9dba60e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 334443,
+        "upload_time": "2026-01-30T17:18:27",
+        "upload_time_iso_8601": "2026-01-30T17:18:27.171637Z",
+        "url": "https://files.pythonhosted.org/packages/34/d2/606dd2e093bd2df92425a595a760c32a5dd2f349e53f3e21ba3333dc03ee/pydocket-0.17.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.17.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "149873427d065c067a99de6afbe24df3d90cf20d63152ceb42edff2b6e829d4c",
+          "md5": "57a94235f53a6be4b67e6e8de41ea4da",
+          "sha256": "544d7c2625a33e52528ac24db25794841427dfc2cf30b9c558ac387c77746241"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "57a94235f53a6be4b67e6e8de41ea4da",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 93355,
+        "upload_time": "2026-01-30T18:44:37",
+        "upload_time_iso_8601": "2026-01-30T18:44:37.972707Z",
+        "url": "https://files.pythonhosted.org/packages/14/98/73427d065c067a99de6afbe24df3d90cf20d63152ceb42edff2b6e829d4c/pydocket-0.17.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "7326ac23ead3725475468b50b486939bf5feda27180050a614a7407344a0af0e",
+          "md5": "a99c0dab28ac086bada34aca040885a0",
+          "sha256": "19a6976d8fd11c1acf62feb0291a339e06beaefa100f73dd38c6499760ad3e62"
+        },
+        "downloads": -1,
+        "filename": "pydocket-0.17.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a99c0dab28ac086bada34aca040885a0",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 334829,
+        "upload_time": "2026-01-30T18:44:39",
+        "upload_time_iso_8601": "2026-01-30T18:44:39.702109Z",
+        "url": "https://files.pythonhosted.org/packages/73/26/ac23ead3725475468b50b486939bf5feda27180050a614a7407344a0af0e/pydocket-0.17.5.tar.gz",
         "yanked": false,
         "yanked_reason": null
       }
@@ -2625,42 +2891,42 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "ddcc019dbc2646dc638caead6349f7427a396257c97b7edbf60dedb52b5ed93d",
-        "md5": "62e60dd022079c4de8fa1dc09223c566",
-        "sha256": "0902c08e7879a9ba8ebcdee2503541bf26dc203d94cab1c2e48d18567383f505"
+        "blake2b_256": "149873427d065c067a99de6afbe24df3d90cf20d63152ceb42edff2b6e829d4c",
+        "md5": "57a94235f53a6be4b67e6e8de41ea4da",
+        "sha256": "544d7c2625a33e52528ac24db25794841427dfc2cf30b9c558ac387c77746241"
       },
       "downloads": -1,
-      "filename": "pydocket-0.17.1-py3-none-any.whl",
+      "filename": "pydocket-0.17.5-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "62e60dd022079c4de8fa1dc09223c566",
+      "md5_digest": "57a94235f53a6be4b67e6e8de41ea4da",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.10",
-      "size": 87371,
-      "upload_time": "2026-01-22T16:59:23",
-      "upload_time_iso_8601": "2026-01-22T16:59:23.915128Z",
-      "url": "https://files.pythonhosted.org/packages/dd/cc/019dbc2646dc638caead6349f7427a396257c97b7edbf60dedb52b5ed93d/pydocket-0.17.1-py3-none-any.whl",
+      "size": 93355,
+      "upload_time": "2026-01-30T18:44:37",
+      "upload_time_iso_8601": "2026-01-30T18:44:37.972707Z",
+      "url": "https://files.pythonhosted.org/packages/14/98/73427d065c067a99de6afbe24df3d90cf20d63152ceb42edff2b6e829d4c/pydocket-0.17.5-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "5646d61842164f7f623c24927dd67b4e19e3b52b6b5127401ab959a0d8273fe4",
-        "md5": "b10539f45b4e4213c278ad8313359031",
-        "sha256": "de5b39241f728c2c0abbcb419b0cd3a5eab3ed48e228c4c7add15b02e234a68c"
+        "blake2b_256": "7326ac23ead3725475468b50b486939bf5feda27180050a614a7407344a0af0e",
+        "md5": "a99c0dab28ac086bada34aca040885a0",
+        "sha256": "19a6976d8fd11c1acf62feb0291a339e06beaefa100f73dd38c6499760ad3e62"
       },
       "downloads": -1,
-      "filename": "pydocket-0.17.1.tar.gz",
+      "filename": "pydocket-0.17.5.tar.gz",
       "has_sig": false,
-      "md5_digest": "b10539f45b4e4213c278ad8313359031",
+      "md5_digest": "a99c0dab28ac086bada34aca040885a0",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.10",
-      "size": 323972,
-      "upload_time": "2026-01-22T16:59:25",
-      "upload_time_iso_8601": "2026-01-22T16:59:25.077377Z",
-      "url": "https://files.pythonhosted.org/packages/56/46/d61842164f7f623c24927dd67b4e19e3b52b6b5127401ab959a0d8273fe4/pydocket-0.17.1.tar.gz",
+      "size": 334829,
+      "upload_time": "2026-01-30T18:44:39",
+      "upload_time_iso_8601": "2026-01-30T18:44:39.702109Z",
+      "url": "https://files.pythonhosted.org/packages/73/26/ac23ead3725475468b50b486939bf5feda27180050a614a7407344a0af0e/pydocket-0.17.5.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

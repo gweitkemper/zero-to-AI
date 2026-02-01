@@ -89,7 +89,7 @@
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33423577,
+  "last_serial": 33922613,
   "releases": {
     "4.0.0": [],
     "4.0.0.dev": [],
@@ -6713,6 +6713,50 @@
         "upload_time": "2026-01-08T11:03:36",
         "upload_time_iso_8601": "2026-01-08T11:03:36.072209Z",
         "url": "https://files.pythonhosted.org/packages/9f/26/0304d487e52ab71554ded44ee152151ddb7e9f5f34d2fe53ba96912a92a6/ipykernel-7.2.0a0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "7.2.0a1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "164e2172c920b7a453c101475cbccb4593488c096a4714a1733cfb7ddc578ff3",
+          "md5": "45cb039e8924539e852996a0029bccfa",
+          "sha256": "c6bb11acd2709516b249b2d79b9d21a081c2ae9f0a752730a364bb6e31602cc9"
+        },
+        "downloads": -1,
+        "filename": "ipykernel-7.2.0a1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "45cb039e8924539e852996a0029bccfa",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 118821,
+        "upload_time": "2026-01-30T10:36:09",
+        "upload_time_iso_8601": "2026-01-30T10:36:09.630215Z",
+        "url": "https://files.pythonhosted.org/packages/16/4e/2172c920b7a453c101475cbccb4593488c096a4714a1733cfb7ddc578ff3/ipykernel-7.2.0a1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "bec6b99b17b70ac9b790f0b2a0834f2aa78d903d1dd10dd51195fd3f9825b1f3",
+          "md5": "f87d55473730229e04e443374a04f802",
+          "sha256": "0518cde8025c07f628b4dab09a84a7bd68aa456439f146d3a271185c4064f446"
+        },
+        "downloads": -1,
+        "filename": "ipykernel-7.2.0a1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f87d55473730229e04e443374a04f802",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 175854,
+        "upload_time": "2026-01-30T10:36:11",
+        "upload_time_iso_8601": "2026-01-30T10:36:11.372918Z",
+        "url": "https://files.pythonhosted.org/packages/be/c6/b99b17b70ac9b790f0b2a0834f2aa78d903d1dd10dd51195fd3f9825b1f3/ipykernel-7.2.0a1.tar.gz",
         "yanked": false,
         "yanked_reason": null
       }

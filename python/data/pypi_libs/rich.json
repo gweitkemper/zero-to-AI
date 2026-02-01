@@ -48,7 +48,7 @@
       "Homepage": "https://github.com/Textualize/rich"
     },
     "provides_extra": null,
-    "release_url": "https://pypi.org/project/rich/14.3.0/",
+    "release_url": "https://pypi.org/project/rich/14.3.1/",
     "requires_dist": [
       "pygments<3.0.0,>=2.13.0",
       "ipywidgets<9,>=7.5.1; extra == \"jupyter\"",
@@ -56,11 +56,11 @@
     ],
     "requires_python": ">=3.8.0",
     "summary": "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal",
-    "version": "14.3.0",
+    "version": "14.3.1",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33775201,
+  "last_serial": 33783167,
   "releases": {
     "0.1.0": [
       {
@@ -5914,6 +5914,50 @@
         "yanked_reason": null
       }
     ],
+    "14.3.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "872aa1810c8627b9ec8c57ec5ec325d306701ae7be50235e8fd81266e002a3cc",
+          "md5": "809e7e9036f6890b62c862f83134accb",
+          "sha256": "da750b1aebbff0b372557426fb3f35ba56de8ef954b3190315eb64076d6fb54e"
+        },
+        "downloads": -1,
+        "filename": "rich-14.3.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "809e7e9036f6890b62c862f83134accb",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8.0",
+        "size": 309952,
+        "upload_time": "2026-01-24T21:40:42",
+        "upload_time_iso_8601": "2026-01-24T21:40:42.969407Z",
+        "url": "https://files.pythonhosted.org/packages/87/2a/a1810c8627b9ec8c57ec5ec325d306701ae7be50235e8fd81266e002a3cc/rich-14.3.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "a1844831f881aa6ff3c976f6d6809b58cdfa350593ffc0dc3c58f5f6586780fb",
+          "md5": "a3e159861e8ac59a1443b0795aefbac2",
+          "sha256": "b8c5f568a3a749f9290ec6bddedf835cec33696bfc1e48bcfecb276c7386e4b8"
+        },
+        "downloads": -1,
+        "filename": "rich-14.3.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a3e159861e8ac59a1443b0795aefbac2",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8.0",
+        "size": 230125,
+        "upload_time": "2026-01-24T21:40:44",
+        "upload_time_iso_8601": "2026-01-24T21:40:44.847245Z",
+        "url": "https://files.pythonhosted.org/packages/a1/84/4831f881aa6ff3c976f6d6809b58cdfa350593ffc0dc3c58f5f6586780fb/rich-14.3.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "2.0.0": [
       {
         "comment_text": "",
@@ -8955,42 +8999,42 @@
     {
       "comment_text": "",
       "digests": {
-        "blake2b_256": "fae083cbdcb81b5cbbbe355648dd402b410437806544f48ee218a2354798f012",
-        "md5": "18476b1c2609d35d09ae0d5a40c863e7",
-        "sha256": "0b8c1e368c1125b9e993c2d2f1342802525f4853fc6dac2e8e9e88bac0f45bce"
+        "blake2b_256": "872aa1810c8627b9ec8c57ec5ec325d306701ae7be50235e8fd81266e002a3cc",
+        "md5": "809e7e9036f6890b62c862f83134accb",
+        "sha256": "da750b1aebbff0b372557426fb3f35ba56de8ef954b3190315eb64076d6fb54e"
       },
       "downloads": -1,
-      "filename": "rich-14.3.0-py3-none-any.whl",
+      "filename": "rich-14.3.1-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "18476b1c2609d35d09ae0d5a40c863e7",
+      "md5_digest": "809e7e9036f6890b62c862f83134accb",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.8.0",
-      "size": 309950,
-      "upload_time": "2026-01-24T12:25:44",
-      "upload_time_iso_8601": "2026-01-24T12:25:44.679789Z",
-      "url": "https://files.pythonhosted.org/packages/fa/e0/83cbdcb81b5cbbbe355648dd402b410437806544f48ee218a2354798f012/rich-14.3.0-py3-none-any.whl",
+      "size": 309952,
+      "upload_time": "2026-01-24T21:40:42",
+      "upload_time_iso_8601": "2026-01-24T21:40:42.969407Z",
+      "url": "https://files.pythonhosted.org/packages/87/2a/a1810c8627b9ec8c57ec5ec325d306701ae7be50235e8fd81266e002a3cc/rich-14.3.1-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": "",
       "digests": {
-        "blake2b_256": "aa9c137848452e130e71f3ca9a9876751ddcac99e4b1f248ed297996c8c2d728",
-        "md5": "3b29171867e64aa3fd31f8f779d52154",
-        "sha256": "b75e54d3abbcc49137e83e4db54dc86c5e47687eebc95aa0305363231a36e699"
+        "blake2b_256": "a1844831f881aa6ff3c976f6d6809b58cdfa350593ffc0dc3c58f5f6586780fb",
+        "md5": "a3e159861e8ac59a1443b0795aefbac2",
+        "sha256": "b8c5f568a3a749f9290ec6bddedf835cec33696bfc1e48bcfecb276c7386e4b8"
       },
       "downloads": -1,
-      "filename": "rich-14.3.0.tar.gz",
+      "filename": "rich-14.3.1.tar.gz",
       "has_sig": false,
-      "md5_digest": "3b29171867e64aa3fd31f8f779d52154",
+      "md5_digest": "a3e159861e8ac59a1443b0795aefbac2",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.8.0",
-      "size": 230113,
-      "upload_time": "2026-01-24T12:25:46",
-      "upload_time_iso_8601": "2026-01-24T12:25:46.336099Z",
-      "url": "https://files.pythonhosted.org/packages/aa/9c/137848452e130e71f3ca9a9876751ddcac99e4b1f248ed297996c8c2d728/rich-14.3.0.tar.gz",
+      "size": 230125,
+      "upload_time": "2026-01-24T21:40:44",
+      "upload_time_iso_8601": "2026-01-24T21:40:44.847245Z",
+      "url": "https://files.pythonhosted.org/packages/a1/84/4831f881aa6ff3c976f6d6809b58cdfa350593ffc0dc3c58f5f6586780fb/rich-14.3.1.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

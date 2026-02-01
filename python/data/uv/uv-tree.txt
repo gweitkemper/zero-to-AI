@@ -1,4 +1,4 @@
-zero-to-ai v0.1.0
+zero-to-ai v1.0.0
 ├── agent-framework v1.0.0b251120
 │   └── agent-framework-core v1.0.0b251001
 │       ├── aiofiles v25.1.0
@@ -574,6 +574,8 @@ zero-to-ai v0.1.0
 ├── pandas v2.3.3 (*)
 ├── pgvector v0.4.2
 │   └── numpy v2.4.0
+├── polars v1.37.1
+│   └── polars-runtime-32 v1.37.1
 ├── psutil v7.2.0
 ├── psycopg2-binary v2.9.11
 ├── pydantic v2.12.5 (*)
@@ -602,6 +604,8 @@ zero-to-ai v0.1.0
 ├── python-json-logger v4.0.0
 ├── python-multipart v0.0.21
 ├── pytz v2025.2
+├── rdflib v7.5.0
+│   └── pyparsing v3.3.1
 ├── six v1.17.0
 ├── sqlalchemy v2.0.46 (*)
 ├── sqlalchemy-utils v0.42.1
@@ -637,6 +641,7 @@ zero-to-ai v0.1.0
 ├── tiktoken v0.12.0
 │   ├── regex v2025.11.3
 │   └── requests v2.32.5 (*)
+├── toon-python v0.1.2
 ├── uvicorn v0.38.0 (*)
 └── watchdog v6.0.0
 (*) Package tree already displayed

@@ -1,5 +1,6 @@
 """
 Pydantic models for the M26 MCP Server.
+Chris Joakim, 3Cloud/Cognizant, 2026
 """
 
 from typing import Optional

@@ -36,7 +36,7 @@
     "project_url": "https://pypi.org/project/rich-toolkit/",
     "project_urls": null,
     "provides_extra": null,
-    "release_url": "https://pypi.org/project/rich-toolkit/0.17.1/",
+    "release_url": "https://pypi.org/project/rich-toolkit/0.18.1/",
     "requires_dist": [
       "click>=8.1.7",
       "rich>=13.7.1",
@@ -44,11 +44,11 @@
     ],
     "requires_python": ">=3.8",
     "summary": "Rich toolkit for building command-line applications",
-    "version": "0.17.1",
+    "version": "0.18.1",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33052182,
+  "last_serial": 33962899,
   "releases": {
     "0.1.0": [
       {
@@ -1326,6 +1326,138 @@
         "yanked_reason": null
       }
     ],
+    "0.17.2": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "8ae4bb5d7e4b323023e3e5d29a7e86975904946d9ce2bdda13fbc14353573e2d",
+          "md5": "9e8c513a2bb9d0f4a2544c2d8acd408f",
+          "sha256": "7794ba31e2d2ff85fefb07aa22b383b7b237902c941f51636b5e22da915ff9ae"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.17.2-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "9e8c513a2bb9d0f4a2544c2d8acd408f",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 31868,
+        "upload_time": "2026-01-29T16:36:14",
+        "upload_time_iso_8601": "2026-01-29T16:36:14.344399Z",
+        "url": "https://files.pythonhosted.org/packages/8a/e4/bb5d7e4b323023e3e5d29a7e86975904946d9ce2bdda13fbc14353573e2d/rich_toolkit-0.17.2-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "54d35f894c1051ac9e7485c0e2fd57005fd4ff389ce0070b8ceb3daf840baafb",
+          "md5": "b083be09cd2214830afab5c196debc7e",
+          "sha256": "f429c98a0048684fdbf72f4218fecf0d5f3f44bb4efa5b626c69394f22b30a65"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.17.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "b083be09cd2214830afab5c196debc7e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 188481,
+        "upload_time": "2026-01-29T16:36:15",
+        "upload_time_iso_8601": "2026-01-29T16:36:15.363399Z",
+        "url": "https://files.pythonhosted.org/packages/54/d3/5f894c1051ac9e7485c0e2fd57005fd4ff389ce0070b8ceb3daf840baafb/rich_toolkit-0.17.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.18.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "993728e902b01c122fa1e8ff7e57dafe4d1f0faa67270fd24245b8013c91dfa1",
+          "md5": "69487d9a84eeb2f9a37131b26a6bb285",
+          "sha256": "150e5e8514f11f47cfb756677768da68b6b54343418009024308680598fcf0b7"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.18.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "69487d9a84eeb2f9a37131b26a6bb285",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 32138,
+        "upload_time": "2026-02-01T00:54:21",
+        "upload_time_iso_8601": "2026-02-01T00:54:21.616160Z",
+        "url": "https://files.pythonhosted.org/packages/99/37/28e902b01c122fa1e8ff7e57dafe4d1f0faa67270fd24245b8013c91dfa1/rich_toolkit-0.18.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "22ef1943fe86c3dfe16ce6c0a6db6e9c8153a387a171fd65e26fe6c33b65be3a",
+          "md5": "a1bae43fb968794b3926df8c14064485",
+          "sha256": "b038021a86387809a4573ed8c7857dd5751402ae3d6c7570c79a403042fa6036"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.18.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "a1bae43fb968794b3926df8c14064485",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 191907,
+        "upload_time": "2026-02-01T00:54:22",
+        "upload_time_iso_8601": "2026-02-01T00:54:22.939952Z",
+        "url": "https://files.pythonhosted.org/packages/22/ef/1943fe86c3dfe16ce6c0a6db6e9c8153a387a171fd65e26fe6c33b65be3a/rich_toolkit-0.18.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.18.1": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "da436f9860c4bfb1f181c347941542a8955ce24b228f84550253765aa1854d53",
+          "md5": "985a797cb82253bffe7fa9a860d83c9d",
+          "sha256": "04011a9751f4c2becdf44bd1aaff8562d4b00caf04f14e483a9873c15fbe3154"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.18.1-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "985a797cb82253bffe7fa9a860d83c9d",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.8",
+        "size": 32255,
+        "upload_time": "2026-02-01T10:56:33",
+        "upload_time_iso_8601": "2026-02-01T10:56:33.071286Z",
+        "url": "https://files.pythonhosted.org/packages/da/43/6f9860c4bfb1f181c347941542a8955ce24b228f84550253765aa1854d53/rich_toolkit-0.18.1-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "daf1bcfbde3ca38db54b5dcf7ee3d0caf3ed9133a169aec5a58ad9ec50ba12e8",
+          "md5": "052494dd689154b7a5a9f10cf4b8a409",
+          "sha256": "bf104f1945a7252debeda7d7138118eaf848fff5ea81d9eda556cbc5f911122c"
+        },
+        "downloads": -1,
+        "filename": "rich_toolkit-0.18.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "052494dd689154b7a5a9f10cf4b8a409",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 192514,
+        "upload_time": "2026-02-01T10:56:31",
+        "upload_time_iso_8601": "2026-02-01T10:56:31.857555Z",
+        "url": "https://files.pythonhosted.org/packages/da/f1/bcfbde3ca38db54b5dcf7ee3d0caf3ed9133a169aec5a58ad9ec50ba12e8/rich_toolkit-0.18.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "0.2.0": [
       {
         "comment_text": "",
@@ -1903,42 +2035,42 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "7f7b15e55fa8a76d0d41bf34d965af78acdaf80a315907adb30de8b63c272694",
-        "md5": "886f3924588d74c4c7155c6553db4200",
-        "sha256": "96d24bb921ecd225ffce7c526a9149e74006410c05e6d405bd74ffd54d5631ed"
+        "blake2b_256": "da436f9860c4bfb1f181c347941542a8955ce24b228f84550253765aa1854d53",
+        "md5": "985a797cb82253bffe7fa9a860d83c9d",
+        "sha256": "04011a9751f4c2becdf44bd1aaff8562d4b00caf04f14e483a9873c15fbe3154"
       },
       "downloads": -1,
-      "filename": "rich_toolkit-0.17.1-py3-none-any.whl",
+      "filename": "rich_toolkit-0.18.1-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "886f3924588d74c4c7155c6553db4200",
+      "md5_digest": "985a797cb82253bffe7fa9a860d83c9d",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.8",
-      "size": 31412,
-      "upload_time": "2025-12-17T10:49:21",
-      "upload_time_iso_8601": "2025-12-17T10:49:21.793132Z",
-      "url": "https://files.pythonhosted.org/packages/7f/7b/15e55fa8a76d0d41bf34d965af78acdaf80a315907adb30de8b63c272694/rich_toolkit-0.17.1-py3-none-any.whl",
+      "size": 32255,
+      "upload_time": "2026-02-01T10:56:33",
+      "upload_time_iso_8601": "2026-02-01T10:56:33.071286Z",
+      "url": "https://files.pythonhosted.org/packages/da/43/6f9860c4bfb1f181c347941542a8955ce24b228f84550253765aa1854d53/rich_toolkit-0.18.1-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "97093f9b8d9daaf235195c626f21e03604c05b987404ee3bcacee0c1f67f2a8e",
-        "md5": "2f46aa26ca63eca23d0414cda6cc7b14",
-        "sha256": "5af54df8d1dd9c8530e462e1bdcaed625c9b49f5a55b035aa0ba1c17bdb87c9a"
+        "blake2b_256": "daf1bcfbde3ca38db54b5dcf7ee3d0caf3ed9133a169aec5a58ad9ec50ba12e8",
+        "md5": "052494dd689154b7a5a9f10cf4b8a409",
+        "sha256": "bf104f1945a7252debeda7d7138118eaf848fff5ea81d9eda556cbc5f911122c"
       },
       "downloads": -1,
-      "filename": "rich_toolkit-0.17.1.tar.gz",
+      "filename": "rich_toolkit-0.18.1.tar.gz",
       "has_sig": false,
-      "md5_digest": "2f46aa26ca63eca23d0414cda6cc7b14",
+      "md5_digest": "052494dd689154b7a5a9f10cf4b8a409",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.8",
-      "size": 187925,
-      "upload_time": "2025-12-17T10:49:22",
-      "upload_time_iso_8601": "2025-12-17T10:49:22.583801Z",
-      "url": "https://files.pythonhosted.org/packages/97/09/3f9b8d9daaf235195c626f21e03604c05b987404ee3bcacee0c1f67f2a8e/rich_toolkit-0.17.1.tar.gz",
+      "size": 192514,
+      "upload_time": "2026-02-01T10:56:31",
+      "upload_time_iso_8601": "2026-02-01T10:56:31.857555Z",
+      "url": "https://files.pythonhosted.org/packages/da/f1/bcfbde3ca38db54b5dcf7ee3d0caf3ed9133a169aec5a58ad9ec50ba12e8/rich_toolkit-0.18.1.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }

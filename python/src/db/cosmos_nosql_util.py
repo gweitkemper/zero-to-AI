@@ -21,6 +21,7 @@ azure_logger.setLevel(logging.WARNING)
 
 LAST_REQUEST_CHARGE_HEADER = "x-ms-request-charge"
 
+
 class CosmosNoSqlUtil:
     def __init__(self, opts={}):
         self._opts = opts
@@ -100,11 +101,9 @@ class CosmosNoSqlUtil:
             result = False
         return result
 
-    async def create_container(self,
-        cname : str,
-        pkpath : str,
-        c_ru :int,
-        indexing_policy_filename : str = None):
+    async def create_container(
+        self, cname: str, pkpath: str, c_ru: int, indexing_policy_filename: str = None
+    ):
         created = False
         if self._client is not None:
             containers = await self.list_containers()
@@ -112,10 +111,10 @@ class CosmosNoSqlUtil:
                 logging.info("CosmosNoSqlUtil - containers already exists: {}".format(cname))
             else:
                 partition_key = PartitionKey(path=pkpath, kind="Hash")
-                if (indexing_policy_filename is None):
+                if indexing_policy_filename is None:
                     indexing_policy_filename = self._default_indexing_policy_filename
-                elif (indexing_policy_filename.lower().startswith("default")):
-                    indexing_policy_filename = self._default_indexing_policy_filename         
+                elif indexing_policy_filename.lower().startswith("default"):
+                    indexing_policy_filename = self._default_indexing_policy_filename
                 indexing_policy = FS.read_json(indexing_policy_filename)
                 vector_policy = self.vector_embedding_policy(indexing_policy)
                 print(f"indexing_policy: {indexing_policy}")
@@ -123,32 +122,32 @@ class CosmosNoSqlUtil:
 
                 if c_ru > 0:
                     throughput = ThroughputProperties(
-                        auto_scale_max_throughput=c_ru,
-                        auto_scale_increment_percent=0
+                        auto_scale_max_throughput=c_ru, auto_scale_increment_percent=0
                     )
                     await self._dbproxy.create_container_if_not_exists(
                         id=cname,
                         partition_key=partition_key,
                         offer_throughput=throughput,
                         indexing_policy=indexing_policy,
-                        vector_embedding_policy=vector_policy
+                        vector_embedding_policy=vector_policy,
                     )
                 else:
                     await self._dbproxy.create_container_if_not_exists(
                         id=cname,
                         partition_key=partition_key,
                         indexing_policy=indexing_policy,
-                        vector_embedding_policy=vector_policy
+                        vector_embedding_policy=vector_policy,
                     )
                 logging.info("CosmosNoSqlUtil - container created: {}".format(cname))
                 created = True
         return created
 
-    def vector_embedding_policy(self,
+    def vector_embedding_policy(
+        self,
         indexing_policy: dict,
         embedding_dimensions: int = 1536,
-        distance_function: str = "cosine"):
-
+        distance_function: str = "cosine",
+    ):
         if "vectorIndexes" in indexing_policy.keys():
             try:
                 policy = dict()

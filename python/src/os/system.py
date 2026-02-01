@@ -17,17 +17,22 @@ class System:
         Return the platform.system() string.
         For example: platform.system() -> 'Darwin'
         """
-        return platform.system().lower()
+        return platform.system().lower().strip()
 
     @classmethod
     def is_windows(cls) -> bool:
         """Return True if the platform is Windows, else False."""
-        return "darwin" not in cls.platform()
+        return cls.platform().startswith("win")
 
     @classmethod
     def is_mac(cls) -> bool:
         """Return True if the platform is Apple macOS, else False."""
         return "darwin" in cls.platform()
+
+    @classmethod
+    def is_linux(cls) -> bool:
+        """Return True if the platform is linux, else False."""
+        return "linux" in cls.platform()
 
     @classmethod
     def pid(cls) -> int:
@@ -37,7 +42,7 @@ class System:
     @classmethod
     def process_name(cls) -> str:
         """Return the current process name."""
-        return psutil.Process().name()
+        return str(psutil.Process().name())
 
     @classmethod
     def get_login(cls) -> str:

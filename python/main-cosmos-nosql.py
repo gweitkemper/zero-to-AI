@@ -18,6 +18,14 @@ Usage:
 
 # Chris Joakim, 3Cloud/Cognizant, 2026
 
+# Wrangling the Cosmos DB Data:
+# 0) run venv.sh 
+# 1) python main-wrangling.py gen_pypi_download_lib_json_script 
+# 2) ./pypi_download_lib_json.sh  (execute the generated script)
+# 3) python main-wrangling.py create_cosmosdb_pypi_lib_documents 
+# 4) python main-wrangling.py add_embeddings_to_cosmosdb_documents 
+
+
 import asyncio
 import json
 import sys
@@ -56,6 +64,7 @@ async def list_databases():
         logging.info(str(e))
         logging.info(traceback.format_exc())
 
+
 async def create_database(dbname: str, db_ru: int):
     try:
         cosmos = CosmosNoSqlUtil()
@@ -65,6 +74,7 @@ async def create_database(dbname: str, db_ru: int):
         logging.info(str(e))
         logging.info(traceback.format_exc())
 
+
 async def delete_database(dbname: str):
     try:
         cosmos = CosmosNoSqlUtil()
@@ -73,6 +83,7 @@ async def delete_database(dbname: str):
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
+
 
 async def create_container(dbname, cname, pkpath, c_ru, idx_policy_filename=None):
     try:
@@ -84,6 +95,7 @@ async def create_container(dbname, cname, pkpath, c_ru, idx_policy_filename=None
         logging.info(str(e))
         logging.info(traceback.format_exc())
 
+
 async def delete_container(dbname, cname):
     try:
         cosmos = CosmosNoSqlUtil()
@@ -93,6 +105,7 @@ async def delete_container(dbname, cname):
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
+
 
 async def list_containers(dbname: str):
     try:
@@ -176,12 +189,14 @@ async def load_airports(dbname: str, cname: str, pkpath: str):
         logging.info(str(e))
         logging.info(traceback.format_exc())
 
+
 async def load_pypi_libs(dbname: str, cname: str, pkpath: str):
     try:
         nosql_util = await initialize_cosmos_nosql_util(dbname, cname)
     except Exception as e:
         logging.info(str(e))
         logging.info(traceback.format_exc())
+
 
 async def test_cosmos_nosql(dbname: str, db_ru: int, cname: str, c_ru: int, pkpath: str):
     logging.info(
@@ -342,7 +357,7 @@ SELECT TOP {} c.id, c.pk, c.name, VectorDistance(c.embedding, {}) AS SimilarityS
 async def vector_search_similar_words(dbname: str, cname: str, words: list):
     nosql_util = await initialize_cosmos_nosql_util(dbname, cname)
     try:
-        ai_util = AOAIUtil() 
+        ai_util = AOAIUtil()
         embedding = await ai_util.generate_embeddings(" ".join(words))
         sql = vector_search_sql(5, embedding)
         results = await nosql_util.query_items(sql, True)

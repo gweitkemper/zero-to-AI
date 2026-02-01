@@ -37,15 +37,15 @@
       "Homepage": "https://developers.google.com/protocol-buffers/"
     },
     "provides_extra": null,
-    "release_url": "https://pypi.org/project/protobuf/6.33.4/",
+    "release_url": "https://pypi.org/project/protobuf/6.33.5/",
     "requires_dist": null,
     "requires_python": ">=3.9",
     "summary": null,
-    "version": "6.33.4",
+    "version": "6.33.5",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33740799,
+  "last_serial": 33910394,
   "releases": {
     "2.0.0beta": [
       {
@@ -59087,6 +59087,218 @@
         "yanked_reason": null
       }
     ],
+    "6.33.5": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "b179af92d0a8369732b027e6d6084251dd8e782c685c72da161bd4a2e00fbabb",
+          "md5": "82b2fa32ddf77fd6f1ddd6d55fcd3f57",
+          "sha256": "d71b040839446bac0f4d162e758bea99c8251161dae9d0983a3b88dee345153b"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp310-abi3-win32.whl",
+        "has_sig": false,
+        "md5_digest": "82b2fa32ddf77fd6f1ddd6d55fcd3f57",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.9",
+        "size": 425769,
+        "upload_time": "2026-01-29T21:51:21",
+        "upload_time_iso_8601": "2026-01-29T21:51:21.751469Z",
+        "url": "https://files.pythonhosted.org/packages/b1/79/af92d0a8369732b027e6d6084251dd8e782c685c72da161bd4a2e00fbabb/protobuf-6.33.5-cp310-abi3-win32.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "5575bb9bc917d10e9ee13dee8607eb9ab963b7cf8be607c46e7862c748aa2af7",
+          "md5": "b1326be947281d49f18f478d66ca35f8",
+          "sha256": "3093804752167bcab3998bec9f1048baae6e29505adaf1afd14a37bddede533c"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp310-abi3-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "b1326be947281d49f18f478d66ca35f8",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp310",
+        "requires_python": ">=3.9",
+        "size": 437118,
+        "upload_time": "2026-01-29T21:51:24",
+        "upload_time_iso_8601": "2026-01-29T21:51:24.022462Z",
+        "url": "https://files.pythonhosted.org/packages/55/75/bb9bc917d10e9ee13dee8607eb9ab963b7cf8be607c46e7862c748aa2af7/protobuf-6.33.5-cp310-abi3-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "a26be48dfc1191bc5b52950246275bf4089773e91cb5ba3592621723cdddca62",
+          "md5": "66a1bc67b477cde22252c86ad623bb74",
+          "sha256": "a5cb85982d95d906df1e2210e58f8e4f1e3cdc088e52c921a041f9c9a0386de5"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl",
+        "has_sig": false,
+        "md5_digest": "66a1bc67b477cde22252c86ad623bb74",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 427766,
+        "upload_time": "2026-01-29T21:51:25",
+        "upload_time_iso_8601": "2026-01-29T21:51:25.413464Z",
+        "url": "https://files.pythonhosted.org/packages/a2/6b/e48dfc1191bc5b52950246275bf4089773e91cb5ba3592621723cdddca62/protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "4eb1c79468184310de09d75095ed1314b839eb2f72df71097db9d1404a1b2717",
+          "md5": "8ac3b8aa0ef3f1896a852e57cd3198aa",
+          "sha256": "9b71e0281f36f179d00cbcb119cb19dec4d14a81393e5ea220f64b286173e190"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl",
+        "has_sig": false,
+        "md5_digest": "8ac3b8aa0ef3f1896a852e57cd3198aa",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 324638,
+        "upload_time": "2026-01-29T21:51:26",
+        "upload_time_iso_8601": "2026-01-29T21:51:26.423693Z",
+        "url": "https://files.pythonhosted.org/packages/4e/b1/c79468184310de09d75095ed1314b839eb2f72df71097db9d1404a1b2717/protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "c5f565d838092fd01c44d16037953fd4c2cc851e783de9b8f02b27ec4ffd906f",
+          "md5": "2ede49d228ef39b9e9abc041321ae7c4",
+          "sha256": "8afa18e1d6d20af15b417e728e9f60f3aa108ee76f23c3b2c07a2c3b546d3afd"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl",
+        "has_sig": false,
+        "md5_digest": "2ede49d228ef39b9e9abc041321ae7c4",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 339411,
+        "upload_time": "2026-01-29T21:51:27",
+        "upload_time_iso_8601": "2026-01-29T21:51:27.446255Z",
+        "url": "https://files.pythonhosted.org/packages/c5/f5/65d838092fd01c44d16037953fd4c2cc851e783de9b8f02b27ec4ffd906f/protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "9b53a9443aa3ca9ba8724fdfa02dd1887c1bcd8e89556b715cfbacca6b63dbec",
+          "md5": "219c2f8957d858d0aae86b0720622bd1",
+          "sha256": "cbf16ba3350fb7b889fca858fb215967792dc125b35c7976ca4818bee3521cf0"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl",
+        "has_sig": false,
+        "md5_digest": "219c2f8957d858d0aae86b0720622bd1",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 323465,
+        "upload_time": "2026-01-29T21:51:28",
+        "upload_time_iso_8601": "2026-01-29T21:51:28.925627Z",
+        "url": "https://files.pythonhosted.org/packages/9b/53/a9443aa3ca9ba8724fdfa02dd1887c1bcd8e89556b715cfbacca6b63dbec/protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "086084d5f6dcda9165e4d6a56ac8433c9f40a8906bf2966150b8a0cfde097d78",
+          "md5": "40386ad8f83dbc361d40a5cb0b6fbec3",
+          "sha256": "a3157e62729aafb8df6da2c03aa5c0937c7266c626ce11a278b6eb7963c4e37c"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-cp39-win32.whl",
+        "has_sig": false,
+        "md5_digest": "40386ad8f83dbc361d40a5cb0b6fbec3",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 425892,
+        "upload_time": "2026-01-29T21:51:30",
+        "upload_time_iso_8601": "2026-01-29T21:51:30.382914Z",
+        "url": "https://files.pythonhosted.org/packages/08/60/84d5f6dcda9165e4d6a56ac8433c9f40a8906bf2966150b8a0cfde097d78/protobuf-6.33.5-cp39-cp39-win32.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "681933d7dc2dc84439587fa1e21e1c0026c01ad2af0a62f58fd54002a7546307",
+          "md5": "5acebca3a2b7ccea5f35270818cd91cd",
+          "sha256": "8f04fa32763dcdb4973d537d6b54e615cc61108c7cb38fe59310c3192d29510a"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-cp39-cp39-win_amd64.whl",
+        "has_sig": false,
+        "md5_digest": "5acebca3a2b7ccea5f35270818cd91cd",
+        "packagetype": "bdist_wheel",
+        "python_version": "cp39",
+        "requires_python": ">=3.9",
+        "size": 437137,
+        "upload_time": "2026-01-29T21:51:31",
+        "upload_time_iso_8601": "2026-01-29T21:51:31.456094Z",
+        "url": "https://files.pythonhosted.org/packages/68/19/33d7dc2dc84439587fa1e21e1c0026c01ad2af0a62f58fd54002a7546307/protobuf-6.33.5-cp39-cp39-win_amd64.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "57bf2086963c69bdac3d7cff1cc7ff79b8ce5ea0bec6797a017e1be338a46248",
+          "md5": "3ac1a81c01fb47e4d092d8f367cf1f72",
+          "sha256": "69915a973dd0f60f31a08b8318b73eab2bd6a392c79184b3612226b0a3f8ec02"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "3ac1a81c01fb47e4d092d8f367cf1f72",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.9",
+        "size": 170687,
+        "upload_time": "2026-01-29T21:51:32",
+        "upload_time_iso_8601": "2026-01-29T21:51:32.557939Z",
+        "url": "https://files.pythonhosted.org/packages/57/bf/2086963c69bdac3d7cff1cc7ff79b8ce5ea0bec6797a017e1be338a46248/protobuf-6.33.5-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "ba257c72c307aafc96fa87062aa6291d9f7c94836e43214d43722e86037aac02",
+          "md5": "5d9230257cd63f6f94ca3a7303b22413",
+          "sha256": "6ddcac2a081f8b7b9642c09406bc6a4290128fce5f471cddd165960bb9119e5c"
+        },
+        "downloads": -1,
+        "filename": "protobuf-6.33.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5d9230257cd63f6f94ca3a7303b22413",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.9",
+        "size": 444465,
+        "upload_time": "2026-01-29T21:51:33",
+        "upload_time_iso_8601": "2026-01-29T21:51:33.494716Z",
+        "url": "https://files.pythonhosted.org/packages/ba/25/7c72c307aafc96fa87062aa6291d9f7c94836e43214d43722e86037aac02/protobuf-6.33.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "7.34.0rc1": [
       {
         "comment_text": null,
@@ -59262,226 +59474,213 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "e0be24ef9f3095bacdf95b458543334d0c4908ccdaee5130420bf064492c325f",
-        "md5": "5be8108493354309bef07696a845a4df",
-        "sha256": "918966612c8232fc6c24c78e1cd89784307f5814ad7506c308ee3cf86662850d"
+        "blake2b_256": "b179af92d0a8369732b027e6d6084251dd8e782c685c72da161bd4a2e00fbabb",
+        "md5": "82b2fa32ddf77fd6f1ddd6d55fcd3f57",
+        "sha256": "d71b040839446bac0f4d162e758bea99c8251161dae9d0983a3b88dee345153b"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp310-abi3-win32.whl",
+      "filename": "protobuf-6.33.5-cp310-abi3-win32.whl",
       "has_sig": false,
-      "md5_digest": "5be8108493354309bef07696a845a4df",
+      "md5_digest": "82b2fa32ddf77fd6f1ddd6d55fcd3f57",
       "packagetype": "bdist_wheel",
       "python_version": "cp310",
       "requires_python": ">=3.9",
-      "size": 425612,
-      "upload_time": "2026-01-12T18:33:29",
-      "upload_time_iso_8601": "2026-01-12T18:33:29.656612Z",
-      "url": "https://files.pythonhosted.org/packages/e0/be/24ef9f3095bacdf95b458543334d0c4908ccdaee5130420bf064492c325f/protobuf-6.33.4-cp310-abi3-win32.whl",
+      "size": 425769,
+      "upload_time": "2026-01-29T21:51:21",
+      "upload_time_iso_8601": "2026-01-29T21:51:21.751469Z",
+      "url": "https://files.pythonhosted.org/packages/b1/79/af92d0a8369732b027e6d6084251dd8e782c685c72da161bd4a2e00fbabb/protobuf-6.33.5-cp310-abi3-win32.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "31ade5693e1974a28869e7cd244302911955c1cebc0161eb32dfa2b25b6e96f0",
-        "md5": "37376e256645e98ab24f2fa4ffadb477",
-        "sha256": "8f11ffae31ec67fc2554c2ef891dcb561dae9a2a3ed941f9e134c2db06657dbc"
+        "blake2b_256": "5575bb9bc917d10e9ee13dee8607eb9ab963b7cf8be607c46e7862c748aa2af7",
+        "md5": "b1326be947281d49f18f478d66ca35f8",
+        "sha256": "3093804752167bcab3998bec9f1048baae6e29505adaf1afd14a37bddede533c"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp310-abi3-win_amd64.whl",
+      "filename": "protobuf-6.33.5-cp310-abi3-win_amd64.whl",
       "has_sig": false,
-      "md5_digest": "37376e256645e98ab24f2fa4ffadb477",
+      "md5_digest": "b1326be947281d49f18f478d66ca35f8",
       "packagetype": "bdist_wheel",
       "python_version": "cp310",
       "requires_python": ">=3.9",
-      "size": 436962,
-      "upload_time": "2026-01-12T18:33:31",
-      "upload_time_iso_8601": "2026-01-12T18:33:31.345992Z",
-      "url": "https://files.pythonhosted.org/packages/31/ad/e5693e1974a28869e7cd244302911955c1cebc0161eb32dfa2b25b6e96f0/protobuf-6.33.4-cp310-abi3-win_amd64.whl",
+      "size": 437118,
+      "upload_time": "2026-01-29T21:51:24",
+      "upload_time_iso_8601": "2026-01-29T21:51:24.022462Z",
+      "url": "https://files.pythonhosted.org/packages/55/75/bb9bc917d10e9ee13dee8607eb9ab963b7cf8be607c46e7862c748aa2af7/protobuf-6.33.5-cp310-abi3-win_amd64.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "66156ee23553b6bfd82670207ead921f4d8ef14c107e5e11443b04caeb5ab5ec",
-        "md5": "9d9bc282767083d7512832b68595ba1a",
-        "sha256": "2fe67f6c014c84f655ee06f6f66213f9254b3a8b6bda6cda0ccd4232c73c06f0"
+        "blake2b_256": "a26be48dfc1191bc5b52950246275bf4089773e91cb5ba3592621723cdddca62",
+        "md5": "66a1bc67b477cde22252c86ad623bb74",
+        "sha256": "a5cb85982d95d906df1e2210e58f8e4f1e3cdc088e52c921a041f9c9a0386de5"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-abi3-macosx_10_9_universal2.whl",
+      "filename": "protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl",
       "has_sig": false,
-      "md5_digest": "9d9bc282767083d7512832b68595ba1a",
+      "md5_digest": "66a1bc67b477cde22252c86ad623bb74",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 427612,
-      "upload_time": "2026-01-12T18:33:32",
-      "upload_time_iso_8601": "2026-01-12T18:33:32.646178Z",
-      "url": "https://files.pythonhosted.org/packages/66/15/6ee23553b6bfd82670207ead921f4d8ef14c107e5e11443b04caeb5ab5ec/protobuf-6.33.4-cp39-abi3-macosx_10_9_universal2.whl",
+      "size": 427766,
+      "upload_time": "2026-01-29T21:51:25",
+      "upload_time_iso_8601": "2026-01-29T21:51:25.413464Z",
+      "url": "https://files.pythonhosted.org/packages/a2/6b/e48dfc1191bc5b52950246275bf4089773e91cb5ba3592621723cdddca62/protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "2b48d301907ce6d0db75f959ca74f44b475a9caa8fcba102d098d3c3dd0f2d3f",
-        "md5": "e20ffa58083f9080116c499354c4df36",
-        "sha256": "757c978f82e74d75cba88eddec479df9b99a42b31193313b75e492c06a51764e"
+        "blake2b_256": "4eb1c79468184310de09d75095ed1314b839eb2f72df71097db9d1404a1b2717",
+        "md5": "8ac3b8aa0ef3f1896a852e57cd3198aa",
+        "sha256": "9b71e0281f36f179d00cbcb119cb19dec4d14a81393e5ea220f64b286173e190"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-abi3-manylinux2014_aarch64.whl",
+      "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl",
       "has_sig": false,
-      "md5_digest": "e20ffa58083f9080116c499354c4df36",
+      "md5_digest": "8ac3b8aa0ef3f1896a852e57cd3198aa",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 324484,
-      "upload_time": "2026-01-12T18:33:33",
-      "upload_time_iso_8601": "2026-01-12T18:33:33.789036Z",
-      "url": "https://files.pythonhosted.org/packages/2b/48/d301907ce6d0db75f959ca74f44b475a9caa8fcba102d098d3c3dd0f2d3f/protobuf-6.33.4-cp39-abi3-manylinux2014_aarch64.whl",
+      "size": 324638,
+      "upload_time": "2026-01-29T21:51:26",
+      "upload_time_iso_8601": "2026-01-29T21:51:26.423693Z",
+      "url": "https://files.pythonhosted.org/packages/4e/b1/c79468184310de09d75095ed1314b839eb2f72df71097db9d1404a1b2717/protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "921ce53078d3f7fe710572ab2dcffd993e1e3b438ae71cfc031b71bae44fcb2d",
-        "md5": "63b335b757bb5f5725a1cf5c95cf30b2",
-        "sha256": "c7c64f259c618f0bef7bee042075e390debbf9682334be2b67408ec7c1c09ee6"
+        "blake2b_256": "c5f565d838092fd01c44d16037953fd4c2cc851e783de9b8f02b27ec4ffd906f",
+        "md5": "2ede49d228ef39b9e9abc041321ae7c4",
+        "sha256": "8afa18e1d6d20af15b417e728e9f60f3aa108ee76f23c3b2c07a2c3b546d3afd"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-abi3-manylinux2014_s390x.whl",
+      "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl",
       "has_sig": false,
-      "md5_digest": "63b335b757bb5f5725a1cf5c95cf30b2",
+      "md5_digest": "2ede49d228ef39b9e9abc041321ae7c4",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 339256,
-      "upload_time": "2026-01-12T18:33:35",
-      "upload_time_iso_8601": "2026-01-12T18:33:35.231769Z",
-      "url": "https://files.pythonhosted.org/packages/92/1c/e53078d3f7fe710572ab2dcffd993e1e3b438ae71cfc031b71bae44fcb2d/protobuf-6.33.4-cp39-abi3-manylinux2014_s390x.whl",
+      "size": 339411,
+      "upload_time": "2026-01-29T21:51:27",
+      "upload_time_iso_8601": "2026-01-29T21:51:27.446255Z",
+      "url": "https://files.pythonhosted.org/packages/c5/f5/65d838092fd01c44d16037953fd4c2cc851e783de9b8f02b27ec4ffd906f/protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "e88e971c0edd084914f7ee7c23aa70ba89e8903918adca179319ee94403701d5",
-        "md5": "a91cb9179f0c395faec77a05160131d5",
-        "sha256": "3df850c2f8db9934de4cf8f9152f8dc2558f49f298f37f90c517e8e5c84c30e9"
+        "blake2b_256": "9b53a9443aa3ca9ba8724fdfa02dd1887c1bcd8e89556b715cfbacca6b63dbec",
+        "md5": "219c2f8957d858d0aae86b0720622bd1",
+        "sha256": "cbf16ba3350fb7b889fca858fb215967792dc125b35c7976ca4818bee3521cf0"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-abi3-manylinux2014_x86_64.whl",
+      "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl",
       "has_sig": false,
-      "md5_digest": "a91cb9179f0c395faec77a05160131d5",
+      "md5_digest": "219c2f8957d858d0aae86b0720622bd1",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 323311,
-      "upload_time": "2026-01-12T18:33:36",
-      "upload_time_iso_8601": "2026-01-12T18:33:36.305399Z",
-      "url": "https://files.pythonhosted.org/packages/e8/8e/971c0edd084914f7ee7c23aa70ba89e8903918adca179319ee94403701d5/protobuf-6.33.4-cp39-abi3-manylinux2014_x86_64.whl",
+      "size": 323465,
+      "upload_time": "2026-01-29T21:51:28",
+      "upload_time_iso_8601": "2026-01-29T21:51:28.925627Z",
+      "url": "https://files.pythonhosted.org/packages/9b/53/a9443aa3ca9ba8724fdfa02dd1887c1bcd8e89556b715cfbacca6b63dbec/protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "2fbd5c6cda3fbdde7473edcfd4c93a698a3021ffdcc92f3c101203a93bfd9c04",
-        "md5": "bc4acbafac7de0a1f678ab99eccf3e7d",
-        "sha256": "955478a89559fa4568f5a81dce77260eabc5c686f9e8366219ebd30debf06aa6"
+        "blake2b_256": "086084d5f6dcda9165e4d6a56ac8433c9f40a8906bf2966150b8a0cfde097d78",
+        "md5": "40386ad8f83dbc361d40a5cb0b6fbec3",
+        "sha256": "a3157e62729aafb8df6da2c03aa5c0937c7266c626ce11a278b6eb7963c4e37c"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-cp39-win32.whl",
+      "filename": "protobuf-6.33.5-cp39-cp39-win32.whl",
       "has_sig": false,
-      "md5_digest": "bc4acbafac7de0a1f678ab99eccf3e7d",
+      "md5_digest": "40386ad8f83dbc361d40a5cb0b6fbec3",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 425734,
-      "upload_time": "2026-01-12T18:33:37",
-      "upload_time_iso_8601": "2026-01-12T18:33:37.247258Z",
-      "url": "https://files.pythonhosted.org/packages/2f/bd/5c6cda3fbdde7473edcfd4c93a698a3021ffdcc92f3c101203a93bfd9c04/protobuf-6.33.4-cp39-cp39-win32.whl",
+      "size": 425892,
+      "upload_time": "2026-01-29T21:51:30",
+      "upload_time_iso_8601": "2026-01-29T21:51:30.382914Z",
+      "url": "https://files.pythonhosted.org/packages/08/60/84d5f6dcda9165e4d6a56ac8433c9f40a8906bf2966150b8a0cfde097d78/protobuf-6.33.5-cp39-cp39-win32.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "a851a128b3eb55954074074bdba124003e64d255314a12888fd41faecc458798",
-        "md5": "5f3e4fe69745748ad31061d390eea3f9",
-        "sha256": "0f12ddbf96912690c3582f9dffb55530ef32015ad8e678cd494312bd78314c4f"
+        "blake2b_256": "681933d7dc2dc84439587fa1e21e1c0026c01ad2af0a62f58fd54002a7546307",
+        "md5": "5acebca3a2b7ccea5f35270818cd91cd",
+        "sha256": "8f04fa32763dcdb4973d537d6b54e615cc61108c7cb38fe59310c3192d29510a"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-cp39-cp39-win_amd64.whl",
+      "filename": "protobuf-6.33.5-cp39-cp39-win_amd64.whl",
       "has_sig": false,
-      "md5_digest": "5f3e4fe69745748ad31061d390eea3f9",
+      "md5_digest": "5acebca3a2b7ccea5f35270818cd91cd",
       "packagetype": "bdist_wheel",
       "python_version": "cp39",
       "requires_python": ">=3.9",
-      "size": 436984,
-      "upload_time": "2026-01-12T18:33:38",
-      "upload_time_iso_8601": "2026-01-12T18:33:38.303585Z",
-      "url": "https://files.pythonhosted.org/packages/a8/51/a128b3eb55954074074bdba124003e64d255314a12888fd41faecc458798/protobuf-6.33.4-cp39-cp39-win_amd64.whl",
+      "size": 437137,
+      "upload_time": "2026-01-29T21:51:31",
+      "upload_time_iso_8601": "2026-01-29T21:51:31.456094Z",
+      "url": "https://files.pythonhosted.org/packages/68/19/33d7dc2dc84439587fa1e21e1c0026c01ad2af0a62f58fd54002a7546307/protobuf-6.33.5-cp39-cp39-win_amd64.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "75b11dc83c2c661b4c62d56cc081706ee33a4fc2835bd90f965baa2663ef7676",
-        "md5": "e0965e81d8d6473f7144d86d7a98a891",
-        "sha256": "1fe3730068fcf2e595816a6c34fe66eeedd37d51d0400b72fabc848811fdc1bc"
+        "blake2b_256": "57bf2086963c69bdac3d7cff1cc7ff79b8ce5ea0bec6797a017e1be338a46248",
+        "md5": "3ac1a81c01fb47e4d092d8f367cf1f72",
+        "sha256": "69915a973dd0f60f31a08b8318b73eab2bd6a392c79184b3612226b0a3f8ec02"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4-py3-none-any.whl",
+      "filename": "protobuf-6.33.5-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "e0965e81d8d6473f7144d86d7a98a891",
+      "md5_digest": "3ac1a81c01fb47e4d092d8f367cf1f72",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.9",
-      "size": 170532,
-      "upload_time": "2026-01-12T18:33:39",
-      "upload_time_iso_8601": "2026-01-12T18:33:39.199736Z",
-      "url": "https://files.pythonhosted.org/packages/75/b1/1dc83c2c661b4c62d56cc081706ee33a4fc2835bd90f965baa2663ef7676/protobuf-6.33.4-py3-none-any.whl",
+      "size": 170687,
+      "upload_time": "2026-01-29T21:51:32",
+      "upload_time_iso_8601": "2026-01-29T21:51:32.557939Z",
+      "url": "https://files.pythonhosted.org/packages/57/bf/2086963c69bdac3d7cff1cc7ff79b8ce5ea0bec6797a017e1be338a46248/protobuf-6.33.5-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "53b8cda15d9d46d03d4aa3a67cb6bffe05173440ccf86a9541afaf7ac59a1b6b",
-        "md5": "de74d3d1a7d8dedd40ed1e81f44a6922",
-        "sha256": "dc2e61bca3b10470c1912d166fe0af67bfc20eb55971dcef8dfa48ce14f0ed91"
+        "blake2b_256": "ba257c72c307aafc96fa87062aa6291d9f7c94836e43214d43722e86037aac02",
+        "md5": "5d9230257cd63f6f94ca3a7303b22413",
+        "sha256": "6ddcac2a081f8b7b9642c09406bc6a4290128fce5f471cddd165960bb9119e5c"
       },
       "downloads": -1,
-      "filename": "protobuf-6.33.4.tar.gz",
+      "filename": "protobuf-6.33.5.tar.gz",
       "has_sig": false,
-      "md5_digest": "de74d3d1a7d8dedd40ed1e81f44a6922",
+      "md5_digest": "5d9230257cd63f6f94ca3a7303b22413",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.9",
-      "size": 444346,
-      "upload_time": "2026-01-12T18:33:40",
-      "upload_time_iso_8601": "2026-01-12T18:33:40.109697Z",
-      "url": "https://files.pythonhosted.org/packages/53/b8/cda15d9d46d03d4aa3a67cb6bffe05173440ccf86a9541afaf7ac59a1b6b/protobuf-6.33.4.tar.gz",
+      "size": 444465,
+      "upload_time": "2026-01-29T21:51:33",
+      "upload_time_iso_8601": "2026-01-29T21:51:33.494716Z",
+      "url": "https://files.pythonhosted.org/packages/ba/25/7c72c307aafc96fa87062aa6291d9f7c94836e43214d43722e86037aac02/protobuf-6.33.5.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }
   ],
-  "vulnerabilities": [
-    {
-      "aliases": [
-        "CVE-2026-0994"
-      ],
-      "details": "A denial-of-service (DoS) vulnerability exists in google.protobuf.json_format.ParseDict() in Python, where the max_recursion_depth limit can be bypassed when parsing nested google.protobuf.Any messages.\n\nDue to missing recursion depth accounting inside the internal Any-handling logic, an attacker can supply deeply nested Any structures that bypass the intended recursion limit, eventually exhausting Python’s recursion stack and causing a RecursionError.",
-      "fixed_in": [],
-      "id": "GHSA-7gcm-g887-7qv7",
-      "link": "https://osv.dev/vulnerability/GHSA-7gcm-g887-7qv7",
-      "source": "osv",
-      "summary": null,
-      "withdrawn": null
-    }
-  ]
+  "vulnerabilities": []
 }

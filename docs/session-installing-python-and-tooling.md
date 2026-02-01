@@ -916,3 +916,9 @@ my-project v0.1.0
 └── pandas v2.3.3 (*)
 (*) Package tree already displayed
 ```
+
+<br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)

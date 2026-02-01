@@ -28,6 +28,8 @@ uv pip compile pyproject.toml -o requirements.txt
 
 uv tree > data/uv/uv-tree.txt
 
+uv export --format cyclonedx1.5 > data/uv/uv-cyclonedx.json
+
 echo "Listing the installed libraries ..."
 uv pip list > data/uv/uv-pip-list.txt
 uv pip list

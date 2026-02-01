@@ -9,11 +9,13 @@
 - COBOL -> Smalltalk -> Java -> Ruby -> Clojure -> Node.js -> Python
 - Private Networks -> Public Internet
 - **Human Written Code -> AI Generated Code** (with Human Guidance)
-- **Human Decision Making -> Agentic AI**
+- **Human Decision Making -> Agentic AI** (computer/LLM decision making)
 
-**These last two are the most significant changes I've seen in my 40 years in IT.**
+**These last two are the most significant changes I've seen in my 39+ years in IT.**
 
 **AI-powered tooling can greatly improve your productivity.  And thus, your value.**
+
+**Microsoft CEO Satya Nadella said that as much as 30% of the company’s code is now written by artificial intelligence.**
 
 <br><br><br>
 
@@ -60,6 +62,7 @@
   - And GitHub Actions
   - And SQLAlchemy
   - And RDF/SPARQL
+  - And Polars
   - And more ...
 
 <br><br><br>
@@ -83,3 +86,10 @@
 
 
 TODO - screen shots of Cursor in action
+
+<br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)
+

@@ -119,3 +119,9 @@ These are in the Streamlit Gallery, not in this GitHub repository.
 - [Streamlit Gallery](https://streamlit.io/gallery)
 - [Faker @ PyPI](https://pypi.org/project/Faker/) to create simulated/synthetic data
 - [m26 @ PyPI](https://pypi.org/project/m26/) running, swimming, and cycling calculations
+
+<br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)

@@ -241,3 +241,10 @@ function gurl {
 ## References
 
 - [Linux Torvalds on Wikipedia](https://en.wikipedia.org/wiki/Linus_Torvalds)
+
+<br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)
+

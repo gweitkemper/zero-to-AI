@@ -26,7 +26,7 @@ This is what a real-world AI application looks like:
 
 ### So, what is Data Wrangling?
 
-- It's the art of transforming messy raw data into a usable formats for your needs
+- **It's the art of transforming messy raw data into a usable formats for your needs**
 - [Data Wrangling at Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)
 
 <br><br><br>
@@ -54,12 +54,13 @@ This is what a real-world AI application looks like:
 
 <br><br><br>
 
-## Python is a great programming language for data Wrangling
+## Python is a GREAT programming language for data Wrangling
 
   - Many useful standard and third-party libraries for this
   - json and csv standard libraries.  And many more
   - [pandas](https://pandas.pydata.org) for CSV/TSV data (covered in the next lesson w/Jupyter)
-  - [duckdb](https://duckdb.org) for remote files in various formats, then read with SQL
+  - [polars](https://pola.rs) a modern and faster implementation of dataframes
+  - [duckdb](https://duckdb.org) for remote files in various formats, then read the data with SQL
   - [beautifulsoup](https://beautiful-soup-4.readthedocs.io/en/latest/) for parsing HTML
   - [openpyxl](https://openpyxl.readthedocs.io/en/stable/) for Excel files
   - PDF will be covered at a later session, using Azure Document Intelligence
@@ -89,13 +90,26 @@ This session uses file **main-wrangling.py**.
 python main-wrangling.py help
 
 Usage:
-    Data wrangling with DuckDB with local and remote files.
+    Data wrangling with duckdb, polars, toon-python, etc.
+    with both local and remote files.
     python main-wrangling.py <func>
-    python main-wrangling.py postal_codes_nc
+    python main-wrangling.py help
+    python main-wrangling.py postal_codes_nc_csv_to_json
+    python main-wrangling.py center_of_nc_with_polars
+    python main-wrangling.py postal_codes_nc_csv_to_toon
     python main-wrangling.py imdb
     python main-wrangling.py openflights
     python main-wrangling.py augment_openflights_airports
+    python main-wrangling.py gen_pypi_download_lib_json_script
+    python main-wrangling.py explore_downloaded_pypi_libs
+    python main-wrangling.py create_cosmosdb_pypi_lib_documents
+    python main-wrangling.py add_embeddings_to_cosmosdb_documents
+    python main-wrangling.py uv_parse
+    python main-wrangling.py gen_graph_data
 ```
+
+Please explore main-wrangling.py on your own.
+Only a few of its' functions will be demonstrated in the session.
 
 ### Wrangling North Carolina Postal Codes
 
@@ -120,7 +134,7 @@ id,postal_cd,country_cd,city_name,state_abbrv,latitude,longitude
 The Python code to process this data:
 
 ```
-def postal_codes_nc():
+def postal_codes_nc_csv_to_json():
     """
     Read a local CSV file with DuckDB.
     Then query it with SQL.
@@ -139,16 +153,101 @@ def postal_codes_nc():
 
     # Transform the CSV data into a JSON file.
     # DuckDB has some dataframe methods - df().
-    outfile = "tmp/postal_codes_nc.json"
+    outfile = "data/postal_codes/postal_codes_nc.json"
     rel.df().to_json(outfile, orient="records", lines=True)
     print(f"file written: {outfile}")
+```
+
+#### python main-wrangling.py postal_codes_nc_csv_to_json
+
+```
+$ python main-wrangling.py postal_codes_nc_csv_to_json
+
+┌───────┬───────────┬────────────┬──────────────┬─────────────┬───────────┬────────────┐
+│  id   │ postal_cd │ country_cd │  city_name   │ state_abbrv │ latitude  │ longitude  │
+│ int64 │   int64   │  varchar   │   varchar    │   varchar   │  double   │   double   │
+├───────┼───────────┼────────────┼──────────────┼─────────────┼───────────┼────────────┤
+│ 10949 │     27006 │ US         │ Advance      │ NC          │ 35.944562 │ -80.437631 │
+│ 10950 │     27007 │ US         │ Ararat       │ NC          │ 36.376884 │ -80.596265 │
+│ 10951 │     27009 │ US         │ Belews Creek │ NC          │  36.22393 │ -80.080018 │
+│ 10952 │     27010 │ US         │ Bethania     │ NC          │   36.1822 │   -80.3384 │
+│ 10953 │     27011 │ US         │ Boonville    │ NC          │ 36.209184 │ -80.693772 │
+│ 10954 │     27012 │ US         │ Clemmons     │ NC          │ 36.004018 │ -80.371445 │
+│ 10955 │     27013 │ US         │ Cleveland    │ NC          │ 35.763468 │  -80.70373 │
+│ 10956 │     27014 │ US         │ Cooleemee    │ NC          │ 35.811967 │ -80.554258 │
+│ 10957 │     27016 │ US         │ Danbury      │ NC          │ 36.444588 │  -80.21657 │
+│ 10958 │     27017 │ US         │ Dobson       │ NC          │ 36.375294 │ -80.804534 │
+│   ·   │       ·   │ ·          │   ·          │ ·           │      ·    │       ·    │
+│   ·   │       ·   │ ·          │   ·          │ ·           │      ·    │       ·    │
+│   ·   │       ·   │ ·          │   ·          │ ·           │      ·    │       ·    │
+│ 12019 │     28814 │ US         │ Asheville    │ NC          │   35.6006 │   -82.5545 │
+│ 12020 │     28815 │ US         │ Asheville    │ NC          │   35.6006 │   -82.5545 │
+│ 12021 │     28816 │ US         │ Asheville    │ NC          │   35.6006 │   -82.5545 │
+│ 12022 │     28901 │ US         │ Andrews      │ NC          │ 35.197799 │ -83.810292 │
+│ 12023 │     28902 │ US         │ Brasstown    │ NC          │ 35.028354 │ -83.962106 │
+│ 12024 │     28903 │ US         │ Culberson    │ NC          │   34.9919 │   -84.1679 │
+│ 12025 │     28904 │ US         │ Hayesville   │ NC          │ 35.073862 │ -83.705197 │
+│ 12026 │     28905 │ US         │ Marble       │ NC          │ 35.161114 │ -83.927575 │
+│ 12027 │     28906 │ US         │ Murphy       │ NC          │ 35.139744 │ -84.103558 │
+│ 12028 │     28909 │ US         │ Warne        │ NC          │ 35.011807 │ -83.918818 │
+├───────┴───────────┴────────────┴──────────────┴─────────────┴───────────┴────────────┤
+│ 1080 rows (20 shown)                                                       7 columns │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+
+(1080, 7)
+<class '_duckdb.DuckDBPyRelation'>
+┌───────────┬───────────┐
+│ postal_cd │ city_name │
+│   int64   │  varchar  │
+├───────────┼───────────┤
+│     28036 │ Davidson  │
+└───────────┴───────────┘
+```
+
+#### A brief comment on relative file sizes - csv vs json vs toon
+
+The TOON format is information-dense.  Lower token utilization for LLMs.
+
+```
+$ ls -al | grep postal_codes_nc
+-rw-r--r--@  1 cjoakim  staff   61273 Jan 18 14:09 postal_codes_nc.csv
+-rw-r--r--@  1 cjoakim  staff  145298 Jan 31 15:48 postal_codes_nc.json
+-rw-r--r--@  1 cjoakim  staff   53583 Jan 31 15:49 postal_codes_nc.toon
+```
+
+### Find the Geographic Center of North Carolina with Polars 
+
+```
+def center_of_nc_with_polars():
+    # Read the CSV file into a Polars dataframe (df)
+    df = pl.read_csv("data/postal_codes/postal_codes_nc.csv")
+    
+    # Explore the dataframe (EDA)
+    print(df.head())
+    print(df.tail())
+    print(df.describe())
+    print(df.dtypes)
+    print(df.columns)
+    print(df.shape)
+
+    # Calculate the center of the state (average of the latitude and longitude)
+    avg_lat = df.select(pl.col("latitude").mean()).item()
+    avg_lon = df.select(pl.col("longitude").mean()).item()
+    print(f"North Carolina center (avg of postal codes): latitude={avg_lat:.6f}, longitude={avg_lon:.6f}")
+```
+
+#### python main-wrangling.py center_of_nc_with_polars
+
+```
+...
+North Carolina center (avg of postal codes): latitude=35.573456, longitude=-79.545256
 ```
 
 <br><br><br>
 
 ### Wrangling IMDb Data
 
-Very large TSV file dataset with Movies, Ratings,Actors, Directors, etc.
+Very large TSV file dataset with Movies, Ratings, Actors, Directors, etc.
 
 - See https://developer.imdb.com/non-commercial-datasets/
 - name.basics.tsv.gz
@@ -166,7 +265,45 @@ This is also a clean dataset with a useful header row.
 def imdb():
     data = duckdb.read_csv("https://datasets.imdbws.com/name.basics.tsv.gz")
     data.show()
-    print(data.shape)  # (14972403, 6) <-- 14-million+ rows!
+    print(data.shape)  # (15056031, 6) <-- 15-million+ rows!
+```
+
+#### python main-wrangling.py imdb
+
+```
+python main-wrangling.py imdb
+┌───────────┬──────────────────────┬───────────┬───────────┬──────────────────────┬──────────────────────────┐
+│  nconst   │     primaryName      │ birthYear │ deathYear │  primaryProfession   │      knownForTitles      │
+│  varchar  │       varchar        │  varchar  │  varchar  │       varchar        │         varchar          │
+├───────────┼──────────────────────┼───────────┼───────────┼──────────────────────┼──────────────────────────┤
+│ nm0000001 │ Fred Astaire         │ 1899      │ 1987      │ actor,miscellaneou…  │ tt0072308,tt0050419,tt…  │
+│ nm0000002 │ Lauren Bacall        │ 1924      │ 2014      │ actress,miscellane…  │ tt0037382,tt0075213,tt…  │
+│ nm0000003 │ Brigitte Bardot      │ 1934      │ 2025      │ actress,music_depa…  │ tt0057345,tt0049189,tt…  │
+│ nm0000004 │ John Belushi         │ 1949      │ 1982      │ actor,writer,music…  │ tt0072562,tt0077975,tt…  │
+│ nm0000005 │ Ingmar Bergman       │ 1918      │ 2007      │ writer,director,ac…  │ tt0050986,tt0069467,tt…  │
+│ nm0000006 │ Ingrid Bergman       │ 1915      │ 1982      │ actress,producer,s…  │ tt0034583,tt0038109,tt…  │
+│ nm0000007 │ Humphrey Bogart      │ 1899      │ 1957      │ actor,producer,mis…  │ tt0034583,tt0043265,tt…  │
+│ nm0000008 │ Marlon Brando        │ 1924      │ 2004      │ actor,director,wri…  │ tt0078788,tt0068646,tt…  │
+│ nm0000009 │ Richard Burton       │ 1925      │ 1984      │ actor,producer,dir…  │ tt0061184,tt0087803,tt…  │
+│ nm0000010 │ James Cagney         │ 1899      │ 1986      │ actor,director,pro…  │ tt0029870,tt0031867,tt…  │
+│     ·     │      ·               │ ·         │ ·         │          ·           │            ·             │
+│     ·     │      ·               │ ·         │ ·         │          ·           │            ·             │
+│     ·     │      ·               │ ·         │ ·         │          ·           │            ·             │
+│ nm0010173 │ Carmen Acosta Iraola │ \N        │ \N        │ costume_department…  │ tt0260772,tt0305205,tt…  │
+│ nm0010174 │ Casimiro Acosta      │ \N        │ \N        │ transportation_dep…  │ tt0094768,tt0107582,tt…  │
+│ nm0010175 │ Cayetano Acosta      │ \N        │ \N        │ actor                │ tt0106307                │
+│ nm0010176 │ Cesar Acosta         │ \N        │ \N        │ actor                │ tt0125931                │
+│ nm0010177 │ Charles Acosta       │ \N        │ \N        │ producer             │ tt0259497,tt27558199,t…  │
+│ nm0010178 │ Christina Acosta     │ \N        │ \N        │ \N                   │ \N                       │
+│ nm0010179 │ Danny Acosta         │ \N        │ \N        │ director,writer,ed…  │ tt0136998                │
+│ nm0010180 │ David Acosta         │ \N        │ \N        │ actor                │ tt0119832,tt2387618,tt…  │
+│ nm0010181 │ Dennis Acosta        │ \N        │ \N        │ actor                │ tt0209441                │
+│ nm0010182 │ Eleuterio Acosta     │ \N        │ \N        │ actor                │ tt0145293                │
+├───────────┴──────────────────────┴───────────┴───────────┴──────────────────────┴──────────────────────────┤
+│ ? rows (>9999 rows, 20 shown)                                                                    6 columns │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+(15056031, 6)
 ```
 
 <br><br><br>
@@ -192,5 +329,13 @@ See the **augment_openflights_airports()** method of **main-wrangling.py**
 
 ## Links
 
- -[duckdb](https://pypi.org/project/duckdb/)
- -[geopy](https://geopy.readthedocs.io/en/stable/)
+- [duckdb](https://pypi.org/project/duckdb/)
+- [polars](https://pola.rs)
+- [geopy](https://geopy.readthedocs.io/en/stable/)
+- [toon](https://toonformat.dev)
+
+<br><br><br>
+---
+<br><br><br>
+
+[Home](../README.md)

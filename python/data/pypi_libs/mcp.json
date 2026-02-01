@@ -46,7 +46,7 @@
       "rich",
       "ws"
     ],
-    "release_url": "https://pypi.org/project/mcp/1.25.0/",
+    "release_url": "https://pypi.org/project/mcp/1.26.0/",
     "requires_dist": [
       "anyio>=4.5",
       "httpx-sse>=0.4",
@@ -69,11 +69,11 @@
     ],
     "requires_python": ">=3.10",
     "summary": "Model Context Protocol SDK",
-    "version": "1.25.0",
+    "version": "1.26.0",
     "yanked": false,
     "yanked_reason": null
   },
-  "last_serial": 33096908,
+  "last_serial": 33781757,
   "releases": {
     "0.9.1": [
       {
@@ -1703,6 +1703,50 @@
         "yanked_reason": null
       }
     ],
+    "1.26.0": [
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fdd9eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9",
+          "md5": "a9d21a0e735bf5d55e127d4898611a49",
+          "sha256": "904a21c33c25aa98ddbeb47273033c435e595bbacfdb177f4bd87f6dceebe1ca"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.26.0-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "a9d21a0e735bf5d55e127d4898611a49",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": ">=3.10",
+        "size": 233615,
+        "upload_time": "2026-01-24T19:40:30",
+        "upload_time_iso_8601": "2026-01-24T19:40:30.652691Z",
+        "url": "https://files.pythonhosted.org/packages/fd/d9/eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9/mcp-1.26.0-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": null,
+        "digests": {
+          "blake2b_256": "fc6d62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10",
+          "md5": "f5d5543665d04017b9dd4a6b782bac18",
+          "sha256": "db6e2ef491eecc1a0d93711a76f28dec2e05999f93afd48795da1c1137142c66"
+        },
+        "downloads": -1,
+        "filename": "mcp-1.26.0.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f5d5543665d04017b9dd4a6b782bac18",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.10",
+        "size": 608005,
+        "upload_time": "2026-01-24T19:40:32",
+        "upload_time_iso_8601": "2026-01-24T19:40:32.468833Z",
+        "url": "https://files.pythonhosted.org/packages/fc/6d/62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10/mcp-1.26.0.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
     "1.3.0": [
       {
         "comment_text": null,
@@ -2368,42 +2412,42 @@
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "e2fc6dc7659c2ae5ddf280477011f4213a74f806862856b796ef08f028e664bf",
-        "md5": "f8a9bd323a6a8b24e195de35f06f203f",
-        "sha256": "b37c38144a666add0862614cc79ec276e97d72aa8ca26d622818d4e278b9721a"
+        "blake2b_256": "fdd9eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9",
+        "md5": "a9d21a0e735bf5d55e127d4898611a49",
+        "sha256": "904a21c33c25aa98ddbeb47273033c435e595bbacfdb177f4bd87f6dceebe1ca"
       },
       "downloads": -1,
-      "filename": "mcp-1.25.0-py3-none-any.whl",
+      "filename": "mcp-1.26.0-py3-none-any.whl",
       "has_sig": false,
-      "md5_digest": "f8a9bd323a6a8b24e195de35f06f203f",
+      "md5_digest": "a9d21a0e735bf5d55e127d4898611a49",
       "packagetype": "bdist_wheel",
       "python_version": "py3",
       "requires_python": ">=3.10",
-      "size": 233076,
-      "upload_time": "2025-12-19T10:19:55",
-      "upload_time_iso_8601": "2025-12-19T10:19:55.416541Z",
-      "url": "https://files.pythonhosted.org/packages/e2/fc/6dc7659c2ae5ddf280477011f4213a74f806862856b796ef08f028e664bf/mcp-1.25.0-py3-none-any.whl",
+      "size": 233615,
+      "upload_time": "2026-01-24T19:40:30",
+      "upload_time_iso_8601": "2026-01-24T19:40:30.652691Z",
+      "url": "https://files.pythonhosted.org/packages/fd/d9/eaa1f80170d2b7c5ba23f3b59f766f3a0bb41155fbc32a69adfa1adaaef9/mcp-1.26.0-py3-none-any.whl",
       "yanked": false,
       "yanked_reason": null
     },
     {
       "comment_text": null,
       "digests": {
-        "blake2b_256": "d52d649d80a0ecf6a1f82632ca44bec21c0461a9d9fc8934d38cb5b319f2db5e",
-        "md5": "f0bb6caf122dcc9237f71bf13373a3c2",
-        "sha256": "56310361ebf0364e2d438e5b45f7668cbb124e158bb358333cd06e49e83a6802"
+        "blake2b_256": "fc6d62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10",
+        "md5": "f5d5543665d04017b9dd4a6b782bac18",
+        "sha256": "db6e2ef491eecc1a0d93711a76f28dec2e05999f93afd48795da1c1137142c66"
       },
       "downloads": -1,
-      "filename": "mcp-1.25.0.tar.gz",
+      "filename": "mcp-1.26.0.tar.gz",
       "has_sig": false,
-      "md5_digest": "f0bb6caf122dcc9237f71bf13373a3c2",
+      "md5_digest": "f5d5543665d04017b9dd4a6b782bac18",
       "packagetype": "sdist",
       "python_version": "source",
       "requires_python": ">=3.10",
-      "size": 605387,
-      "upload_time": "2025-12-19T10:19:56",
-      "upload_time_iso_8601": "2025-12-19T10:19:56.985704Z",
-      "url": "https://files.pythonhosted.org/packages/d5/2d/649d80a0ecf6a1f82632ca44bec21c0461a9d9fc8934d38cb5b319f2db5e/mcp-1.25.0.tar.gz",
+      "size": 608005,
+      "upload_time": "2026-01-24T19:40:32",
+      "upload_time_iso_8601": "2026-01-24T19:40:32.468833Z",
+      "url": "https://files.pythonhosted.org/packages/fc/6d/62e76bbb8144d6ed86e202b5edd8a4cb631e7c8130f3f4893c3f90262b10/mcp-1.26.0.tar.gz",
       "yanked": false,
       "yanked_reason": null
     }
